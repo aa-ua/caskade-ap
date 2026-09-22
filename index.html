@@ -520,6 +520,21 @@ body.mobile .files-drops{display:grid;grid-template-columns:1fr;gap:8px}
   .modal{padding:10px 4px}.modal-body{padding:8px}
   .toast{max-width:92vw;bottom:10px}
 }
+
+/* Викладка (22.09.2026, як у старій програмі): панель, сітка фото, панель фото, підбір, розмітка, підсумок, ZIP */
+.ph-bar .bar{flex-wrap:wrap;gap:6px}.ph-bar .ph-f{max-width:150px;padding:6px 8px;font-size:12px}.ph-bar .ph-q{flex:1;min-width:140px;padding:6px 8px;font-size:12px}.ph-seg .chip{padding:5px 9px}.btn.disabled{opacity:.45;pointer-events:none}.btn.warn{background:rgba(250,204,21,.16);border-color:rgba(250,204,21,.45);color:#fde68a}.btn-danger{background:#7f1d1d;color:#fecaca}
+.ph-banner{margin:6px 8px;background:#111c33;border:2px solid #2b3a58;border-radius:14px;padding:9px 12px}.ph-banner-t b{font-size:13px;color:#7dd3fc}.ph-pills{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px;font-size:12px}.ph-pill{border-radius:9px;padding:3px 8px;font-weight:800}.ph-pill.ok{background:rgba(52,211,153,.14);color:#34d399}.ph-pill.add{background:rgba(180,83,9,.18);color:#fdba74}.ph-pill.no{background:rgba(248,113,113,.14);color:#fca5a5}.ph-pill.dup{background:rgba(148,163,184,.14);color:#cbd5e1}.ph-pill.warn{background:rgba(250,204,21,.14);color:#fde68a}
+.ph-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;padding:8px}.ph-cell{background:#14203a;border:2px solid #1d2a45;border-radius:12px;overflow:hidden;cursor:pointer;position:relative}.ph-cell.sel{border-color:#3b82f6}.ph-cell.ok{border-color:#10b981}.ph-cell img{width:100%;height:210px;object-fit:cover;display:block}.ph-name{padding:6px 8px;font-size:11px;color:#94a3b8;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ph-badge{position:absolute;top:6px;right:6px;background:rgba(2,6,14,.8);border-radius:6px;padding:2px 7px;font-size:10.5px;font-weight:800;color:#34d399}.ph-white{position:absolute;top:34px;right:6px;background:#f8fafc;color:#0f172a;border-radius:6px;padding:2px 6px;font-size:9.5px;font-weight:900}.ph-tags{position:absolute;bottom:30px;left:6px;display:flex;gap:3px;flex-direction:column;align-items:flex-start}.ph-tags span{background:rgba(2,6,14,.8);color:#a5b4fc;border-radius:5px;padding:1px 6px;font-size:9px;font-weight:800}.ph-sel{position:absolute;top:6px;left:6px;width:24px;height:24px;border-radius:50%;border:2px solid #94a3b8;background:rgba(2,6,14,.6);cursor:pointer;z-index:2;display:flex;align-items:center;justify-content:center;color:#fff;font-size:13px;font-weight:900}.ph-sel.on{background:#3b82f6;border-color:#3b82f6}.ph-cnt{position:absolute;bottom:30px;right:6px;background:rgba(124,58,237,.9);color:#fff;border-radius:6px;padding:2px 7px;font-size:10.5px;font-weight:800}
+.ph-detail{background:rgba(15,23,44,.55);border:1px solid rgba(255,255,255,.09);border-radius:18px;padding:12px 14px}.ph-top{display:flex;gap:14px;align-items:flex-start;flex-wrap:wrap}.ph-big{width:260px;height:300px;flex:0 0 auto}.ph-big img{width:100%;height:100%;object-fit:cover;border-radius:12px}.ph-top-r{flex:1;min-width:260px;display:flex;flex-direction:column;gap:8px}.ph-pnm{font-size:16px;font-weight:800}.ph-thumbs{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0}.ph-thumb{text-align:center}.ph-thumb-img{width:64px;height:76px}.ph-thumb-img img{width:64px;height:76px;object-fit:cover;border-radius:8px}.ph-line{font-size:12.5px;font-weight:700;color:#60a5fa;background:rgba(59,130,246,.1);border:1px solid rgba(59,130,246,.4);border-radius:9px;padding:8px 11px}.ph-line.add{border-color:rgba(251,146,60,.6);color:#fb923c}.ph-note{width:100%;min-height:44px;margin-top:10px;font-family:inherit}
+.ph-finder{margin-top:12px;background:#14203a;border:1px solid #1d2a45;border-radius:12px;overflow:hidden;padding:8px 10px}.ph-fh{font-size:13px;font-weight:800;display:flex;align-items:center;gap:8px;flex-wrap:wrap}.ph-showall{margin-left:auto;cursor:pointer}.ph-fq{width:100%;margin:8px 0;padding:10px 12px;border:2px solid #3b82f6;font-size:15px}.ph-rl{max-height:60vh;overflow-y:auto}.ph-pal{padding:4px 2px 7px;display:flex;gap:4px;flex-wrap:wrap;align-items:center}.ph-pal>.small{flex-basis:100%}.ph-col{display:inline-flex;align-items:center;gap:5px;cursor:pointer;border:2px solid rgba(255,255,255,.14);border-radius:20px;padding:2px 8px 2px 3px;font-size:10.5px;font-weight:800;color:#cbd5e1}.ph-col.on{border-color:#7dd3fc;background:rgba(125,211,252,.14)}.ph-dot{width:14px;height:14px;border-radius:50%;border:1px solid rgba(255,255,255,.25);display:inline-block}
+.ph-grp{border:2px solid;border-radius:13px;padding:8px;margin-bottom:10px}.ph-grp.g1{border-color:#34d39944;background:#34d3990d}.ph-grp.g2{border-color:#facc1544;background:#facc150d}.ph-grp.g3{border-color:#64748b44;background:#64748b0d}.ph-grp.empty{border-style:dashed}.ph-grp-h{display:flex;align-items:baseline;gap:8px;margin-bottom:6px;flex-wrap:wrap}.ph-grp.g1 .ph-grp-h b{color:#34d399}.ph-grp.g2 .ph-grp-h b{color:#facc15}.ph-grp.g3 .ph-grp-h b{color:#94a3b8}
+.ph-row{display:flex;gap:12px;padding:8px 10px;border-top:1px solid #1d2a45;align-items:center}.ph-row.picked{border-left:4px solid #60a5fa}.ph-row.recent{border-left:4px solid #fb923c}.ph-row.linked{border-left:4px solid #fbbf24}.ph-rin{flex:1;min-width:0}.ph-rnm{font-size:13.5px;font-weight:700}.ph-why{display:flex;gap:5px;flex-wrap:wrap;margin:3px 0}.ph-why span{font-size:9.5px;font-weight:900;background:rgba(255,255,255,.06);border-radius:6px;padding:1px 6px}.ph-st{font-size:10px;font-weight:900}.ph-st.picked{color:#60a5fa}.ph-st.recent{color:#fb923c}.ph-st.linked{color:#fbbf24}.ph-st.free{color:#34d399}.ph-more{width:100%;margin-top:6px}
+.ph-cmp{display:flex;gap:12px;flex-wrap:wrap;margin:12px 0}.ph-cmp-i{width:230px;background:#14203a;border:1px solid #2b3a58;border-radius:12px;overflow:hidden;padding-bottom:8px}.ph-cmp-img img{width:100%;height:270px;object-fit:cover}.ph-cmp-i .btn{margin:6px 8px 0;width:calc(100% - 16px)}
+.tagmode{position:fixed;inset:0;background:#0b1120;z-index:9500;display:flex}.tg-left{flex:1;display:flex;align-items:center;justify-content:center;padding:20px;min-width:0}.tg-img{max-width:100%;max-height:100%;object-fit:contain;border-radius:12px}.tg-right{flex:0 0 380px;background:#111c33;border-left:1px solid #2b3a58;display:flex;flex-direction:column;padding:14px;gap:10px;overflow-y:auto}.tg-top{display:flex;align-items:center;gap:10px}.tg-pos{font-weight:800;color:#7dd3fc}.tg-skip{margin-left:auto}.tg-name{font-size:11px;color:#7d8aa0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.tg-h{font-size:11px;font-weight:800;letter-spacing:.05em;color:#7dd3fc;margin-top:6px}.tg-h.done{color:#34d399}.tg-chips{display:flex;flex-wrap:wrap;gap:6px;max-height:190px;overflow-y:auto;padding:2px}.tg-chips .chip{padding:8px 11px}.chip.dashed{border:1px dashed #c4b5fd;color:#c4b5fd}
+.ph-steps ol{margin:6px 0 0 18px;padding:0;font-size:12.5px;line-height:1.6}.ph-steps{background:#111c33;border:1px solid #2b3a58;border-radius:13px;padding:10px;margin:10px 0}.ph-sum-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:11px}.ph-sum-card{background:#111c33;border:2px solid;border-radius:13px;padding:10px}.ph-sum-card.ok{border-color:rgba(52,211,153,.35)}.ph-sum-card.ok>b{color:#34d399}.ph-sum-card.add{border-color:rgba(251,146,60,.35)}.ph-sum-card.add>b{color:#fdba74}.ph-sum-card.no{border-color:rgba(248,113,113,.35)}.ph-sum-card.no>b{color:#fca5a5}.ph-sum-i{display:flex;gap:9px;align-items:center;padding:5px 0;border-bottom:1px solid rgba(255,255,255,.05);font-size:12.5px}.ph-sum-i .photo-small{width:38px;height:46px}
+.ph-aud .ph-iss{border:1px solid;border-radius:12px;padding:9px 12px;margin:8px 0}.ph-iss.red{border-color:rgba(248,113,113,.5);background:rgba(127,29,29,.18)}.ph-iss.yel{border-color:rgba(250,204,21,.4);background:rgba(113,88,10,.14)}.ph-iss.done{background:rgba(22,101,52,.18)}.ph-aud-modal .modal-box{max-width:880px;width:100%}
+.ph-ren-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;margin-top:10px}.ph-ren-i{background:#111c33;border:1px solid #2b3a58;border-radius:10px;padding:6px;font-size:10px}.ph-ren-i.orig{border-color:#14532d}.ph-ren-img img{width:100%;height:110px;object-fit:cover;border-radius:7px}.ph-parts{display:flex;flex-direction:column;gap:6px;margin-top:8px}.ph-parts .btn{text-align:left}
+body.mobile .ph-grid{grid-template-columns:repeat(auto-fill,minmax(120px,1fr))}body.mobile .ph-cell img{height:150px}body.mobile .ph-big{width:100%;height:auto}body.mobile .tg-right{flex:0 0 55%}body.mobile .tagmode{flex-direction:column}
 </style>
 </head>
 <body>
@@ -569,7 +584,7 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
 !function(f){typeof module!='undefined'&&typeof exports=='object'?module.exports=f():typeof define!='undefined'&&define.amd?define(f):(typeof self!='undefined'?self:this).fflate=f()}(function(){var _e={};"use strict";_e.deflate=zt,_e.deflateSync=kt,_e.inflate=At,_e.inflateSync=Tt,_e.gzip=It,_e.compress=It,_e.gzipSync=Ut,_e.compressSync=Ut,_e.gunzip=Zt,_e.gunzipSync=qt,_e.zlib=Lt,_e.zlibSync=Bt,_e.unzlib=Nt,_e.unzlibSync=Pt,_e.gzip=It,_e.compress=It,_e.decompress=Jt,_e.decompressSync=Kt,_e.strToU8=nn,_e.strFromU8=rn,_e.zip=dn,_e.zipSync=gn,_e.unzip=zn,_e.unzipSync=kn;var t=(typeof module!='undefined'&&typeof exports=='object'?function(_f){"use strict";var e,r,t,n=";var __w=require('worker_threads');__w.parentPort.on('message',function(m){onmessage({data:m})}),postMessage=function(m,t){__w.parentPort.postMessage(m,t)},close=process.exit;self=global";try{e=require("worker_threads"),r=e.Worker,t=e.isMarkedAsUntransferable}catch(e){}exports.default=r?function(e,o,a,s,u){var i=!1,l=new r(e+n,{eval:!0}).on("error",function(e){return u(e,null)}).on("message",function(e){return u(null,e)}).on("exit",function(e){e&&!i&&u(Error("exited with code "+e),null)});return t&&(s=s.filter(function(e){return!t(e)})),l.postMessage(a,s),l.terminate=function(){return i=!0,r.prototype.terminate.call(l)},l}:function(e,r,t,n,o){setImmediate(function(){return o(Error("async operations unsupported - update to Node 12+ (or Node 10-11 with the --experimental-worker CLI flag)"),null)});var a=function(){};return{terminate:a,postMessage:a}};return _f}:function(_f){"use strict";var e={};_f.default=function(r,t,s,a,n){var o=new Worker(e[t]||(e[t]=URL.createObjectURL(new Blob([r+';addEventListener("error",function(e){e=e.error;postMessage({$e$:[e.message,e.code,e.stack]})})'],{type:"text/javascript"}))));return o.onmessage=function(e){var r=e.data,t=r.$e$;if(t){var s=Error(t[0]);s.code=t[1],s.stack=t[2],n(s,null)}else n(null,r)},o.postMessage(s,a),o};return _f})({}),n=Uint8Array,r=Uint16Array,i=Int32Array,e=new n([0,0,0,0,0,0,0,0,1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,0,0,0,0]),o=new n([0,0,0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,0,0]),s=new n([16,17,18,0,8,7,9,6,10,5,11,4,12,3,13,2,14,1,15]),a=function(t,n){for(var e=new r(31),o=0;o<31;++o)e[o]=n+=1<<t[o-1];var s=new i(e[30]);for(o=1;o<30;++o)for(var a=e[o];a<e[o+1];++a)s[a]=a-e[o]<<5|o;return{b:e,r:s}},u=a(e,2),h=u.b,f=u.r;h[28]=258,f[258]=28;for(var c=a(o,0),l=c.b,p=c.r,v=new r(32768),d=0;d<32768;++d){var g=(43690&d)>>1|(21845&d)<<1;v[d]=((65280&(g=(61680&(g=(52428&g)>>2|(13107&g)<<2))>>4|(3855&g)<<4))>>8|(255&g)<<8)>>1}var y=function(t,n,i){for(var e=t.length,o=0,s=new r(n);o<e;++o)t[o]&&++s[t[o]-1];var a,u=new r(n);for(o=1;o<n;++o)u[o]=u[o-1]+s[o-1]<<1;if(i){a=new r(1<<n);var h=15-n;for(o=0;o<e;++o)if(t[o])for(var f=o<<4|t[o],c=n-t[o],l=u[t[o]-1]++<<c,p=l|(1<<c)-1;l<=p;++l)a[v[l]>>h]=f}else for(a=new r(e),o=0;o<e;++o)t[o]&&(a[o]=v[u[t[o]-1]++]>>15-t[o]);return a},m=new n(288);for(d=0;d<144;++d)m[d]=8;for(d=144;d<256;++d)m[d]=9;for(d=256;d<280;++d)m[d]=7;for(d=280;d<288;++d)m[d]=8;var b=new n(32);for(d=0;d<32;++d)b[d]=5;var w=y(m,9,0),x=y(m,9,1),z=y(b,5,0),k=y(b,5,1),M=function(t){for(var n=t[0],r=1;r<t.length;++r)t[r]>n&&(n=t[r]);return n},S=function(t,n,r){var i=n/8|0;return(t[i]|t[i+1]<<8)>>(7&n)&r},A=function(t,n){var r=n/8|0;return(t[r]|t[r+1]<<8|t[r+2]<<16)>>(7&n)},T=function(t){return(t+7)/8|0},D=function(t,r,i){return(null==r||r<0)&&(r=0),(null==i||i>t.length)&&(i=t.length),new n(t.subarray(r,i))};_e.FlateErrorCode={UnexpectedEOF:0,InvalidBlockType:1,InvalidLengthLiteral:2,InvalidDistance:3,StreamFinished:4,NoStreamHandler:5,InvalidHeader:6,NoCallback:7,InvalidUTF8:8,ExtraFieldTooLong:9,InvalidDate:10,FilenameTooLong:11,StreamFinishing:12,InvalidZipData:13,UnknownCompressionMethod:14};var C=["unexpected EOF","invalid block type","invalid length/literal","invalid distance","stream finished","no stream handler",,"no callback","invalid UTF-8 data","extra field too long","date not in range 1980-2099","filename too long","stream finishing","invalid zip data"],I=function(t,n,r){var i=Error(n||C[t]);if(i.code=t,Error.captureStackTrace&&Error.captureStackTrace(i,I),!r)throw i;return i},U=function(t,r,i,a){var u=t.length,f=a?a.length:0;if(!u||r.f&&!r.l)return i||new n(0);var c=!i,p=c||2!=r.i,v=r.i;c&&(i=new n(3*u));var d=function(t){var r=i.length;if(t>r){var e=new n(Math.max(2*r,t));e.set(i),i=e}},g=r.f||0,m=r.p||0,b=r.b||0,w=r.l,z=r.d,C=r.m,U=r.n,F=8*u;do{if(!w){g=S(t,m,1);var E=S(t,m+1,3);if(m+=3,!E){var Z=t[(Y=T(m)+4)-4]|t[Y-3]<<8,q=Y+Z;if(q>u){v&&I(0);break}p&&d(b+Z),i.set(t.subarray(Y,q),b),r.b=b+=Z,r.p=m=8*q,r.f=g;continue}if(1==E)w=x,z=k,C=9,U=5;else if(2==E){var O=S(t,m,31)+257,G=S(t,m+10,15)+4,L=O+S(t,m+5,31)+1;m+=14;for(var B=new n(L),H=new n(19),j=0;j<G;++j)H[s[j]]=S(t,m+3*j,7);m+=3*G;var N=M(H),P=(1<<N)-1,V=y(H,N,1);for(j=0;j<L;){var Y,J=V[S(t,m,P)];if(m+=15&J,(Y=J>>4)<16)B[j++]=Y;else{var K=0,Q=0;for(16==Y?(Q=3+S(t,m,3),m+=2,K=B[j-1]):17==Y?(Q=3+S(t,m,7),m+=3):18==Y&&(Q=11+S(t,m,127),m+=7);Q--;)B[j++]=K}}var R=B.subarray(0,O),W=B.subarray(O);C=M(R),U=M(W),w=y(R,C,1),z=y(W,U,1)}else I(1);if(m>F){v&&I(0);break}}p&&d(b+131072);for(var X=(1<<C)-1,$=(1<<U)-1,_=m;;_=m){var tt=(K=w[A(t,m)&X])>>4;if((m+=15&K)>F){v&&I(0);break}if(K||I(2),tt<256)i[b++]=tt;else{if(256==tt){_=m,w=null;break}var nt=tt-254;tt>264&&(nt=S(t,m,(1<<(et=e[j=tt-257]))-1)+h[j],m+=et);var rt=z[A(t,m)&$],it=rt>>4;if(rt||I(3),m+=15&rt,W=l[it],it>3){var et=o[it];W+=A(t,m)&(1<<et)-1,m+=et}if(m>F){v&&I(0);break}p&&d(b+131072);var ot=b+nt;if(b<W){var st=f-W,at=Math.min(W,ot);for(st+b<0&&I(3);b<at;++b)i[b]=a[st+b]}for(;b<ot;++b)i[b]=i[b-W]}}r.l=w,r.p=_,r.b=b,r.f=g,w&&(g=1,r.m=C,r.d=z,r.n=U)}while(!g);return b!=i.length&&c?D(i,0,b):i.subarray(0,b)},F=function(t,n,r){var i=n/8|0;t[i]|=r<<=7&n,t[i+1]|=r>>8},E=function(t,n,r){var i=n/8|0;t[i]|=r<<=7&n,t[i+1]|=r>>8,t[i+2]|=r>>16},Z=function(t,i){for(var e=[],o=0;o<t.length;++o)t[o]&&e.push({s:o,f:t[o]});var s=e.length,a=e.slice();if(!s)return{t:j,l:0};if(1==s){var u=new n(e[0].s+1);return u[e[0].s]=1,{t:u,l:1}}e.sort(function(t,n){return t.f-n.f}),e.push({s:-1,f:25001});var h=e[0],f=e[1],c=0,l=1,p=2;for(e[0]={s:-1,f:h.f+f.f,l:h,r:f};l!=s-1;)h=e[e[c].f<e[p].f?c++:p++],f=e[c!=l&&e[c].f<e[p].f?c++:p++],e[l++]={s:-1,f:h.f+f.f,l:h,r:f};var v=a[0].s;for(o=1;o<s;++o)a[o].s>v&&(v=a[o].s);var d=new r(v+1),g=q(e[l-1],d,0);if(g>i){o=0;var y=0,m=g-i,b=1<<m;for(a.sort(function(t,n){return d[n.s]-d[t.s]||t.f-n.f});o<s;++o){var w=a[o].s;if(!(d[w]>i))break;y+=b-(1<<g-d[w]),d[w]=i}for(y>>=m;y>0;){var x=a[o].s;d[x]<i?y-=1<<i-d[x]++-1:++o}for(;o>=0&&y;--o){var z=a[o].s;d[z]==i&&(--d[z],++y)}g=i}return{t:new n(d),l:g}},q=function(t,n,r){return-1==t.s?Math.max(q(t.l,n,r+1),q(t.r,n,r+1)):n[t.s]=r},O=function(t){for(var n=t.length;n&&!t[--n];);for(var i=new r(++n),e=0,o=t[0],s=1,a=function(t){i[e++]=t},u=1;u<=n;++u)if(t[u]==o&&u!=n)++s;else{if(!o&&s>2){for(;s>138;s-=138)a(32754);s>2&&(a(s>10?s-11<<5|28690:s-3<<5|12305),s=0)}else if(s>3){for(a(o),--s;s>6;s-=6)a(8304);s>2&&(a(s-3<<5|8208),s=0)}for(;s--;)a(o);s=1,o=t[u]}return{c:i.subarray(0,e),n:n}},G=function(t,n){for(var r=0,i=0;i<n.length;++i)r+=t[i]*n[i];return r},L=function(t,n,r){var i=r.length,e=T(n+2);t[e]=255&i,t[e+1]=i>>8,t[e+2]=255^t[e],t[e+3]=255^t[e+1];for(var o=0;o<i;++o)t[e+o+4]=r[o];return 8*(e+4+i)},B=function(t,n,i,a,u,h,f,c,l,p,v){F(n,v++,i),++u[256];for(var d=Z(u,15),g=d.t,x=d.l,k=Z(h,15),M=k.t,S=k.l,A=O(g),T=A.c,D=A.n,C=O(M),I=C.c,U=C.n,q=new r(19),B=0;B<T.length;++B)++q[31&T[B]];for(B=0;B<I.length;++B)++q[31&I[B]];for(var H=Z(q,7),j=H.t,N=H.l,P=19;P>4&&!j[s[P-1]];--P);var V,Y,J,K,Q=p+5<<3,R=G(u,m)+G(h,b)+f,W=G(u,g)+G(h,M)+f+14+3*P+G(q,j)+2*q[16]+3*q[17]+7*q[18];if(l>=0&&Q<=R&&Q<=W)return L(n,v,t.subarray(l,l+p));if(F(n,v,1+(W<R)),v+=2,W<R){V=y(g,x,0),Y=g,J=y(M,S,0),K=M;var X=y(j,N,0);for(F(n,v,D-257),F(n,v+5,U-1),F(n,v+10,P-4),v+=14,B=0;B<P;++B)F(n,v+3*B,j[s[B]]);v+=3*P;for(var $=[T,I],_=0;_<2;++_){var tt=$[_];for(B=0;B<tt.length;++B)F(n,v,X[rt=31&tt[B]]),v+=j[rt],rt>15&&(F(n,v,tt[B]>>5&127),v+=tt[B]>>12)}}else V=w,Y=m,J=z,K=b;for(B=0;B<c;++B){var nt=a[B];if(nt>255){var rt;E(n,v,V[257+(rt=nt>>18&31)]),v+=Y[rt+257],rt>7&&(F(n,v,nt>>23&31),v+=e[rt]);var it=31&nt;E(n,v,J[it]),v+=K[it],it>3&&(E(n,v,nt>>5&8191),v+=o[it])}else E(n,v,V[nt]),v+=Y[nt]}return E(n,v,V[256]),v+Y[256]},H=new i([65540,131080,131088,131104,262176,1048704,1048832,2114560,2117632]),j=new n(0),N=function(t,s,a,u,h,c){var l=c.z||t.length,v=new n(u+l+5*(1+Math.ceil(l/7e3))+h),d=v.subarray(u,v.length-h),g=c.l,y=7&(c.r||0);if(s){y&&(d[0]=c.r>>3);for(var m=H[s-1],b=m>>13,w=8191&m,x=(1<<a)-1,z=c.p||new r(32768),k=c.h||new r(x+1),M=Math.ceil(a/3),S=2*M,A=function(n){return(t[n]^t[n+1]<<M^t[n+2]<<S)&x},C=new i(25e3),I=new r(288),U=new r(32),F=0,E=0,Z=c.i||0,q=0,O=c.w||0,G=0;Z+2<l;++Z){var j=A(Z),N=32767&Z,P=k[j];if(z[N]=P,k[j]=N,O<=Z){var V=l-Z;if((F>7e3||q>24576)&&(V>423||!g)){y=B(t,d,0,C,I,U,E,q,G,Z-G,y),q=F=E=0,G=Z;for(var Y=0;Y<286;++Y)I[Y]=0;for(Y=0;Y<30;++Y)U[Y]=0}var J=2,K=0,Q=w,R=N-P&32767;if(V>2&&j==A(Z-R))for(var W=Math.min(b,V)-1,X=Math.min(32767,Z),$=Math.min(258,V);R<=X&&--Q&&N!=P;){if(t[Z+J]==t[Z+J-R]){for(var _=0;_<$&&t[Z+_]==t[Z+_-R];++_);if(_>J){if(J=_,K=R,_>W)break;var tt=Math.min(R,_-2),nt=0;for(Y=0;Y<tt;++Y){var rt=Z-R+Y&32767,it=rt-z[rt]&32767;it>nt&&(nt=it,P=rt)}}}R+=(N=P)-(P=z[N])&32767}if(K){C[q++]=268435456|f[J]<<18|p[K];var et=31&f[J],ot=31&p[K];E+=e[et]+o[ot],++I[257+et],++U[ot],O=Z+J,++F}else C[q++]=t[Z],++I[t[Z]]}}for(Z=Math.max(Z,O);Z<l;++Z)C[q++]=t[Z],++I[t[Z]];y=B(t,d,g,C,I,U,E,q,G,Z-G,y),g||(c.r=7&y|d[y/8|0]<<3,y-=7,c.h=k,c.p=z,c.i=Z,c.w=O)}else{for(Z=c.w||0;Z<l+g;Z+=65535){var st=Z+65535;st>=l&&(d[y/8|0]=g,st=l),y=L(d,y+1,t.subarray(Z,st))}c.i=l}return D(v,0,u+T(y)+h)},P=function(){for(var t=new Int32Array(256),n=0;n<256;++n){for(var r=n,i=9;--i;)r=(1&r&&-306674912)^r>>>1;t[n]=r}return t}(),V=function(){var t=-1;return{p:function(n){for(var r=t,i=0;i<n.length;++i)r=P[255&r^n[i]]^r>>>8;t=r},d:function(){return~t}}},Y=function(){var t=1,n=0;return{p:function(r){for(var i=t,e=n,o=0|r.length,s=0;s!=o;){for(var a=Math.min(s+2655,o);s<a;++s)e+=i+=r[s];i=(65535&i)+15*(i>>16),e=(65535&e)+15*(e>>16)}t=i,n=e},d:function(){return(255&(t%=65521))<<24|(65280&t)<<8|(255&(n%=65521))<<8|n>>8}}},J=function(t,r,i,e,o){if(!o&&(o={l:1},r.dictionary)){var s=r.dictionary.subarray(-32768),a=new n(s.length+t.length);a.set(s),a.set(t,s.length),t=a,o.w=s.length}return N(t,null==r.level?6:r.level,null==r.mem?o.l?Math.ceil(1.5*Math.max(8,Math.min(13,Math.log(t.length)))):20:12+r.mem,i,e,o)},K=function(t,n){var r={};for(var i in t)r[i]=t[i];for(var i in n)r[i]=n[i];return r},Q=function(t,n,r){for(var i=t(),e=""+t,o=e.slice(e.indexOf("[")+1,e.lastIndexOf("]")).replace(/\s+/g,"").split(","),s=0;s<i.length;++s){var a=i[s],u=o[s];if("function"==typeof a){n+=";"+u+"=";var h=""+a;if(a.prototype)if(-1!=h.indexOf("[native code]")){var f=h.indexOf(" ",8)+1;n+=h.slice(f,h.indexOf("(",f))}else for(var c in n+=h,a.prototype)n+=";"+u+".prototype."+c+"="+a.prototype[c];else n+=h}else r[u]=a}return n},R=[],W=function(t){var n=[];for(var r in t)t[r].buffer&&n.push((t[r]=new t[r].constructor(t[r])).buffer);return n},X=function(n,r,i,e){if(!R[i]){for(var o="",s={},a=n.length-1,u=0;u<a;++u)o=Q(n[u],o,s);R[i]={c:Q(n[a],o,s),e:s}}var h=K({},R[i].e);return(0,t.default)(R[i].c+";onmessage=function(e){for(var k in e.data)self[k]=e.data[k];onmessage="+r+"}",i,h,W(h),e)},$=function(){return[n,r,i,e,o,s,h,l,x,k,v,C,y,M,S,A,T,D,I,U,Tt,et,ot]},_=function(){return[n,r,i,e,o,s,f,p,w,m,z,b,v,H,j,y,F,E,Z,q,O,G,L,B,T,D,N,J,kt,et]},tt=function(){return[pt,gt,lt,V,P]},nt=function(){return[vt,dt]},rt=function(){return[yt,lt,Y]},it=function(){return[mt]},et=function(t){return postMessage(t,[t.buffer])},ot=function(t){return t&&{out:t.size&&new n(t.size),dictionary:t.dictionary}},st=function(t,n,r,i,e,o){var s=X(r,i,e,function(t,n){s.terminate(),o(t,n)});return s.postMessage([t,n],n.consume?[t.buffer]:[]),function(){s.terminate()}},at=function(t){return t.ondata=function(t,n){return postMessage([t,n],[t.buffer])},function(n){n.data[0]?(t.push(n.data[0],n.data[1]),postMessage([n.data[0].length])):t.flush(n.data[1])}},ut=function(t,n,r,i,e,o,s){var a,u=X(t,i,e,function(t,r){t?(u.terminate(),n.ondata.call(n,t)):Array.isArray(r)?1==r.length?(n.queuedSize-=r[0],n.ondrain&&n.ondrain(r[0])):(r[1]&&u.terminate(),n.ondata.call(n,t,r[0],r[1])):s(r)});u.postMessage(r),n.queuedSize=0,n.push=function(t,r){n.ondata||I(5),a&&n.ondata(I(4,0,1),null,!!r),n.queuedSize+=t.length,u.postMessage([t,a=r],t.buffer instanceof ArrayBuffer?[t.buffer]:[])},n.terminate=function(){u.terminate()},o&&(n.flush=function(t){u.postMessage([0,t])})},ht=function(t,n){return t[n]|t[n+1]<<8},ft=function(t,n){return(t[n]|t[n+1]<<8|t[n+2]<<16|t[n+3]<<24)>>>0},ct=function(t,n){return ft(t,n)+4294967296*ft(t,n+4)},lt=function(t,n,r){for(;r;++n)t[n]=r,r>>>=8},pt=function(t,n){var r=n.filename;if(t[0]=31,t[1]=139,t[2]=8,t[8]=n.level<2?4:9==n.level?2:0,t[9]=3,0!=n.mtime&&lt(t,4,Math.floor(new Date(n.mtime||Date.now())/1e3)),r){t[3]=8;for(var i=0;i<=r.length;++i)t[i+10]=r.charCodeAt(i)}},vt=function(t){31==t[0]&&139==t[1]&&8==t[2]||I(6,"invalid gzip data");var n=t[3],r=10;4&n&&(r+=2+(t[10]|t[11]<<8));for(var i=(n>>3&1)+(n>>4&1);i>0;i-=!t[r++]);return r+(2&n)},dt=function(t){var n=t.length;return(t[n-4]|t[n-3]<<8|t[n-2]<<16|t[n-1]<<24)>>>0},gt=function(t){return 10+(t.filename?t.filename.length+1:0)},yt=function(t,n){var r=n.level,i=0==r?0:r<6?1:9==r?3:2;if(t[0]=120,t[1]=i<<6|(n.dictionary&&32),t[1]|=31-(t[0]<<8|t[1])%31,n.dictionary){var e=Y();e.p(n.dictionary),lt(t,2,e.d())}},mt=function(t,n){return(8!=(15&t[0])||t[0]>>4>7||(t[0]<<8|t[1])%31)&&I(6,"invalid zlib data"),(t[1]>>5&1)==+!n&&I(6,"invalid zlib data: "+(32&t[1]?"need":"unexpected")+" dictionary"),2+(t[1]>>3&4)};function bt(t,n){return"function"==typeof t&&(n=t,t={}),this.ondata=n,t}var wt=function(){function t(t,r){if("function"==typeof t&&(r=t,t={}),this.ondata=r,this.o=t||{},this.s={l:0,i:32768,w:32768,z:32768},this.b=new n(98304),this.o.dictionary){var i=this.o.dictionary.subarray(-32768);this.b.set(i,32768-i.length),this.s.i=32768-i.length}}return t.prototype.p=function(t,n){this.ondata(J(t,this.o,0,0,this.s),n)},t.prototype.push=function(t,r){this.ondata||I(5),this.s.l&&I(4);var i=t.length+this.s.z;if(i>this.b.length){if(i>2*this.b.length-32768){var e=new n(-32768&i);e.set(this.b.subarray(0,this.s.z)),this.b=e}var o=this.b.length-this.s.z;this.b.set(t.subarray(0,o),this.s.z),this.s.z=this.b.length,this.p(this.b,!1),this.b.set(this.b.subarray(-32768)),this.b.set(t.subarray(o),32768),this.s.z=t.length-o+32768,this.s.i=32766,this.s.w=32768}else this.b.set(t,this.s.z),this.s.z+=t.length;this.s.l=1&r,(this.s.z>this.s.w+8191||r)&&(this.p(this.b,r||!1),this.s.w=this.s.i,this.s.i-=2),r&&(this.s=this.o={},this.b=j)},t.prototype.flush=function(t){if(this.ondata||I(5),this.s.l&&I(4),this.p(this.b,!1),this.s.w=this.s.i,this.s.i-=2,t){var r=new n(6);r[0]=this.s.r>>3;var i=L(r,this.s.r,j);this.s.r=0,this.ondata(r.subarray(0,i>>3),!1)}},t}();_e.Deflate=wt;var xt=function(){return function(t,n){ut([_,function(){return[at,wt]}],this,bt.call(this,t,n),function(t){var n=new wt(t.data);onmessage=at(n)},6,1)}}();function zt(t,n,r){return r||(r=n,n={}),"function"!=typeof r&&I(7),st(t,n,[_],function(t){return et(kt(t.data[0],t.data[1]))},0,r)}function kt(t,n){return J(t,n||{},0,0)}_e.AsyncDeflate=xt;var Mt=function(){function t(t,r){"function"==typeof t&&(r=t,t={}),this.ondata=r;var i=t&&t.dictionary&&t.dictionary.subarray(-32768);this.s={i:0,b:i?i.length:0},this.o=new n(32768),this.p=new n(0),i&&this.o.set(i)}return t.prototype.e=function(t){if(this.ondata||I(5),this.d&&I(4),this.p.length){if(t.length){var r=new n(this.p.length+t.length);r.set(this.p),r.set(t,this.p.length),this.p=r}}else this.p=t},t.prototype.c=function(t){this.s.i=+(this.d=t||!1);var n=this.s.b,r=U(this.p,this.s,this.o);this.ondata(D(r,n,this.s.b),this.d),this.o=D(r,this.s.b-32768),this.s.b=this.o.length,this.p=D(this.p,this.s.p/8|0),this.s.p&=7},t.prototype.push=function(t,n){this.e(t),this.c(n)},t}();_e.Inflate=Mt;var St=function(){return function(t,n){ut([$,function(){return[at,Mt]}],this,bt.call(this,t,n),function(t){var n=new Mt(t.data);onmessage=at(n)},7,0)}}();function At(t,n,r){return r||(r=n,n={}),"function"!=typeof r&&I(7),st(t,n,[$],function(t){return et(Tt(t.data[0],ot(t.data[1])))},1,r)}function Tt(t,n){return U(t,{i:2},n&&n.out,n&&n.dictionary)}_e.AsyncInflate=St;var Dt=function(){function t(t,n){this.c=V(),this.l=0,this.v=1,wt.call(this,t,n)}return t.prototype.push=function(t,n){this.c.p(t),this.l+=t.length,wt.prototype.push.call(this,t,n)},t.prototype.p=function(t,n){var r=J(t,this.o,this.v&&gt(this.o),n&&8,this.s);this.v&&(pt(r,this.o),this.v=0),n&&(lt(r,r.length-8,this.c.d()),lt(r,r.length-4,this.l)),this.ondata(r,n)},t.prototype.flush=function(t){wt.prototype.flush.call(this,t)},t}();_e.Gzip=Dt,_e.Compress=Dt;var Ct=function(){return function(t,n){ut([_,tt,function(){return[at,wt,Dt]}],this,bt.call(this,t,n),function(t){var n=new Dt(t.data);onmessage=at(n)},8,1)}}();function It(t,n,r){return r||(r=n,n={}),"function"!=typeof r&&I(7),st(t,n,[_,tt,function(){return[Ut]}],function(t){return et(Ut(t.data[0],t.data[1]))},2,r)}function Ut(t,n){n||(n={});var r=V(),i=t.length;r.p(t);var e=J(t,n,gt(n),8),o=e.length;return pt(e,n),lt(e,o-8,r.d()),lt(e,o-4,i),e}_e.AsyncGzip=Ct,_e.AsyncCompress=Ct;var Ft=function(){function t(t,n){this.v=1,this.r=0,Mt.call(this,t,n)}return t.prototype.push=function(t,r){if(Mt.prototype.e.call(this,t),this.r+=t.length,this.v){var i=this.p.subarray(this.v-1),e=i.length>3?vt(i):4;if(e>i.length){if(!r)return}else this.v>1&&this.onmember&&this.onmember(this.r-i.length);this.p=i.subarray(e),this.v=0}Mt.prototype.c.call(this,0),this.s.f&&!this.s.l?(this.v=T(this.s.p)+9,this.s={i:0},this.o=new n(0),this.push(new n(0),r)):r&&Mt.prototype.c.call(this,r)},t}();_e.Gunzip=Ft;var Et=function(){return function(t,n){var r=this;ut([$,nt,function(){return[at,Mt,Ft]}],this,bt.call(this,t,n),function(t){var n=new Ft(t.data);n.onmember=function(t){return postMessage(t)},onmessage=at(n)},9,0,function(t){return r.onmember&&r.onmember(t)})}}();function Zt(t,n,r){return r||(r=n,n={}),"function"!=typeof r&&I(7),st(t,n,[$,nt,function(){return[qt]}],function(t){return et(qt(t.data[0],t.data[1]))},3,r)}function qt(t,r){var i=vt(t);return i+8>t.length&&I(6,"invalid gzip data"),U(t.subarray(i,-8),{i:2},r&&r.out||new n(dt(t)),r&&r.dictionary)}_e.AsyncGunzip=Et;var Ot=function(){function t(t,n){this.c=Y(),this.v=1,wt.call(this,t,n)}return t.prototype.push=function(t,n){this.c.p(t),wt.prototype.push.call(this,t,n)},t.prototype.p=function(t,n){var r=J(t,this.o,this.v&&(this.o.dictionary?6:2),n&&4,this.s);this.v&&(yt(r,this.o),this.v=0),n&&lt(r,r.length-4,this.c.d()),this.ondata(r,n)},t.prototype.flush=function(t){wt.prototype.flush.call(this,t)},t}();_e.Zlib=Ot;var Gt=function(){return function(t,n){ut([_,rt,function(){return[at,wt,Ot]}],this,bt.call(this,t,n),function(t){var n=new Ot(t.data);onmessage=at(n)},10,1)}}();function Lt(t,n,r){return r||(r=n,n={}),"function"!=typeof r&&I(7),st(t,n,[_,rt,function(){return[Bt]}],function(t){return et(Bt(t.data[0],t.data[1]))},4,r)}function Bt(t,n){n||(n={});var r=Y();r.p(t);var i=J(t,n,n.dictionary?6:2,4);return yt(i,n),lt(i,i.length-4,r.d()),i}_e.AsyncZlib=Gt;var Ht=function(){function t(t,n){Mt.call(this,t,n),this.v=t&&t.dictionary?2:1}return t.prototype.push=function(t,n){if(Mt.prototype.e.call(this,t),this.v){if(this.p.length<6&&!n)return;this.p=this.p.subarray(mt(this.p,this.v-1)),this.v=0}n&&(this.p.length<4&&I(6,"invalid zlib data"),this.p=this.p.subarray(0,-4)),Mt.prototype.c.call(this,n)},t}();_e.Unzlib=Ht;var jt=function(){return function(t,n){ut([$,it,function(){return[at,Mt,Ht]}],this,bt.call(this,t,n),function(t){var n=new Ht(t.data);onmessage=at(n)},11,0)}}();function Nt(t,n,r){return r||(r=n,n={}),"function"!=typeof r&&I(7),st(t,n,[$,it,function(){return[Pt]}],function(t){return et(Pt(t.data[0],ot(t.data[1])))},5,r)}function Pt(t,n){return U(t.subarray(mt(t,n&&n.dictionary),-4),{i:2},n&&n.out,n&&n.dictionary)}_e.AsyncUnzlib=jt;var Vt=function(){function t(t,n){this.o=bt.call(this,t,n)||{},this.G=Ft,this.I=Mt,this.Z=Ht}return t.prototype.i=function(){var t=this;this.s.ondata=function(n,r){t.ondata(n,r)}},t.prototype.push=function(t,r){if(this.ondata||I(5),this.s)this.s.push(t,r);else{if(this.p&&this.p.length){var i=new n(this.p.length+t.length);i.set(this.p),i.set(t,this.p.length)}else this.p=t;this.p.length>2&&(this.s=31==this.p[0]&&139==this.p[1]&&8==this.p[2]?new this.G(this.o):8!=(15&this.p[0])||this.p[0]>>4>7||(this.p[0]<<8|this.p[1])%31?new this.I(this.o):new this.Z(this.o),this.i(),this.s.push(this.p,r),this.p=null)}},t}();_e.Decompress=Vt;var Yt=function(){function t(t,n){Vt.call(this,t,n),this.queuedSize=0,this.G=Et,this.I=St,this.Z=jt}return t.prototype.i=function(){var t=this;this.s.ondata=function(n,r,i){t.ondata(n,r,i)},this.s.ondrain=function(n){t.queuedSize-=n,t.ondrain&&t.ondrain(n)}},t.prototype.push=function(t,n){this.queuedSize+=t.length,Vt.prototype.push.call(this,t,n)},t}();function Jt(t,n,r){return r||(r=n,n={}),"function"!=typeof r&&I(7),31==t[0]&&139==t[1]&&8==t[2]?Zt(t,n,r):8!=(15&t[0])||t[0]>>4>7||(t[0]<<8|t[1])%31?At(t,n,r):Nt(t,n,r)}function Kt(t,n){return 31==t[0]&&139==t[1]&&8==t[2]?qt(t,n):8!=(15&t[0])||t[0]>>4>7||(t[0]<<8|t[1])%31?Tt(t,n):Pt(t,n)}_e.AsyncDecompress=Yt;var Qt=function(t,r,i,e){for(var o in t){var s=t[o],a=r+o,u=e;Array.isArray(s)&&(u=K(e,s[1]),s=s[0]),ArrayBuffer.isView(s)?i[a]=[s,u]:(i[a+="/"]=[new n(0),u],Qt(s,a,i,e))}},Rt="undefined"!=typeof TextEncoder&&new TextEncoder,Wt="undefined"!=typeof TextDecoder&&new TextDecoder,Xt=0;try{Wt.decode(j,{stream:!0}),Xt=1}catch(t){}var $t=function(t){for(var n="",r=0;;){var i=t[r++],e=(i>127)+(i>223)+(i>239);if(r+e>t.length)return{s:n,r:D(t,r-1)};e?3==e?(i=((15&i)<<18|(63&t[r++])<<12|(63&t[r++])<<6|63&t[r++])-65536,n+=String.fromCharCode(55296|i>>10,56320|1023&i)):n+=String.fromCharCode(1&e?(31&i)<<6|63&t[r++]:(15&i)<<12|(63&t[r++])<<6|63&t[r++]):n+=String.fromCharCode(i)}},_t=function(){function t(t){this.ondata=t,Xt?this.t=new TextDecoder:this.p=j}return t.prototype.push=function(t,r){if(this.ondata||I(5),r=!!r,this.t)return this.ondata(this.t.decode(t,{stream:!0}),r),void(r&&(this.t.decode().length&&I(8),this.t=null));this.p||I(4);var i=new n(this.p.length+t.length);i.set(this.p),i.set(t,this.p.length);var e=$t(i),o=e.s,s=e.r;r?(s.length&&I(8),this.p=null):this.p=s,this.ondata(o,r)},t}();_e.DecodeUTF8=_t;var tn=function(){function t(t){this.ondata=t}return t.prototype.push=function(t,n){this.ondata||I(5),this.d&&I(4),this.ondata(nn(t),this.d=n||!1)},t}();function nn(t,r){if(r){for(var i=new n(t.length),e=0;e<t.length;++e)i[e]=t.charCodeAt(e);return i}if(Rt)return Rt.encode(t);var o=t.length,s=new n(t.length+(t.length>>1)),a=0,u=function(t){s[a++]=t};for(e=0;e<o;++e){if(a+5>s.length){var h=new n(a+8+(o-e<<1));h.set(s),s=h}var f=t.charCodeAt(e);f<128||r?u(f):f<2048?(u(192|f>>6),u(128|63&f)):f>55295&&f<57344?(u(240|(f=65536+(1047552&f)|1023&t.charCodeAt(++e))>>18),u(128|f>>12&63),u(128|f>>6&63),u(128|63&f)):(u(224|f>>12),u(128|f>>6&63),u(128|63&f))}return D(s,0,a)}function rn(t,n){if(n){for(var r="",i=0;i<t.length;i+=16384)r+=String.fromCharCode.apply(null,t.subarray(i,i+16384));return r}if(Wt)return Wt.decode(t);var e=$t(t),o=e.s;return(r=e.r).length&&I(8),o}_e.EncodeUTF8=tn;var en=function(t){return 1==t?3:t<6?2:9==t?1:0},on=function(t,n){return n+30+ht(t,n+26)+ht(t,n+28)},sn=function(t,n,r){var i=ht(t,n+28),e=ht(t,n+30),o=rn(t.subarray(n+46,n+46+i),!(2048&ht(t,n+8))),s=n+46+i,a=an(t,s,e,r,ft(t,n+20),ft(t,n+24),ft(t,n+42)),u=a[0],h=a[1],f=a[2];return[ht(t,n+10),u,h,o,s+e+ht(t,n+32),f]},an=function(t,n,r,i,e,o,s){var a=4294967295==e,u=4294967295==o,h=4294967295==s,f=n+r;if(i&&a+u+h){for(;n+4<f;n+=4+ht(t,n+2))if(1==ht(t,n))return[a?ct(t,n+4+8*u):e,u?ct(t,n+4):o,h?ct(t,n+4+8*(u+a)):s,1];i<2&&I(13)}return[e,o,s,0]},un=function(t){var n=0;if(t)for(var r in t){var i=t[r].length;i>65535&&I(9),n+=i+4}return n},hn=function(t,n,r,i,e,o,s,a){var u=i.length,h=r.extra,f=a&&a.length,c=un(h);lt(t,n,null!=s?33639248:67324752),n+=4,null!=s&&(t[n++]=20,t[n++]=r.os),t[n]=20,n+=2,t[n++]=r.flag<<1|(o<0&&8),t[n++]=e&&8,t[n++]=255&r.compression,t[n++]=r.compression>>8;var l=new Date(null==r.mtime?Date.now():r.mtime),p=l.getFullYear()-1980;if((p<0||p>119)&&I(10),lt(t,n,p<<25|l.getMonth()+1<<21|l.getDate()<<16|l.getHours()<<11|l.getMinutes()<<5|l.getSeconds()>>1),n+=4,-1!=o&&(lt(t,n,r.crc),lt(t,n+4,o<0?-o-2:o),lt(t,n+8,r.size)),lt(t,n+12,u),lt(t,n+14,c),n+=16,null!=s&&(lt(t,n,f),lt(t,n+6,r.attrs),lt(t,n+10,s),n+=14),t.set(i,n),n+=u,c)for(var v in h){var d=h[v],g=d.length;lt(t,n,+v),lt(t,n+2,g),t.set(d,n+4),n+=4+g}return f&&(t.set(a,n),n+=f),n},fn=function(t,n,r,i,e){lt(t,n,101010256),lt(t,n+8,r),lt(t,n+10,r),lt(t,n+12,i),lt(t,n+16,e)},cn=function(){function t(t){this.filename=t,this.c=V(),this.size=0,this.compression=0}return t.prototype.process=function(t,n){this.ondata(null,t,n)},t.prototype.push=function(t,n){this.ondata||I(5),this.c.p(t),this.size+=t.length,n&&(this.crc=this.c.d()),this.process(t,n||!1)},t}();_e.ZipPassThrough=cn;var ln=function(){function t(t,n){var r=this;n||(n={}),cn.call(this,t),this.d=new wt(n,function(t,n){r.ondata(null,t,n)}),this.compression=8,this.flag=en(n.level)}return t.prototype.process=function(t,n){try{this.d.push(t,n)}catch(t){this.ondata(t,null,n)}},t.prototype.push=function(t,n){cn.prototype.push.call(this,t,n)},t}();_e.ZipDeflate=ln;var pn=function(){function t(t,n){var r=this;n||(n={}),cn.call(this,t),this.d=new xt(n,function(t,n,i){r.ondata(t,n,i)}),this.compression=8,this.flag=en(n.level),this.terminate=this.d.terminate}return t.prototype.process=function(t,n){this.d.push(t,n)},t.prototype.push=function(t,n){cn.prototype.push.call(this,t,n)},t}();_e.AsyncZipDeflate=pn;var vn=function(){function t(t){this.ondata=t,this.u=[],this.d=1}return t.prototype.add=function(t){var r=this;if(this.ondata||I(5),2&this.d)this.ondata(I(4+8*(1&this.d),0,1),null,!1);else{var i=nn(t.filename),e=i.length,o=t.comment,s=o&&nn(o),a=e!=t.filename.length||s&&o.length!=s.length,u=e+un(t.extra)+30;e>65535&&this.ondata(I(11,0,1),null,!1);var h=new n(u);hn(h,0,t,i,a,-1);var f=[h],c=function(){for(var t=0,n=f;t<n.length;t++)r.ondata(null,n[t],!1);f=[]},l=this.d;this.d=0;var p=this.u.length,v=K(t,{f:i,u:a,o:s,t:function(){t.terminate&&t.terminate()},r:function(){if(c(),l){var t=r.u[p+1];t?t.r():r.d=1}l=1}}),d=0;t.ondata=function(i,e,o){if(i)r.ondata(i,e,o),r.terminate();else if(d+=e.length,f.push(e),o){var s=new n(16);lt(s,0,134695760),lt(s,4,t.crc),lt(s,8,d),lt(s,12,t.size),f.push(s),v.c=d,v.b=u+d+16,v.crc=t.crc,v.size=t.size,l&&v.r(),l=1}else l&&c()},this.u.push(v)}},t.prototype.end=function(){var t=this;2&this.d?this.ondata(I(4+8*(1&this.d),0,1),null,!0):(this.d?this.e():this.u.push({r:function(){1&t.d&&(t.u.splice(-1,1),t.e())},t:function(){}}),this.d=3)},t.prototype.e=function(){for(var t=0,r=0,i=0,e=0,o=this.u;e<o.length;e++)i+=46+(h=o[e]).f.length+un(h.extra)+(h.o?h.o.length:0);for(var s=new n(i+22),a=0,u=this.u;a<u.length;a++){var h;hn(s,t,h=u[a],h.f,h.u,-h.c-2,r,h.o),t+=46+h.f.length+un(h.extra)+(h.o?h.o.length:0),r+=h.b}fn(s,t,this.u.length,i,r),this.ondata(null,s,!0),this.d=2},t.prototype.terminate=function(){for(var t=0,n=this.u;t<n.length;t++)n[t].t();this.d=2},t}();function dn(t,r,i){i||(i=r,r={}),"function"!=typeof i&&I(7);var e={};Qt(t,"",e,r);var o=Object.keys(e),s=o.length,a=0,u=0,h=s,f=Array(s),c=[],l=function(){for(var t=0;t<c.length;++t)c[t]()},p=function(t,n){xn(function(){i(t,n)})};xn(function(){p=i});var v=function(){var t=new n(u+22),r=a,i=u-a;u=0;for(var e=0;e<h;++e){var o=f[e];try{var s=o.c.length;hn(t,u,o,o.f,o.u,s);var c=30+o.f.length+un(o.extra),l=u+c;t.set(o.c,l),hn(t,a,o,o.f,o.u,s,u,o.m),a+=16+c+(o.m?o.m.length:0),u=l+s}catch(t){return p(t,null)}}fn(t,a,f.length,i,r),p(null,t)};s||v();for(var d=function(t){var n=o[t],r=e[n],i=r[0],h=r[1],d=V(),g=i.length;d.p(i);var y=nn(n),m=y.length,b=h.comment,w=b&&nn(b),x=w&&w.length,z=un(h.extra),k=0==h.level?0:8,M=function(r,i){if(r)l(),p(r,null);else{var e=i.length;f[t]=K(h,{size:g,crc:d.d(),c:i,f:y,m:w,u:m!=n.length||w&&b.length!=x,compression:k}),a+=30+m+z+e,u+=76+2*(m+z)+(x||0)+e,--s||v()}};if(m>65535&&M(I(11,0,1),null),k)if(g<16e4)try{M(null,kt(i,h))}catch(t){M(t,null)}else c.push(zt(i,h,M));else M(null,i)},g=0;g<h;++g)d(g);return l}function gn(t,r){r||(r={});var i={},e=[];Qt(t,"",i,r);var o=0,s=0;for(var a in i){var u=i[a],h=u[0],f=u[1],c=0==f.level?0:8,l=(M=nn(a)).length,p=f.comment,v=p&&nn(p),d=v&&v.length,g=un(f.extra);l>65535&&I(11);var y=c?kt(h,f):h,m=y.length,b=V();b.p(h),e.push(K(f,{size:h.length,crc:b.d(),c:y,f:M,m:v,u:l!=a.length||v&&p.length!=d,o:o,compression:c})),o+=30+l+g+m,s+=76+2*(l+g)+(d||0)+m}for(var w=new n(s+22),x=o,z=s-o,k=0;k<e.length;++k){var M;hn(w,(M=e[k]).o,M,M.f,M.u,M.c.length);var S=30+M.f.length+un(M.extra);w.set(M.c,M.o+S),hn(w,o,M,M.f,M.u,M.c.length,M.o,M.m),o+=16+S+(M.m?M.m.length:0)}return fn(w,o,e.length,z,x),w}_e.Zip=vn;var yn=function(){function t(){}return t.prototype.push=function(t,n){this.ondata(null,t,n)},t.compression=0,t}();_e.UnzipPassThrough=yn;var mn=function(){function t(){var t=this;this.i=new Mt(function(n,r){t.ondata(null,n,r)})}return t.prototype.push=function(t,n){try{this.i.push(t,n)}catch(t){this.ondata(t,null,n)}},t.compression=8,t}();_e.UnzipInflate=mn;var bn=function(){function t(t,n){var r=this;n<32e4?this.i=new Mt(function(t,n){r.ondata(null,t,n)}):(this.i=new St(function(t,n,i){r.ondata(t,n,i)}),this.terminate=this.i.terminate)}return t.prototype.push=function(t,n){this.i.terminate&&(t=D(t,0)),this.i.push(t,n)},t.compression=8,t}();_e.AsyncUnzipInflate=bn;var wn=function(){function t(t){this.onfile=t,this.k=[],this.o={0:yn},this.p=j}return t.prototype.push=function(t,r){var i=this;if(this.onfile||I(5),this.p||I(4),this.c>0){var e=Math.min(this.c,t.length),o=t.subarray(0,e);if(this.c-=e,this.d?this.d.push(o,!this.c):this.k[0].push(o),(t=t.subarray(e)).length)return this.push(t,r)}else{var s=0,a=0,u=void 0,h=void 0;this.p.length?t.length?((h=new n(this.p.length+t.length)).set(this.p),h.set(t,this.p.length)):h=this.p:h=t;for(var f=h.length,c=this.c,l=c&&this.d,p=function(){var t=ft(h,a);if(67324752==t){s=1,u=a,v.d=null,v.c=0;var n=ht(h,a+6),r=ht(h,a+8),e=2048&n,o=8&n,l=ht(h,a+26),p=ht(h,a+28);if(f>a+30+l+p){var d=[];v.k.unshift(d),s=2;var g,y=ft(h,a+18),m=ft(h,a+22),b=rn(h.subarray(a+30,a+=30+l),!e),w=an(h,a,p,2,y,m,0),x=w[0],z=w[1];o&&(x=-1-w[3]),a+=p,v.c=x;var k={name:b,compression:r,start:function(){if(k.ondata||I(5),x){var t=i.o[r];t||k.ondata(I(14,"unknown compression type "+r,1),null,!1),(g=x<0?new t(b):new t(b,x,z)).ondata=function(t,n,r){k.ondata(t,n,r)};for(var n=0,e=d;n<e.length;n++)g.push(e[n],!1);i.k[0]==d&&i.c?i.d=g:g.push(j,!0)}else k.ondata(null,j,!0)},terminate:function(){g&&g.terminate&&g.terminate()}};x>=0&&(k.size=x,k.originalSize=z),v.onfile(k)}return"break"}if(c){if(134695760==t)return u=a+=12+(-2==c&&8),s=3,v.c=0,"break";if(33639248==t)return u=a-=4,s=3,v.c=0,"break"}},v=this;a<f-4&&"break"!==p();++a);if(this.p=j,c<0){var d=h.subarray(0,s?u-12-(-2==c&&8)-(134695760==ft(h,u-16)&&4):a);l?l.push(d,!!s):this.k[+(2==s)].push(d)}if(2&s)return this.push(h.subarray(a),r);this.p=h.subarray(a)}r&&(this.c&&I(13),this.p=null)},t.prototype.register=function(t){this.o[t.compression]=t},t}();_e.Unzip=wn;var xn="function"==typeof queueMicrotask?queueMicrotask:"function"==typeof setTimeout?setTimeout:function(t){t()};function zn(t,r,i){i||(i=r,r={}),"function"!=typeof i&&I(7);var e=[],o=function(){for(var t=0;t<e.length;++t)e[t]()},s={},a=function(t,n){xn(function(){i(t,n)})};xn(function(){a=i});for(var u=t.length-22;101010256!=ft(t,u);--u)if(!u||t.length-u>65558)return a(I(13,0,1),null),o;var h=ht(t,u+8);if(h){var f=h,c=ft(t,u+16),l=117853008==ft(t,u-20);if(l){var p=ft(t,u-12);(l=101075792==ft(t,p))&&(f=h=ft(t,p+32),c=ft(t,p+48))}for(var v=r&&r.filter,d=function(r){var i=sn(t,c,l),u=i[0],f=i[1],p=i[2],d=i[3],g=i[4],y=on(t,i[5]);c=g;var m=function(t,n){t?(o(),a(t,null)):(n&&(s[d]=n),--h||a(null,s))};if(!v||v({name:d,size:f,originalSize:p,compression:u}))if(u)if(8==u){var b=t.subarray(y,y+f);if(p<524288||f>.8*p)try{m(null,Tt(b,{out:new n(p)}))}catch(t){m(t,null)}else e.push(At(b,{size:p},m))}else m(I(14,"unknown compression type "+u,1),null);else m(null,D(t,y,y+f));else m(null,null)},g=0;g<f;++g)d()}else a(null,{});return o}function kn(t,r){for(var i={},e=t.length-22;101010256!=ft(t,e);--e)(!e||t.length-e>65558)&&I(13);var o=ht(t,e+8);if(!o)return{};var s=ft(t,e+16),a=117853008==ft(t,e-20);if(a){var u=ft(t,e-12);(a=101075792==ft(t,u))&&(o=ft(t,u+32),s=ft(t,u+48))}for(var h=r&&r.filter,f=0;f<o;++f){var c=sn(t,s,a),l=c[0],p=c[1],v=c[2],d=c[3],g=c[4],y=on(t,c[5]);s=g,h&&!h({name:d,size:p,originalSize:v,compression:l})||(l?8==l?i[d]=Tt(t.subarray(y,y+p),{out:new n(v)}):I(14,"unknown compression type "+l):i[d]=D(t,y,y+p))}return i}return _e});
 </script>
 <script>
-const CK = window.CK = { BUILD: "v2.101 (100743f, 2026-09-22)" };
+const CK = window.CK = { BUILD: "v2.102 (5cb4d84, 2026-09-22)" };
 // ==== src/core/util.js
 // Загальні утиліти. Усі модулі живуть у просторі імен CK (один HTML без сервера).
 CK.util = (() => {
@@ -2183,6 +2198,329 @@ CK.listing = (() => {
   return { COLS, UA2RU, COLMAP, MATERIALS, DESC, colorOf, stripColor, makeName, describe };
 })();
 
+// ==== src/core/photos.js
+// Викладка нових (22.09.2026, прохання Артема: «як у старій програмі v0.0.50»): фото → бренд і категорія → підбір товару DN →
+// підсумок → файли (картки Хорошопа + ZIP фото «АРТИКУЛ@N.jpg») → CSV «викладка_для_клода». Тут — уся логіка без екрана:
+// стан фото, групи, ранжування підбору, підсумок, мапа перейменування, перевірка («Проблеми викладки»), CSV, розбивка ZIP.
+CK.photos = (() => {
+  const U = CK.util;
+  // Сімʼя типу товару (зі старої програми): «до кросівок не може стати анорак».
+  const TYPEW2 = [['зіп-худі', 'КОФТИ'], ['зип-худі', 'КОФТИ'], ['світшот', 'КОФТИ'], ['худі', 'КОФТИ'], ['олімпійк', 'КОФТИ'], ['кофт', 'КОФТИ'], ['светр', 'КОФТИ'], ['шерп', 'КОФТИ'], ['гольф', 'КОФТИ'],
+    ['футболк', 'ФУТБОЛКИ'], ['поло', 'ФУТБОЛКИ'], ['майк', 'ФУТБОЛКИ'], ['сороч', 'СОРОЧКИ'],
+    ['джинсовк', 'КУРТКИ'], ['вітрівк', 'КУРТКИ'], ['овершот', 'КУРТКИ'], ['бомбер', 'КУРТКИ'], ['куртк', 'КУРТКИ'], ['жилет', 'КУРТКИ'], ['пухови', 'КУРТКИ'],
+    ['джогер', 'ШТАНИ'], ['джинс', 'ШТАНИ'], ['штан', 'ШТАНИ'], ['шорт', 'ШОРТИ'],
+    ['кросівк', 'ВЗУТТЯ'], ['кед', 'ВЗУТТЯ'], ['капц', 'ВЗУТТЯ'], ['шльопанц', 'ВЗУТТЯ'], ['черевик', 'ВЗУТТЯ'],
+    ['бананк', 'СУМКИ'], ['месендж', 'СУМКИ'], ['рюкзак', 'СУМКИ'], ['сумк', 'СУМКИ'], ['портфел', 'СУМКИ'], ['барсетк', 'СУМКИ'],
+    ['ремін', 'АКСЕСУАРИ'], ['ремен', 'АКСЕСУАРИ'], ['гаманц', 'АКСЕСУАРИ'], ['гаманець', 'АКСЕСУАРИ'], ['чохол', 'АКСЕСУАРИ'], ['чохл', 'АКСЕСУАРИ'], ['окуляр', 'АКСЕСУАРИ'], ['шкарпет', 'АКСЕСУАРИ'], ['кепк', 'АКСЕСУАРИ'], ['панам', 'АКСЕСУАРИ'], ['шапк', 'АКСЕСУАРИ'],
+    ['парф', 'ПАРФЮМ']];
+  const LAT = { c: 'с', o: 'о', a: 'а', e: 'е', p: 'р', x: 'х', y: 'у', i: 'і' };
+  function typeFam(nm) { const l = String(nm || '').toLowerCase().replace(/[coaepxyi]/g, (ch) => LAT[ch] || ch); for (const [w, f] of TYPEW2) if (l.includes(w)) return f; return null; }
+  const COLORW = ['чорн', 'черн', 'біл', 'бел', 'сір', 'сер', 'коричн', 'син', 'блакит', 'голуб', 'зелен', 'беж', 'червон', 'красн', 'жовт', 'желт', 'помаранч', 'оранж', 'фіолет', 'рожев', 'розов', 'хакі', 'олив', 'графіт', 'мультиколор', 'бордов', 'лайм', 'пісочн', 'песочн', 'кремов', 'срібл', 'золот'];
+  const COLORHEX = { чорн: '#111827', черн: '#111827', біл: '#f8fafc', бел: '#f8fafc', сір: '#9ca3af', сер: '#9ca3af', графіт: '#4b5563', коричн: '#7c4a21', син: '#1d4ed8', блакит: '#38bdf8', голуб: '#38bdf8', зелен: '#16a34a', олив: '#6b8e23', хакі: '#78866b', беж: '#e3c9a3', кремов: '#f5e9d6', пісочн: '#e6d3a3', песочн: '#e6d3a3', червон: '#dc2626', красн: '#dc2626', бордов: '#7f1d1d', жовт: '#facc15', желт: '#facc15', лайм: '#a3e635', помаранч: '#fb923c', оранж: '#fb923c', фіолет: '#7c3aed', рожев: '#f472b6', розов: '#f472b6', мультиколор: '#a78bfa', срібл: '#cbd5e1', золот: '#d4a017' };
+  const COLORLABEL = { чорн: 'чорний', черн: 'чёрный', біл: 'білий', бел: 'белый', сір: 'сірий', сер: 'серый', графіт: 'графіт', коричн: 'коричневий', син: 'синій', блакит: 'блакитний', голуб: 'голубой', зелен: 'зелений', олив: 'оливковий', хакі: 'хакі', беж: 'бежевий', кремов: 'кремовий', пісочн: 'пісочний', песочн: 'песочный', червон: 'червоний', красн: 'красный', бордов: 'бордовий', жовт: 'жовтий', желт: 'желтый', лайм: 'лайм', помаранч: 'помаранчевий', оранж: 'оранжевый', фіолет: 'фіолетовий', рожев: 'рожевий', розов: 'розовый', мультиколор: 'мультиколор', срібл: 'сріблястий', золот: 'золотий' };
+  const norm = (s) => String(s || '').toLowerCase().replace(/[ʼ'`’]/g, '');
+  const nrmKey = (s) => norm(s).replace(/[^a-zа-яіїєґ0-9]/g, '');
+  function colorsOf(s) { const n = norm(s); return COLORW.filter((cw) => n.includes(cw)); }
+  function colorPalette(products) {
+    const cnt = {};
+    for (const p of products) for (const c of colorsOf(p.name)) cnt[c] = (cnt[c] || 0) + 1;
+    return Object.keys(cnt).filter((c) => cnt[c] >= 2).sort((a, b) => cnt[b] - cnt[a]).map((c) => ({ k: c, n: cnt[c], hex: COLORHEX[c] || '#64748b', label: COLORLABEL[c] || c }));
+  }
+  // Мʼякий пошук зі старої програми: нічого не викидає, рахує збіг 0..1.
+  const L2C = { shch: 'щ', sch: 'щ', kh: 'х', zh: 'ж', ts: 'ц', ch: 'ч', sh: 'ш', ya: 'я', yu: 'ю', ye: 'є', a: 'а', b: 'б', c: 'к', d: 'д', e: 'е', f: 'ф', g: 'г', h: 'х', i: 'і', j: 'дж', k: 'к', l: 'л', m: 'м', n: 'н', o: 'о', p: 'п', q: 'к', r: 'р', s: 'с', t: 'т', u: 'у', v: 'в', w: 'в', x: 'кс', y: 'и', z: 'з' };
+  function lat2cyr(w) { let out = '', i = 0; while (i < w.length) { let hit = null; for (let len = 4; len >= 1; len--) { const seg = w.substr(i, len); if (L2C[seg]) { hit = seg; break; } } if (hit) { out += L2C[hit]; i += hit.length; } else { out += w[i]; i++; } } return out; }
+  function lev1(a, b) { if (a === b) return 0; let la = a.length, lb = b.length; if (Math.abs(la - lb) > 1) return 2; if (la > lb) { [a, b] = [b, a]; [la, lb] = [lb, la]; } let prev = [], cs = []; for (let i = 0; i <= la; i++) prev[i] = i; for (let j = 1; j <= lb; j++) { cs[0] = j; let mn = j; for (let i = 1; i <= la; i++) { const c = a[i - 1] === b[j - 1] ? 0 : 1; cs[i] = Math.min(prev[i] + 1, cs[i - 1] + 1, prev[i - 1] + c); if (cs[i] < mn) mn = cs[i]; } if (mn > 1) return 2; [prev, cs] = [cs, prev]; } return prev[la]; }
+  function wscore(q, w) { if (w.indexOf(q) === 0) return 3; if (w.indexOf(q) > 0) return 2; if (q.length >= 3 && lev1(q, w.slice(0, q.length)) <= 1) return 1; return 0; }
+  function qtokens(q) { return norm(q).match(/[a-zа-яіїєґ0-9]{2,}/g) || []; }
+  function wordsOf(p) { return norm(`${p.name} ${p.brand || ''} ${p.brandN || ''} ${p.base || ''} ${p.category || ''} ${p.codes.join(' ')}`).split(/[^a-zа-яіїєґ0-9]+/).filter(Boolean); }
+  function softMatch(words, toks) {
+    if (!toks.length) return { r: 1, hit: 0 };
+    let hit = 0;
+    for (const q1 of toks) { const q2 = /[a-z]/.test(q1) ? lat2cyr(q1) : null; let best = 0; for (const w of words) { let sc = wscore(q1, w); if (q2) sc = Math.max(sc, wscore(q2, w)); if (sc > best) best = sc; if (best === 3) break; } if (best) hit++; }
+    return { r: hit / toks.length, hit };
+  }
+  // Контекст фото: бренд, слова типу (категорія + нотатка), сімʼя, кольори.
+  function ctxOf(st) {
+    st = st || {};
+    const typeW = [];
+    if (st.cat) { const last = String(st.cat).split('/').pop(); const c9 = norm(last).replace(/и$|і$/, ''); if (c9.length > 2) typeW.push(c9); }
+    for (const w of String(st.note || '').toLowerCase().split(/[^a-zа-яёіїєґ]+/)) if (w.length > 3) typeW.push(norm(w));
+    return { brand: st.brand || '', typeW, fam: typeFam(String(st.cat || '') + ' ' + String(st.note || '')), colors: colorsOf(String(st.note || '') + ' ' + String(st.cat || '')), cat: st.cat || '' };
+  }
+  // Оцінка товару для фото (зі старої програми, «сортування, не фільтр»): група 1 — збіглося все задане, 2 — частково, 3 — решта.
+  // env: { linked(p) → артикул картки сайту | null, picked(p) → імʼя фото | null, fresh(p) → днів від найновішого | null, queued(p) → bool }
+  function rate(p, ctx, toks, colorSel, env, words) {
+    let okBrand = false, okType = false, okColor = null;
+    const pb = p.brandN || p.brand || '';
+    if (ctx.brand) { const a = nrmKey(ctx.brand), b = nrmKey(pb); okBrand = !!(a && b && (a === b || a.includes(b) || b.includes(a))); }
+    if (ctx.typeW.length) { const nm = norm(p.name + ' ' + (p.category || '')); okType = ctx.typeW.some((t) => t && nm.includes(t)); }
+    const mCols = colorsOf(p.name);
+    const wantCols = (colorSel ? [colorSel] : []).concat(ctx.colors || []);
+    if (wantCols.length) okColor = wantCols.some((c) => mCols.includes(c));
+    const sm = softMatch(words || wordsOf(p), toks);
+    const famItem = typeFam(p.name + ' ' + (p.category || ''));
+    const famOK = ctx.fam ? famItem === ctx.fam : null;
+    let need = 0, got = 0;
+    if (ctx.brand) { need++; if (okBrand) got++; }
+    if (ctx.typeW.length) { need++; if (okType) got++; }
+    if (wantCols.length) { need++; if (okColor) got++; }
+    if (toks.length) { need++; if (sm.r >= 0.999) got++; }
+    const partial = got > 0 || (toks.length > 0 && sm.r > 0);
+    const d = env.fresh(p);
+    let grp;
+    if (famOK === false) grp = 3;
+    else if (need === 0) grp = d !== null && d <= 45 ? 1 : 3;
+    else if (got === need) grp = 1;
+    else if (famOK === true || partial) grp = 2;
+    else grp = 3;
+    let s = 0; const why = [];
+    if (d !== null) { s += Math.max(0, 200 - d * 2); if (d <= 45) why.push({ t: '🆕 ' + (p.created ? U.fmtDate(p.created).slice(0, 10) : 'новий'), c: '#5eead4' }); }
+    const lk = env.linked(p);
+    if (!lk) s += 120; else s -= 80;
+    if (env.queued(p)) { s += 300; why.push({ t: 'у черзі на викладку', c: '#fde68a' }); }
+    const stock = p.rows.reduce((n, r) => n + (r.stock > 0 && !r.isParent && !r.isTech ? r.stock : 0), 0);
+    if (stock > 0) { s += 45; why.push({ t: 'зал ' + stock, c: '#9fb0d0' }); }
+    if (p.image) s += 15;
+    if (famOK === true) { s += 260; why.push({ t: 'тип: ' + ctx.fam, c: '#86efac' }); }
+    else if (famOK === false) { s -= 400; why.push({ t: 'інший тип' + (famItem ? ': ' + famItem : ''), c: '#f87171' }); }
+    if (okBrand) { s += 240; why.push({ t: 'бренд: ' + pb, c: '#a5b4fc' }); } else if (ctx.brand) why.push({ t: 'інший бренд', c: '#94a3b8' });
+    if (okType) { s += 120; why.push({ t: 'категорія ✓', c: '#a5b4fc' }); }
+    if (okColor) { s += 140; why.push({ t: 'колір: ' + (COLORLABEL[wantCols.find((c) => mCols.includes(c))] || '✓'), c: '#a5b4fc' }); } else if (okColor === false) s -= 60;
+    if (toks.length) { s += Math.round(sm.r * 400); if (sm.hit) why.push({ t: `пошук ${sm.hit}/${toks.length}`, c: '#7dd3fc' }); }
+    if (env.picked(p)) s -= 9000;
+    return { grp, s, why, famOK, linked: lk, picked: env.picked(p) };
+  }
+  function rank(products, st, query, colorSel, env, showAll) {
+    const ctx = ctxOf(st), toks = qtokens(query || '');
+    const rated = []; let hidden = 0;
+    for (const p of products) {
+      const lk = env.linked(p);
+      if (!showAll && ((lk && !env.recent(p)) || env.hiddenProgram(p))) { hidden++; continue; }
+      const r = rate(p, ctx, toks, colorSel, env);
+      rated.push(Object.assign({ p }, r));
+    }
+    rated.sort((a, b) => (a.grp - b.grp) || (b.s - a.s) || ((b.p.created || '') > (a.p.created || '') ? 1 : -1));
+    const G = { 1: [], 2: [], 3: [] };
+    for (const r of rated) G[r.grp].push(r);
+    return { G, hidden, ctx, toks, need: (ctx.brand ? 1 : 0) + (ctx.typeW.length ? 1 : 0) + ((colorSel || ctx.colors.length) ? 1 : 0) + (toks.length ? 1 : 0) };
+  }
+  // Оточення підбору з індексу і стану програми.
+  function envOf(index, state, phState) {
+    let maxCr = ''; for (const p of index.sellable) if (p.created > maxCr) maxCr = p.created;
+    const maxT = maxCr ? new Date(maxCr).getTime() : 0;
+    const linkedOf = (p) => { for (const b of p.barcodes) { const lp = state.linkByBarcode.get(b); if (lp) return lp; const rows = index.hByBarcode.get(b); if (rows && rows.length) return rows[0].parent; } return null; };
+    const status = (p) => { const l = state.listing.get(p.codes[0]); return l ? l.status : ''; };
+    const pickedOf = (p) => { for (const nm of Object.keys(phState || {})) { const s = phState[nm]; if (s && !s.dup && !s.partOf && s.tgtKey === p.key) return nm; } return null; };
+    return {
+      linked: linkedOf,
+      recent: (p) => status(p) === 'listed', // виклали з цієї програми — картка нова, фото можна дозняти
+      hiddenProgram: (p) => status(p) === 'program', // «лише в програмі»
+      queued: (p) => status(p) === 'listing',
+      picked: pickedOf,
+      fresh: (p) => (p.created && maxT ? Math.round((maxT - new Date(p.created).getTime()) / 864e5) : null),
+      status,
+    };
+  }
+  // ---- стан фото: { name → {tgtKey, tgtBcs, attach, brand, cat, note, dup, group[], partOf} }
+  const partOf = (st, name) => (st[name] && st[name].partOf) || null;
+  const groupOf = (st, main) => (st[main] && st[main].group) || [];
+  function ensure(st, name) { return (st[name] = st[name] || {}); }
+  // Обʼєднати вибрані: головне — перше з білим фоном, інакше перше за порядком.
+  function join(st, names, order, whiteOf) {
+    names = names.filter((n) => order.includes(n)).sort((a, b) => order.indexOf(a) - order.indexOf(b));
+    if (names.length < 2) return null;
+    const main = names.find((n) => whiteOf(n)) || names[0];
+    const g = ensure(st, main).group || [];
+    for (const nm of names.filter((x) => x !== main)) {
+      if (!g.includes(nm)) g.push(nm);
+      const s = ensure(st, nm); s.partOf = main;
+      for (const sub of s.group || []) if (!g.includes(sub)) { g.push(sub); ensure(st, sub).partOf = main; }
+      delete s.group;
+    }
+    st[main].group = g;
+    return { main, count: g.length + 1 };
+  }
+  function ungroup(st, main) { for (const nm of groupOf(st, main)) if (st[nm]) delete st[nm].partOf; if (st[main]) delete st[main].group; }
+  function setMain(st, oldMain, newMain) {
+    const all = [oldMain, ...groupOf(st, oldMain)];
+    if (!all.includes(newMain)) return false;
+    const keep = st[oldMain] || {};
+    for (const nm of all) if (st[nm]) { delete st[nm].partOf; delete st[nm].group; }
+    const s = ensure(st, newMain);
+    s.tgtKey = keep.tgtKey; s.tgtBcs = keep.tgtBcs; s.note = keep.note; s.attach = keep.attach; s.brand = keep.brand || s.brand; s.cat = keep.cat || s.cat;
+    s.group = all.filter((x) => x !== newMain);
+    for (const nm of s.group) { const q = ensure(st, nm); q.partOf = newMain; delete q.tgtKey; delete q.attach; }
+    return true;
+  }
+  function remove(st, name) { for (const sub of groupOf(st, name)) if (st[sub]) delete st[sub].partOf; delete st[name]; }
+  function repair(st, names) { const have = new Set(names); let fixed = 0; for (const nm of Object.keys(st)) { const s = st[nm]; if (!s) continue; if (s.partOf && !have.has(s.partOf)) { delete s.partOf; fixed++; } if (s.group) { const g2 = s.group.filter((x) => have.has(x)); if (g2.length !== s.group.length) { s.group = g2; if (!g2.length) delete s.group; } } } return fixed; }
+  // Товар за станом фото.
+  const productOf = (index, s) => (s && s.tgtKey ? index.products.get(s.tgtKey) || (s.tgtBcs || []).map((b) => index.dByBarcode.get(b)).filter(Boolean).map((d) => index.productByCode.get(d.code)).find(Boolean) || null : null);
+  // Підсумок: створити / дофото / без товару / дублі.
+  function summary(st, names, index) {
+    const create = [], addph = [], noTgt = []; let dups = 0;
+    for (const nm of names) {
+      if (partOf(st, nm)) continue;
+      const s = st[nm];
+      if (s && s.dup) { dups++; continue; }
+      const n = 1 + groupOf(st, nm).length;
+      if (s && s.attach) { addph.push({ name: nm, s, art: String(s.attach).replace(/^КАРТКА:/, ''), n }); continue; }
+      const p = productOf(index, s);
+      if (p) { create.push({ name: nm, s, p, n }); continue; }
+      noTgt.push({ name: nm, n });
+    }
+    let rows = 0; for (const x of create) rows += Math.max(1, x.p.rows.filter((r) => r.barcode && !r.isParent && !r.isTech).length);
+    return { create, addph, noTgt, dups, rows };
+  }
+  // Батьківський артикул нової картки: одяг → БАЗА-XS, взуття → БАЗА-36, інакше БАЗА (як у старій програмі і в правилі 5).
+  function parentSkuFor(p, section, state) {
+    const S = CK.sizes;
+    const base = p.base || p.codes[0];
+    const type = S.typeOf(section || p.category || U.firstWord(p.name), state.gridRules);
+    if (type === 'one' || type === 'case') return base;
+    return `${base}-${S.parentSize(type)}`;
+  }
+  // Мапа перейменування: {old, new, item, kind:'нова'|'дофото', main}. Усі розмірні штрихкоди вже на одній картці → дофото на неї.
+  function renmap(st, names, index, state) {
+    const out = [];
+    for (const nm of names) {
+      if (partOf(st, nm)) continue;
+      const s = st[nm]; if (!s || s.dup) continue;
+      const files = [nm, ...groupOf(st, nm)];
+      let tgtArt = null, item = '', kind = '';
+      if (s.attach) { tgtArt = String(s.attach).replace(/^КАРТКА:/, ''); kind = 'дофото'; item = s.note || 'картка ' + tgtArt; }
+      else {
+        const p = productOf(index, s); if (!p) continue;
+        const own = {}; let liveN = 0, szN = 0;
+        for (const r of p.rows) { if (!r.barcode || !r.sizeN || r.isParent || r.isTech || /^29\d{11}$/.test(r.barcode)) continue; szN++; const rows = index.hByBarcode.get(r.barcode); if (rows && rows.length) { own[rows[0].parent] = 1; liveN++; } }
+        const owners = Object.keys(own);
+        if (szN && owners.length === 1 && liveN === szN) { tgtArt = owners[0]; kind = 'дофото'; item = `${p.name} | ${p.brandN || p.brand || ''} (вже на сайті)`; }
+        else { tgtArt = parentSkuFor(p, s.cat, state); kind = 'нова'; item = `${p.name} | ${p.brandN || p.brand || ''}`; }
+      }
+      files.forEach((fn, i) => { const ext = (String(fn).match(/\.[^.]+$/) || ['.jpg'])[0]; out.push({ old: fn, new: `${tgtArt}@${i + 1}${ext}`, item, kind, main: nm, parent: tgtArt }); });
+    }
+    return out;
+  }
+  // Розбивка на частини ≤ LIM байтів: усі фото одного артикула — в одній частині; в межах артикула — за номером @N (числом).
+  function splitParts(entries, sizeOf, LIM) {
+    const groups = new Map();
+    for (const e of entries) { const par = e.new.split('@')[0]; if (!groups.has(par)) groups.set(par, []); groups.get(par).push(e); }
+    const pars = Array.from(groups.keys()).sort();
+    const num = (e) => +((e.new.match(/@(\d+)\./) || [])[1] || 1);
+    const parts = [[]]; let size = 0;
+    for (const par of pars) {
+      const g = groups.get(par).sort((a, b) => num(a) - num(b));
+      const gsize = g.reduce((s, e) => s + sizeOf(e), 0);
+      if (size + gsize > LIM && parts[parts.length - 1].length) { parts.push([]); size = 0; }
+      for (const e of g) parts[parts.length - 1].push(e);
+      size += gsize;
+    }
+    return parts;
+  }
+  // ---- перевірка «Проблеми викладки» (нічого не блокує)
+  const AUD_DETAIL = /(карман|кишен|лого|принт|замк|сітк|двома|маленьк|велик|зліва|справа|позаду|спереду|patch|program|квадрат)/i;
+  const KATW = [['футболк', 'футболк'], ['зіп', 'кофт|зіп|худі'], ['худі', 'кофт|худі'], ['світшот', 'кофт|світшот'], ['джинсов', 'джинс|шорт|куртк'], ['джинси', 'джинс'], ['шорт', 'шорт'], ['штан', 'штан'], ['вітрівк', 'вітрівк|овершот|куртк'], ['куртк', 'куртк'], ['кросівк', 'кросівк|взутт'], ['бананк', 'месендж|сумк|бананк'], ['сумк', 'месендж|сумк'], ['месендж', 'месендж|сумк'], ['рюкзак', 'рюкзак|сумк'], ['кепк', 'кепк|головн'], ['панам', 'панам|головн'], ['шапк', 'шапк|головн']];
+  function brandKeyT(s) { const TR = { а: 'a', в: 'b', е: 'e', к: 'k', м: 'm', н: 'h', о: 'o', р: 'p', с: 'c', т: 't', у: 'y', х: 'x', і: 'i', ї: 'i', є: 'e', я: 'ya', ю: 'yu' }; return String(s || '').toLowerCase().replace(/[а-яіїєґ]/g, (ch) => TR[ch] !== undefined ? TR[ch] : ch).replace(/[^a-z0-9]/g, ''); }
+  function lev(a, b) { if (a === b) return 0; const m = a.length, n = b.length; if (!m) return n; if (!n) return m; let prev = [], cur = []; for (let j = 0; j <= n; j++) prev[j] = j; for (let i = 1; i <= m; i++) { cur[0] = i; for (let j = 1; j <= n; j++) cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1)); prev = cur.slice(); } return prev[n]; }
+  function brandCheck(b, siteBrands) {
+    const k = brandKeyT(b); if (!k) return { status: 'ok' };
+    const map = {}; const list = [];
+    for (const sb of siteBrands) { const kk = brandKeyT(sb); if (!map[kk]) { map[kk] = sb; list.push({ k: kk, name: sb }); } }
+    if (map[k]) return map[k] === b ? { status: 'ok', siteName: map[k] } : { status: 'spelling', siteName: map[k], hint: `На сайті цей бренд записаний як «${map[k]}». Це той самий бренд — просто інше написання.` };
+    const parts = String(b || '').split(/\s+[x×хX]\s+|\s*&\s*|\s*\+\s*/).map((v) => v.trim()).filter(Boolean);
+    if (parts.length > 1) { const known = parts.filter((p) => map[brandKeyT(p)]).map((p) => map[brandKeyT(p)]); if (known.length) return { status: 'collab', siteName: known.join(' + '), hint: `Це колаборація. На сайті вже є: ${known.join(', ')}. Якщо потрібен окремий бренд для колаборації — створи його на сайті.` }; }
+    let best = null, bd = 99;
+    for (const x of list) { const d = lev(k, x.k); if (d < bd) { bd = d; best = x; } if (bd > 2 && (x.k.includes(k) || k.includes(x.k)) && Math.abs(x.k.length - k.length) <= 4) { bd = 2; best = x; } }
+    if (best && (bd <= 2 || (k.length > 5 && bd <= 3))) return { status: 'typo', siteName: best.name, hint: `Схоже на бренд «${best.name}», що вже є на сайті (різниця в ${bd} симв.). Ймовірно, одруківка в DNTrade.` };
+    return { status: 'new', hint: 'Такого бренду на сайті справді немає — його треба створити в адмінці Хорошопа.' };
+  }
+  const audId = (code, it) => `${code}|${it.kind === 'create' ? it.p.key : 'K:' + it.art}|${it.name}`;
+  function audit(sum, index, state) {
+    const items = [...sum.create.map((x) => ({ kind: 'create', name: x.name, s: x.s, p: x.p })), ...sum.addph.map((x) => ({ kind: 'addphoto', name: x.name, s: x.s, art: x.art }))];
+    const iss = []; const byKey = {};
+    for (const it of items) if (it.kind === 'create') (byKey[it.p.key] = byKey[it.p.key] || []).push(it);
+    const siteBrands = U.uniq(Array.from(index.cards.values()).map((c) => c.brand).filter(Boolean));
+    const STD = new Set(['XS', 'S', 'M', 'L', 'XL', 'XXL', '2XL', '3XL', '4XL', '5XL', 'XXS', '', '—']);
+    for (const it of items) {
+      if (it.kind === 'addphoto') { if (!index.cards.has(it.art)) iss.push({ id: audId('nocard', it), sev: 'red', code: 'nocard', it, title: `Картки «${it.art}» немає на сайті`, detail: 'Дофото неможливе — перевір номер картки або вибери товар заново.' }); continue; }
+      const p = it.p, nm = p.name || '';
+      const live = p.rows.filter((r) => !r.isParent && !r.isTech && !r.isDiscount);
+      const price = U.mode(live.map((r) => r.retail).filter((v) => v !== null && v > 0));
+      if (!(price > 0)) iss.push({ id: audId('price', it), sev: 'red', code: 'price', it, title: 'Немає роздрібної ціни в DNTrade', detail: `${nm} · ${p.brandN || p.brand || '—'}. Впиши ціну — піде у файл (і внеси її в DNTrade).`, input: 'price' });
+      if (byKey[p.key].length > 1) iss.push({ id: audId('dupl', it), sev: 'red', code: 'dupl', it, title: `Один товар DN обраний для ${byKey[p.key].length} фото-груп`, detail: 'Кожен товар — одна нова картка. Прибери зайву привʼязку або обʼєднай фото.' });
+      const bad = [];
+      if (/\d/.test(nm)) bad.push('цифри');
+      if (AUD_DETAIL.test(nm)) bad.push('деталі (кишені/лого/принт тощо)');
+      if (/нейлонов/i.test(nm)) bad.push('«нейлонові»');
+      if (/двухнитк/i.test(nm)) bad.push('«двухнитка» → «двунитка»');
+      if (/[а-яіїєґ][a-z]|[a-z][а-яіїєґ]/i.test(nm)) bad.push('латиниця впереміш із кирилицею');
+      if (/темно\s*[-–]\s+|темно\s+[-–]/i.test(nm)) bad.push('розірваний колір «темно -»');
+      if (bad.length) iss.push({ id: audId('name', it), sev: 'yel', code: 'name', it, title: 'Назва DN дасть криву назву на сайті', detail: `«${nm}» — ${bad.join(', ')}. Впиши назву для сайту або підтверди як є.`, input: 'name' });
+      const odd = U.uniq(live.map((r) => r.sizeN || '').filter((s9) => !STD.has(s9) && !/^(3[0-9]|4[0-8])([.,]5)?$/.test(s9) && !/^\d+ мл$/.test(s9)));
+      if (odd.length) iss.push({ id: audId('grid', it), sev: 'yel', code: 'grid', it, title: 'Нестандартна розмірна сітка: ' + odd.join(', '), detail: 'Розміри поза стандартами (одяг XS–3XL+XXS/4XL/5XL, взуття 36–45). Підтверди — файл збереться під цю сітку за DN.' });
+      const brand = it.s.brand || p.brandN || p.brand;
+      if (brand) {
+        const bc9 = brandCheck(brand, siteBrands);
+        if (bc9.status === 'spelling') iss.push({ id: audId('brand', it), sev: 'yel', code: 'brand', it, fixTo: bc9.siteName, title: `Бренд «${brand}» на сайті пишеться як «${bc9.siteName}»`, detail: bc9.hint + ' Можна підставити сайтове написання одним кліком.', input: 'brand' });
+        else if (bc9.status === 'typo') iss.push({ id: audId('brand', it), sev: 'yel', code: 'brand', it, fixTo: bc9.siteName, title: `Бренд «${brand}» — схоже на одруківку`, detail: bc9.hint + ' Виправ у DNTrade або підстав правильний бренд тут.', input: 'brand' });
+        else if (bc9.status === 'collab') iss.push({ id: audId('brand', it), sev: 'yel', code: 'brand', it, title: `Колаборація: «${brand}»`, detail: bc9.hint, input: 'brand' });
+        else if (bc9.status === 'new') iss.push({ id: audId('brand', it), sev: 'yel', code: 'brand', it, title: `Бренду «${brand}» немає на сайті`, detail: bc9.hint + ' Перевір написання або створи бренд.', input: 'brand' });
+      }
+      if (!it.s.cat) iss.push({ id: audId('nocat', it), sev: 'yel', code: 'nocat', it, title: 'Не задано категорію (розділ сайту) для фото', detail: 'Без розділу картка на сайті не створиться. Постав категорію у панелі фото або «🎯 Визначити бренди і категорії».' });
+      const ln = nm.toLowerCase(), cat = (it.s.cat || p.category || '').toLowerCase();
+      const w = KATW.find((k) => ln.includes(k[0]));
+      if (w && cat && !new RegExp(w[1], 'i').test(cat)) iss.push({ id: audId('cat', it), sev: 'yel', code: 'cat', it, title: 'Назва каже одне, категорія — інше', detail: `«${nm}» ↔ категорія «${it.s.cat || p.category || '—'}». Підтверди або зміни категорію фото.` });
+      const tech = live.filter((r) => r.barcode && (r.barcode.length < 12 || r.barcode === r.code)).length;
+      if (tech) iss.push({ id: audId('tech', it), sev: 'yel', code: 'tech', it, title: `Техкоди: ${tech} рядк.`, detail: 'Коди коротші 12 знаків або технічні — у файлі замість них будуть 29-коди.' });
+      const szbc = live.filter((r) => r.barcode && r.sizeN && !/^29\d{11}$/.test(r.barcode));
+      const own = {}; let liveN = 0;
+      for (const r of szbc) { const rows = index.hByBarcode.get(r.barcode); if (rows && rows.length) { own[rows[0].parent] = (own[rows[0].parent] || 0) + 1; liveN++; } }
+      const owners = Object.keys(own);
+      if (szbc.length && owners.length === 1 && liveN === szbc.length) iss.push({ id: audId('same', it), sev: 'yel', code: 'same', fixTo: owners[0], it, title: `Цей товар ВЖЕ є на сайті — картка ${owners[0]}`, detail: `Усі розмірні коди цього товару вже привʼязані до картки ${owners[0]}. Другу картку не створюємо — додамо лише фото.` });
+      else { const busy = live.filter((r) => r.barcode && index.hByBarcode.has(r.barcode)).map((r) => `${r.barcode}→${index.hByBarcode.get(r.barcode)[0].parent}`); if (busy.length) iss.push({ id: audId('busy', it), sev: 'yel', code: 'busy', it, title: `Коди вже живуть на сайті (${busy.length})`, detail: busy.slice(0, 3).join(' · ') + (busy.length > 3 ? ' …' : '') + '. Стара звʼязка буде відвʼязана — підтверди.' }); }
+    }
+    return iss;
+  }
+  const solved = (q, r) => (q.code === 'price' ? !!(r && r.price > 0) : !!(r && (r.ok || r.text)));
+  function unresolved(iss, res) { let red = 0, yel = 0; for (const q of iss) { const r = res[q.id]; if (!solved(q, r)) { if (q.sev === 'red') red++; else yel++; } } return { red, yel }; }
+  // CSV «викладка_для_клода»: лише НОВІ картки, як у старій програмі (роздільник «;», UTF-8 з BOM).
+  function csv(sum, iss, res, index) {
+    const L = ['фото;артикул_DN;рішення;dn_товар;розміри_коди_артикули;коментар;проблеми'];
+    const sections = new Set(Array.from(index.cards.values()).map((c) => c.section).filter(Boolean));
+    const byPh = {};
+    for (const q of iss) if (!solved(q, res[q.id])) (byPh[q.it.name] = byPh[q.it.name] || []).push((q.sev === 'red' ? '!' : '?') + q.title);
+    const clean = (x) => String(x || '').replace(/;/g, ',');
+    let n = 0;
+    for (const x of sum.create) {
+      const p = x.p, s = x.s; n++;
+      const files = [x.name, ...(s.group || [])];
+      const live = p.rows.filter((r) => !r.isParent && !r.isTech);
+      const det = live.filter((r) => r.barcode).map((r) => `${r.sizeN || '—'}:${r.barcode}:${r.sku || ''}`).join(',');
+      const rb = res[`brand|${p.key}|${x.name}`]; const brandVal = (rb && rb.text) || s.brand || p.brandN || p.brand || '';
+      const extra = [];
+      const rp = res[`price|${p.key}|${x.name}`]; if (rp && rp.price > 0) extra.push('ціна:' + rp.price);
+      const rn = res[`name|${p.key}|${x.name}`]; if (rn && rn.text) extra.push('назва:' + rn.text);
+      L.push([`ФОТО:${clean(files.join('|'))}`, clean(p.base || ''), 'create', clean(`${p.name} | ${p.brandN || p.brand || ''}`), det, clean([s.note, brandVal ? 'бренд:' + brandVal : '', s.cat ? 'категорія:' + s.cat + (sections.has(s.cat) ? '' : ' (НОВА — створити розділ)') : ''].concat(extra).filter(Boolean).join(' | ')), clean((byPh[x.name] || []).join(' · '))].join(';'));
+    }
+    return { text: '﻿' + L.join('\n'), n };
+  }
+  // Партія для файлів Хорошопа (картки + ZIP) з підсумку: те, що раніше робив Клод із CSV, тепер збирає програма (розділ 5).
+  function batchOf(sum, res, index, state, photoData) {
+    const out = [];
+    for (const x of sum.create) {
+      const p = x.p, s = x.s;
+      const rb = res[`brand|${p.key}|${x.name}`], rn = res[`name|${p.key}|${x.name}`], rp = res[`price|${p.key}|${x.name}`];
+      const brand = (rb && rb.text) || s.brand || p.brandN || p.brand || '';
+      const material = (CK.listing.MATERIALS.find((m) => m && norm(s.note || '').includes(m)) || '');
+      const nm = CK.listing.makeName(p.name, brand, material);
+      const files = [x.name, ...(s.group || [])];
+      out.push({ product: p, sku: p.base || p.codes[0], name: (rn && rn.text) || nm.ua, nameRu: nm.ru, section: s.cat || p.category || '', brand, color: CK.listing.colorOf(p.name) || (s.note ? CK.listing.colorOf(s.note) : '') || '', material, description: '', price: rp && rp.price > 0 ? rp.price : '', photos: files.map((f) => ({ name: f, data: photoData(f) })).filter((ph) => ph.data), files });
+    }
+    return out;
+  }
+  return { TYPEW2, typeFam, COLORW, COLORHEX, COLORLABEL, colorsOf, colorPalette, norm, nrmKey, qtokens, softMatch, wordsOf, lat2cyr, ctxOf, rate, rank, envOf, partOf, groupOf, join, ungroup, setMain, remove, repair, productOf, summary, parentSkuFor, renmap, splitParts, audit, unresolved, solved, brandCheck, csv, batchOf };
+})();
+
 // ==== src/core/rules.js
 // Правила програми — той самий текст, що показується на екрані «Правила» (розділ 9).
 // Це не логіка, а її опис простими словами. Кожна зміна алгоритму — зміна тут же, з датою.
@@ -2468,7 +2806,8 @@ CK.exports = (() => {
         if (!dr) need29.push({ it, size, sku });
         aoa.push([sku, parentSku, it.name, nameRu, it.name, nameRu, it.brand, it.section, price, 'UAH', 'Да', dr && dr.stock > 0 ? 'В наявності' : 'Під замовлення', 'Facebook Feed', type === 'one' || type === 'case' ? '' : size, dr ? dr.barcode : '', it.color, descUa, descRu, d.shortUa, d.shortRu]);
       }
-      it.photos.forEach((ph, i) => { zipEntries[`${it.sku}@${i + 1}.jpg`] = ph.data; });
+      // Імена фото — за батьківським артикулом картки (як у старій програмі): «1234A-XS@1.jpg» — інакше Хорошоп не знайде рядок (22.09.2026).
+      it.photos.forEach((ph, i) => { zipEntries[`${parentSku}@${i + 1}.jpg`] = ph.data; });
     }
     const codes = CK.codes29.issue(state, index.hRows, index.dRows, need29.length);
     let k = 0;
@@ -4232,81 +4571,7 @@ CK.screens2 = (() => {
   const D = CK.dom, h = D.h, U = CK.util, PV = CK.pairView;
 
   // ---------- Викладка
-  function listing(app, left, right, ctx) {
-    const root = right;
-    const un = CK.model.unlinked(app.index, app.state);
-    const queue = un.dn.filter((x) => x.listing === 'listing');
-    const listed = un.dn.filter((x) => x.listing === 'listed');
-    ctx.batch = ctx.batch || [];
-    const sections = U.uniq(Array.from(app.index.cards.values()).map((c) => c.section).filter(Boolean)).sort();
-    const brands = U.uniq(Array.from(app.index.cards.values()).map((c) => c.brand).filter(Boolean)).sort();
-    root.appendChild(h('div', { class: 'bar' }, h('b', { text: `Потрібна викладка: ${queue.length}` }), h('span', { class: 'muted', text: ` · файли зібрано, чекаємо на сайті: ${listed.length} · у поточній партії: ${ctx.batch.length}` })));
-    root.appendChild(h('datalist', { id: 'dl-sections2' }, sections.map((s) => h('option', { value: s }))));
-    root.appendChild(h('datalist', { id: 'dl-brands2' }, brands.map((s) => h('option', { value: s }))));
-
-    // Партія: фото → бренд + категорія → підбір товару з черги (сортування, не фільтр).
-    const batchBox = h('div', { class: 'batch' });
-    const drawBatch = () => {
-      D.clear(batchBox);
-      batchBox.appendChild(h('h3', { text: 'Партія' }));
-      const photoInput = h('input', { type: 'file', accept: 'image/*', multiple: true });
-      const brand = h('input', { class: 'inp', list: 'dl-brands2', placeholder: 'бренд' });
-      const cat = h('input', { class: 'inp', list: 'dl-sections2', placeholder: 'категорія (розділ сайту)' });
-      batchBox.appendChild(h('div', { class: 'batch-new' }, h('label', null, '1. Фото ', photoInput), h('label', null, '2. Бренд ', brand), h('label', null, 'Категорія ', cat),
-        D.btn('3. Підібрати товар із черги', async () => {
-          const files = Array.from(photoInput.files || []);
-          if (!files.length) { D.toast('Спершу оберіть фото', 'error'); return; }
-          const photos = [];
-          for (const f of files) photos.push({ name: f.name, data: new Uint8Array(await D.readFile(f)) });
-          pickFromQueue(app, ctx, queue.map((x) => x.product), brand.value, cat.value, (product) => {
-            const br = brand.value || product.brandN || product.brand || '';
-            const nm = CK.listing.makeName(product.name, br, '');
-            ctx.batch.push({ product, sku: product.base || product.codes[0], name: nm.ua, nameRu: nm.ru, section: cat.value || product.category || '', brand: br, color: CK.listing.colorOf(product.name), material: '', description: '', price: '', photos });
-            ctx.rerender();
-          });
-        }, 'btn-primary')));
-      ctx.batch.forEach((it, i) => {
-        const f = (key, ph, list) => { const inp = h('input', { class: 'inp', value: it[key] || '', placeholder: ph, list }); inp.addEventListener('input', () => { it[key] = inp.value; }); return h('label', null, ph + ' ', inp); };
-        batchBox.appendChild(h('div', { class: 'card-item batch-item' },
-          h('div', { class: 'batch-photos' }, it.photos.map((p, n) => h('span', { class: 'tag', text: `${it.sku}@${n + 1}.jpg` })), D.photo(it.product.image, '', 'photo-small')),
-          h('div', { class: 'pick-info' }, h('b', { text: it.product.name + ' · коди ' + it.product.codes.join(', ') }),
-            h('div', { class: 'grid2' }, f('sku', 'артикул'), f('name', 'назва (UA)'), f('nameRu', 'назва (RU)'), f('section', 'розділ', 'dl-sections2'), f('brand', 'бренд', 'dl-brands2'), f('color', 'колір (обов’язково)'), f('material', 'тканина (двунитка, фліс…)'), f('price', 'ціна'), f('description', 'опис UA (порожньо — шаблон, 2 речення)')),
-            h('div', { class: 'small muted', text: 'розміри DN: ' + (it.product.sizes.join(', ') || 'не визначено') + '; сітка добудується 29-кодами' })),
-          h('div', { class: 'btn-col' }, D.btn('прибрати з партії', () => { ctx.batch.splice(i, 1); ctx.rerender(); }, 'btn-small'))));
-      });
-      if (ctx.batch.length) {
-        batchBox.appendChild(h('div', { class: 'pair-btns' }, D.btn('Зібрати файли для Хорошопа (картки + ZIP фото)', () => {
-          const bad = ctx.batch.filter((it) => !it.sku || !it.name || !it.section || !it.color);
-          if (bad.length) { D.toast('У кожного товару мають бути артикул, назва, розділ і колір (розділ 5)', 'error'); return; }
-          const res = CK.exports.listingFiles(ctx.batch, app.index, app.state);
-          if (!res.cards.check.ok) { ctx.giveFile(res.cards); return; }
-          ctx.giveFile(res.cards);
-          if (res.zip) D.download(res.zipName, res.zip, 'application/zip');
-          CK.app.markListed(app, ctx.batch);
-          D.toast(`Файли зібрано: ${res.cards.aoa.length - 1} рядків, фото ${res.zipEntries.length}, 29-кодів ${res.assigned29.length}`);
-          ctx.batch = [];
-          ctx.rerender();
-        }, 'btn-primary')));
-        batchBox.appendChild(h('div', { class: 'small muted', text: 'Порядок у Хорошопі: спершу картки → потім фото. Дофото — без «Видалити наявні»; повна заміна — з галочкою.' }));
-      }
-    };
-    drawBatch();
-    root.appendChild(batchBox);
-    root.appendChild(h('h3', { text: `Черга «Потрібна викладка» (${queue.length})` }));
-    root.appendChild(D.paged(queue, (x) => h('div', { class: 'card-item' }, D.photo(x.product.image, '', 'photo-small'), h('div', { class: 'pick-info' }, h('b', { text: x.product.name }), h('div', { class: 'small', text: `${x.product.base || ''} · коди ${x.product.codes.join(', ')} · ${x.product.brandN || x.product.brand || '—'} · ${x.product.category || '—'} · ${x.product.created}` })),
-      h('div', { class: 'btn-col' }, D.btn('Прибрати з черги', () => { CK.app.setListing(app, x.product, 'program'); ctx.rerender(); }, 'btn-small'))), 30));
-  }
-  function pickFromQueue(app, ctx, products, brand, category, onPick) {
-    const q = h('input', { class: 'inp', placeholder: 'пошук — лише сортує' });
-    const list = h('div');
-    const m = D.modal('Який це товар із черги?', h('div', null, h('div', { class: 'small muted', text: 'порядок: бренд + категорія → лише бренд → лише категорія → решта; всередині від нового до старого' }), q, list));
-    const draw = () => {
-      D.clear(list);
-      list.appendChild(D.paged(CK.picker.sortProducts(products, brand, category, q.value), (x) => h('div', { class: 'pick-item rank-' + x.rank }, D.photo(x.p.image, '', 'photo-small'), h('div', { class: 'pick-info' }, h('b', { text: x.p.name }), h('div', { class: 'small', text: `${x.p.base || ''} · ${x.p.brandN || x.p.brand || '—'} · ${x.p.category || '—'} · ${x.p.created}` }), h('span', { class: 'tag', text: x.rankLabel })), D.btn('Це він', () => { m.close(); onPick(x.p); }, 'btn-small btn-primary')), 40));
-    };
-    q.addEventListener('input', draw); draw();
-  }
-
+  // «Викладка» (22.09.2026) — тепер окремий модуль src/ui/photos.js (як у старій програмі v0.0.50: сітка фото, підбір, підсумок, ZIP).
   // ---------- Підсумок (головна): наскільки виконана головна мета, що робити далі за найменшим опором.
   function home(app, left, right, ctx) {
     const ix = app.index, st = app.state;
@@ -4793,7 +5058,475 @@ CK.screens2 = (() => {
       n.product ? D.btn('У Каталозі →', () => goTab('catalog', { selC: n.product.key }), 'btn-small') : null));
     right.appendChild(box);
   }
-  return { home, listing, files, rules, catalog, fixes, attrsScreen };
+  return { home, files, rules, catalog, fixes, attrsScreen };
+})();
+
+// ==== src/ui/photos.js
+// Екран «Викладка» (22.09.2026, прохання Артема: «як у старій програмі v0.0.50»): ліворуч — панель кнопок і сітка фото,
+// праворуч — панель фото з підбором товару DN; режими «Підсумок і файли», «ZIP фото», вікно «Проблеми викладки», розмітка брендів і категорій.
+// Фото зберігаються у сховищі браузера (IndexedDB) стиснутими (довга сторона ≤1800, jpeg 0.87); стан фото — окремим записом.
+CK.photosUi = (() => {
+  const D = CK.dom, h = D.h, U = CK.util, P = CK.photos;
+  const PH = { photos: [], state: {}, res: {}, user: { cats: [], brands: [] }, sel: {}, last: null, view: 'main', assignF: '', brandF: '', catF: '', q: '', color: null, showAll: false, n: { 1: 25, 2: 12, 3: 8 }, loaded: false, loading: false, mode: 'photo', cur: null, queue: [], busy: false, done: 0, total: 0, ren: { files: {}, ignored: 0, parts: null } };
+  const MAXSIDE = 1800, JPGQ = 0.87, PART_LIM = 126 * 1024 * 1024;
+  const names = () => PH.photos.map((p) => p.name);
+  const photoOf = (nm) => PH.photos.find((p) => p.name === nm) || null;
+  const st = (nm) => PH.state[nm] || {};
+  const ensure = (nm) => (PH.state[nm] = PH.state[nm] || {});
+  const saveState = () => CK.store.set('ph_state', PH.state).catch(() => {});
+  const saveList = () => CK.store.set('ph_list', names()).catch(() => {});
+  const saveRes = () => CK.store.set('ph_audit', PH.res).catch(() => {});
+  const saveUser = () => CK.store.set('ph_user', PH.user).catch(() => {});
+  async function loadPhotos(ctx) {
+    if (PH.loaded || PH.loading) return;
+    PH.loading = true;
+    try {
+      const list = (await CK.store.get('ph_list')) || [];
+      for (const nm of list) { const v = await CK.store.get('ph:' + nm); if (v && v.url && !photoOf(nm)) PH.photos.push({ name: nm, url: v.url, white: !!v.white }); }
+      PH.state = (await CK.store.get('ph_state')) || {};
+      PH.res = (await CK.store.get('ph_audit')) || {};
+      PH.user = (await CK.store.get('ph_user')) || { cats: [], brands: [] };
+      try { PH.showAll = localStorage.getItem('ck.ph.showall') === '1'; } catch (e) { /* ок */ }
+      P.repair(PH.state, names());
+    } catch (e) { D.toast('Сховище фото: ' + e.message, 'error'); }
+    PH.loaded = true; PH.loading = false;
+    if (ctx && ctx.rerender) ctx.rerender();
+  }
+  // ---- додавання фото: стиснення у браузері + визначення білого фону (як у старій програмі)
+  const readDataUrl = (f) => new Promise((res, rej) => { const r = new FileReader(); r.onload = () => res(r.result); r.onerror = () => rej(r.error); r.readAsDataURL(f); });
+  const canvasOk = () => { try { const cv = document.createElement('canvas'); return !!(cv.getContext && cv.getContext('2d')); } catch (e) { return false; } };
+  function loadImage(url) { return new Promise((res, rej) => { const im = new Image(); im.onload = () => res(im); im.onerror = () => rej(new Error('image')); im.src = url; }); }
+  async function compress(f, url) {
+    if (!canvasOk()) return url;
+    try {
+      const im = await loadImage(url);
+      const w = im.width, hh = im.height, k = Math.min(1, MAXSIDE / Math.max(w, hh));
+      if (k >= 1 && f.size < 900 * 1024) return url;
+      const cv = document.createElement('canvas'); cv.width = Math.round(w * k); cv.height = Math.round(hh * k);
+      cv.getContext('2d').drawImage(im, 0, 0, cv.width, cv.height);
+      return cv.toDataURL('image/jpeg', JPGQ);
+    } catch (e) { return url; }
+  }
+  async function detectWhite(url) {
+    if (!canvasOk()) return false;
+    try {
+      const im = await loadImage(url);
+      const cv = document.createElement('canvas'); cv.width = 64; cv.height = 64;
+      const cx = cv.getContext('2d'); cx.drawImage(im, 0, 0, 64, 64);
+      const dat = cx.getImageData(0, 0, 64, 64).data;
+      let sum = 0, n = 0;
+      for (let y = 0; y < 64; y++) for (let x = 0; x < 64; x++) { if (x > 4 && x < 59 && y > 4 && y < 59) continue; const i = (y * 64 + x) * 4; sum += (dat[i] + dat[i + 1] + dat[i + 2]) / 3; n++; }
+      return sum / n >= 238;
+    } catch (e) { return false; }
+  }
+  function addFiles(files, ctx) {
+    const fresh = Array.from(files || []).filter((f) => !photoOf(f.name) && !PH.queue.some((q) => q.name === f.name));
+    const skipped = (files ? files.length : 0) - fresh.length;
+    if (skipped) D.toast('Пропущено копій за назвою: ' + skipped);
+    PH.queue.push(...fresh); PH.total += fresh.length;
+    pump(ctx);
+  }
+  async function pump(ctx) {
+    if (PH.busy) return;
+    const f = PH.queue.shift();
+    if (!f) { if (PH.total) { D.toast(`Готово: додано ${PH.done} фото ✓`); PH.done = 0; PH.total = 0; saveList(); ctx.rerender(); } return; }
+    PH.busy = true;
+    try {
+      const raw = await readDataUrl(f);
+      const url = await compress(f, raw);
+      const ph = { name: f.name, url, white: false };
+      PH.photos.push(ph);
+      ph.white = await detectWhite(url);
+      await CK.store.set('ph:' + f.name, { url, white: ph.white });
+      PH.done++;
+      if (PH.done % 5 === 0) D.toast(`Обробляю фото… ${PH.done} / ${PH.total}`);
+    } catch (e) { D.toast('Фото ' + f.name + ': ' + e.message, 'error'); }
+    PH.busy = false;
+    setTimeout(() => pump(ctx), 10);
+  }
+  // Тестовий вхід: фото без стиснення (jsdom не має canvas).
+  function addPhotos(list) { for (const p of list) if (!photoOf(p.name)) PH.photos.push({ name: p.name, url: p.url || '', white: !!p.white }); saveList(); for (const p of list) CK.store.set('ph:' + p.name, { url: p.url || '', white: !!p.white }).catch(() => {}); }
+  function removePhoto(nm) { P.remove(PH.state, nm); delete PH.sel[nm]; const i = PH.photos.findIndex((x) => x.name === nm); if (i >= 0) PH.photos.splice(i, 1); CK.store.del('ph:' + nm).catch(() => {}); if (PH.cur === nm) PH.cur = null; }
+  const dataUrlBytes = (url) => { const m = /^data:[^;]*;base64,(.*)$/.exec(url || ''); if (!m) return null; const bin = atob(m[1]); const u8 = new Uint8Array(bin.length); for (let i = 0; i < bin.length; i++) u8[i] = bin.charCodeAt(i); return u8; };
+  const photoData = (nm) => { const p = photoOf(nm); return p ? dataUrlBytes(p.url) : null; };
+  // ---- довідники для розмітки
+  const siteBrands = (app) => U.uniq(Array.from(app.index.cards.values()).map((c) => c.brand).filter(Boolean).concat(PH.user.brands)).sort((a, b) => a.localeCompare(b));
+  const siteCats = (app) => U.uniq(Array.from(app.index.cards.values()).map((c) => c.section).filter(Boolean).concat(PH.user.cats)).sort((a, b) => a.localeCompare(b));
+  const catLabel = (c) => String(c || '').split('/').pop();
+  // ---- підсумок і перевірка
+  const summary = (app) => P.summary(PH.state, names(), app.index);
+  const issues = (app) => P.audit(summary(app), app.index, app.state);
+  const unresolved = (app) => P.unresolved(issues(app), PH.res);
+
+  // ================= екран
+  function listing(app, left, right, ctx) {
+    if (!PH.loaded) { loadPhotos(ctx); left.appendChild(h('div', { class: 'hint', text: 'Завантажую фото зі сховища…' })); return; }
+    const sum = summary(app);
+    const u = unresolved(app);
+    left.appendChild(bar(app, ctx, sum, u));
+    left.appendChild(banner(app, ctx, sum, u));
+    const list = h('div', { class: 'list ph-list' }); left.appendChild(list);
+    list.appendChild(gridView(app, ctx));
+    if (PH.mode === 'sum') { right.appendChild(summaryView(app, ctx, sum, u)); return; }
+    if (PH.mode === 'ren') { right.appendChild(renView(app, ctx)); return; }
+    if (PH.mode === 'compare') { right.appendChild(compareView(app, ctx)); return; }
+    const p = PH.cur ? photoOf(PH.cur) : null;
+    if (!p) { right.appendChild(h('div', { class: 'hint' }, PH.photos.length ? 'Обери фото ліворуч — тут буде панель: група, бренд, категорія, нотатка і підбір товару DNTrade.' : 'Натисни «➕ Додати фото» — і підбирай кожному товар із програми. ', D.help('Викладка — як з цим працювати', ['1. «➕ Додати фото» — усі фото нової поставки разом. Фото стискаються і лишаються у цьому браузері.', '2. Однакові товари з різних ракурсів — обери кружечками і «🔗 Обʼєднати»: головне фото — з білим фоном.', '3. «🎯 Визначити бренди і категорії» — швидка розмітка кожного фото чипами.', '4. Відкрий фото → у підборі знизу «Це він» на товарі DN (порядок: збіглося все → частково → решта) або «➕ Додати фото до картки», якщо товар уже на сайті.', '5. «✅ Підсумок і файли» → файл карток для Хорошопа + ZIP фото з іменами «АРТИКУЛ@N.jpg» + CSV для Клода. «⚠ Проблеми» — що варто виправити, нічого не блокує.', '6. Після заливки — «Новий імпорт», щоб очистити фото.']))); return; }
+    right.appendChild(detail(app, ctx, p));
+  }
+  function bar(app, ctx, sum, u) {
+    const nSel = Object.keys(PH.sel).length;
+    const input = h('input', { type: 'file', accept: 'image/*', multiple: true, class: 'ph-file', style: 'display:none' });
+    input.addEventListener('change', () => { addFiles(input.files, ctx); input.value = ''; });
+    const mains = PH.photos.filter((p) => !P.partOf(PH.state, p.name) && !st(p.name).dup);
+    const asYes = mains.filter((p) => st(p.name).tgtKey || st(p.name).attach).length;
+    const seg = (v, label) => D.btn(label, () => { PH.assignF = v; ctx.rerender(); }, 'btn-small chip' + (PH.assignF === v ? ' on' : ''));
+    const dupN = PH.photos.filter((p) => !P.partOf(PH.state, p.name) && st(p.name).dup).length;
+    const brands = U.uniq(Object.values(PH.state).map((s) => s && s.brand).filter(Boolean)).sort();
+    const cats = U.uniq(Object.values(PH.state).map((s) => s && s.cat).filter(Boolean)).sort();
+    const selB = h('select', { class: 'inp ph-f' }, h('option', { value: '', text: 'усі бренди' }), brands.map((b) => h('option', { value: b, text: b, selected: PH.brandF === b })));
+    selB.addEventListener('change', () => { PH.brandF = selB.value; ctx.rerender(); });
+    const selC = h('select', { class: 'inp ph-f' }, h('option', { value: '', text: 'усі категорії' }), cats.map((c) => h('option', { value: c, text: catLabel(c), selected: PH.catF === c })));
+    selC.addEventListener('change', () => { PH.catF = selC.value; ctx.rerender(); });
+    const q = h('input', { class: 'inp ph-q', placeholder: 'пошук за іменем файла', value: PH.q });
+    q.addEventListener('input', () => { PH.q = q.value; const l = left(ctx); if (l) { const g = l.querySelector('.ph-grid-wrap'); if (g) g.replaceWith(gridView(app, ctx)); } });
+    const nIss = u.red + u.yel;
+    return h('div', { class: 'left-top ph-bar' },
+      h('div', { class: 'bar' }, input, D.btn('➕ Додати фото', () => input.click(), 'btn-primary btn-ph-add'),
+        PH.view === 'main' ? D.btn(`🔗 Обʼєднати вибрані${nSel ? ` (${nSel})` : ''}`, () => joinSel(ctx), 'btn-small btn-ph-join' + (nSel < 2 ? ' disabled' : '')) : null,
+        PH.view === 'dups' ? D.btn(`⚖ Порівняти вибрані${nSel ? ` (${nSel})` : ''}`, () => { if (nSel < 2) return; PH.mode = 'compare'; ctx.rerender(); }, 'btn-small' + (nSel < 2 ? ' disabled' : '')) : null,
+        nSel ? D.btn(`🗑 Видалити вибрані (${nSel})`, () => { if (typeof confirm === 'function' && !confirm(`Видалити ${nSel} фото безповоротно?`)) return; for (const nm of Object.keys(PH.sel)) removePhoto(nm); PH.sel = {}; saveList(); saveState(); D.toast(`Видалено: ${nSel} фото 🗑`); ctx.rerender(); }, 'btn-small btn-danger btn-ph-del') : null,
+        h('span', { class: 'chips ph-seg' }, seg('', `Всі (${mains.length})`), seg('no', `⏳ Без товару (${mains.length - asYes})`), seg('yes', `✓ З товаром (${asYes})`)),
+        D.btn('🎯 Визначити бренди і категорії', () => tagOpen(app, ctx), 'btn-small btn-primary btn-ph-tag'),
+        selB, selC,
+        D.btn(PH.view === 'dups' ? '← Назад до викладки' : `👥 Дублі (${dupN})`, () => { PH.view = PH.view === 'dups' ? 'main' : 'dups'; PH.sel = {}; PH.cur = null; PH.mode = 'photo'; ctx.rerender(); }, 'btn-small btn-ph-dups'),
+        D.btn('✅ Підсумок і файли', () => { PH.mode = PH.mode === 'sum' ? 'photo' : 'sum'; ctx.rerender(); }, 'btn-small btn-ok btn-ph-sum' + (PH.mode === 'sum' ? ' on' : '')),
+        D.btn('📦 ZIP фото', () => { PH.mode = PH.mode === 'ren' ? 'photo' : 'ren'; ctx.rerender(); }, 'btn-small btn-ph-ren' + (PH.mode === 'ren' ? ' on' : '')),
+        D.btn(nIss ? `⚠ Проблеми (${nIss})` : '✓ зауважень нема', () => problemsModal(app, ctx), 'btn-small btn-ph-prob' + (nIss ? ' warn' : '')),
+        D.btn('Новий імпорт — очистити фото', () => newImport(ctx), 'btn-small btn-ph-clear'), q));
+  }
+  const left = (ctx) => document.getElementById('left');
+  function banner(app, ctx, sum, u) {
+    if (!PH.photos.length) return h('div');
+    const done = sum.create.length + sum.addph.length;
+    return h('div', { class: 'ph-banner' },
+      h('div', { class: 'ph-banner-t' }, h('b', { text: 'ПІДСУМОК ВИКЛАДКИ' }), h('span', { class: 'small', text: ` опрацьовано ${done} з ${done + sum.noTgt.length} фото-груп` })),
+      h('div', { class: 'ph-pills' }, h('span', { class: 'ph-pill ok', text: `➕ Створити картки: ${sum.create.length}` }), h('span', { class: 'ph-pill add', text: `📷 Дофото до наявних: ${sum.addph.length}` }),
+        sum.noTgt.length ? h('span', { class: 'ph-pill no', text: `⏳ Ще без товару: ${sum.noTgt.length}` }) : null, sum.dups ? h('span', { class: 'ph-pill dup', text: `Дублі: ${sum.dups}` }) : null,
+        u.red + u.yel ? h('span', { class: 'ph-pill warn', text: `⚠ зауважень: ${u.red + u.yel}` }) : h('span', { class: 'ph-pill ok', text: '✓ зауважень нема' })));
+  }
+  function visible() {
+    const q = P.norm(PH.q).trim();
+    return PH.photos.filter((p) => {
+      if (P.partOf(PH.state, p.name)) return false;
+      const s = st(p.name);
+      if (PH.view === 'dups' ? !s.dup : s.dup) return false;
+      if (PH.brandF && P.nrmKey(s.brand || '') !== P.nrmKey(PH.brandF)) return false;
+      if (PH.catF && s.cat !== PH.catF) return false;
+      const asg = !!(s.tgtKey || s.attach);
+      if (PH.view === 'main' && PH.assignF === 'no' && asg) return false;
+      if (PH.view === 'main' && PH.assignF === 'yes' && !asg) return false;
+      return !q || P.norm(p.name).includes(q);
+    });
+  }
+  function gridView(app, ctx) {
+    const list = visible();
+    const wrap = h('div', { class: 'ph-grid-wrap' });
+    if (!list.length) { wrap.appendChild(h('div', { class: 'hint', text: PH.view === 'dups' ? 'Дублів немає. Познач фото кнопкою «👥 Це дубль» у панелі.' : (PH.photos.length ? 'Нічого не підходить під фільтр.' : 'Натисни «➕ Додати фото» — і підбирай кожному товар із програми') })); return wrap; }
+    const vis = list.map((p) => p.name);
+    const g = h('div', { class: 'ph-grid' });
+    for (const p of list) {
+      const s = st(p.name);
+      const asg = !!(s.tgtKey || s.attach);
+      const grp = P.groupOf(PH.state, p.name);
+      const cell = h('div', { class: 'ph-cell' + (PH.cur === p.name ? ' sel' : '') + (asg ? ' ok' : ''), data: { photo: p.name } });
+      const selBtn = h('div', { class: 'ph-sel' + (PH.sel[p.name] ? ' on' : ''), text: PH.sel[p.name] ? '✓' : '' });
+      selBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (e.shiftKey && PH.last && vis.includes(PH.last) && vis.includes(p.name)) { const i1 = vis.indexOf(PH.last), i2 = vis.indexOf(p.name); for (let i = Math.min(i1, i2); i <= Math.max(i1, i2); i++) PH.sel[vis[i]] = 1; D.toast(`Вибрано діапазон: ${Math.abs(i2 - i1) + 1} фото`); }
+        else if (PH.sel[p.name]) delete PH.sel[p.name]; else PH.sel[p.name] = 1;
+        PH.last = p.name; ctx.rerender();
+      });
+      cell.appendChild(selBtn);
+      cell.appendChild(h('img', { src: p.url, loading: 'lazy', alt: p.name }));
+      if (asg) cell.appendChild(h('div', { class: 'ph-badge', text: s.attach ? '➕' : '✓' }));
+      if (p.white) cell.appendChild(h('div', { class: 'ph-white', text: '⬜ БІЛИЙ ФОН' }));
+      if (s.brand || s.cat) cell.appendChild(h('div', { class: 'ph-tags' }, s.brand ? h('span', { text: s.brand }) : null, s.cat ? h('span', { text: catLabel(s.cat) }) : null));
+      if (grp.length) cell.appendChild(h('div', { class: 'ph-cnt', text: `🖼 ${grp.length + 1} фото` }));
+      cell.appendChild(h('div', { class: 'ph-name', text: p.name }));
+      cell.addEventListener('click', () => { PH.cur = p.name; PH.mode = 'photo'; ctx.mDetail = true; PH.n = { 1: 25, 2: 12, 3: 8 }; ctx.rerender(); });
+      g.appendChild(cell);
+    }
+    wrap.appendChild(g);
+    return wrap;
+  }
+  function joinSel(ctx) {
+    const r = P.join(PH.state, Object.keys(PH.sel), names(), (nm) => { const p = photoOf(nm); return !!(p && p.white); });
+    if (!r) { D.toast('Для обʼєднання потрібно ≥2 існуючих фото'); return; }
+    PH.sel = {}; saveState(); D.toast(`Обʼєднано: ${r.count} фото = один товар`); ctx.rerender();
+  }
+  function newImport(ctx) {
+    if (!PH.photos.length) { D.toast('Фото і так нема — просто додай нові'); return; }
+    if (typeof confirm === 'function') { if (!confirm(`НОВИЙ ІМПОРТ\n\nВидалити всі ${PH.photos.length} фото цієї викладки (разом з привʼязками до товарів, брендами, категоріями)?\n\nТовари, рішення, журнал — НЕ чіпаються.`)) return; if (!confirm('Точно видалити? Цю дію не можна скасувати.')) return; }
+    for (const nm of names()) CK.store.del('ph:' + nm).catch(() => {});
+    PH.photos.length = 0; PH.sel = {}; PH.state = {}; PH.res = {}; PH.cur = null; PH.mode = 'photo';
+    saveList(); saveState(); saveRes();
+    D.toast('Готово — викладка порожня, додавай нові фото ✓'); ctx.rerender();
+  }
+  // ---- панель фото
+  function detail(app, ctx, p) {
+    const s = st(p.name);
+    const box = h('div', { class: 'ph-detail', data: { photo: p.name } });
+    const grp = P.groupOf(PH.state, p.name);
+    box.appendChild(h('div', { class: 'ph-top' }, D.photo(p.url, p.name, 'ph-big'),
+      h('div', { class: 'ph-top-r' }, h('div', { class: 'ph-pnm', text: p.name }), h('div', { class: 'small muted', text: 'Нове фото для викладки. Знайди товар у програмі — його коди підуть у файл.' }),
+        grp.length ? h('div', { class: 'ph-group' }, h('div', { class: 'small muted', text: `ГОЛОВНЕ ФОТО — ЦЕ (піде першим${p.white ? ', ⬜ білий фон' : ''}). У групі ще ${grp.length}:` }),
+          h('div', { class: 'ph-thumbs' }, grp.map((nm) => { const ph = photoOf(nm); if (!ph) return null; return h('div', { class: 'ph-thumb' }, D.photo(ph.url, nm, 'ph-thumb-img'), ph.white ? h('div', { class: 'small', text: '⬜' }) : null, D.btn('★ головне', () => { if (P.setMain(PH.state, p.name, nm)) { PH.cur = nm; saveState(); D.toast('Головне фото змінено ★'); ctx.rerender(); } }, 'btn-small btn-ph-main')); })),
+          D.btn('✂ Розʼєднати групу', () => { P.ungroup(PH.state, p.name); saveState(); D.toast('Групу розʼєднано'); ctx.rerender(); }, 'btn-small btn-ph-ungroup')) : null,
+        s.attach ? h('div', { class: 'ph-line add' }, `➕ Фото буде ДОДАНО до існуючої картки `, h('b', { text: s.attach }), ' (додаткові зображення) ', D.btn('↺', () => { delete ensure(p.name).attach; saveState(); ctx.rerender(); }, 'btn-small')) : null,
+        (() => { const pr = P.productOf(app.index, s); if (!pr) return null; const live = pr.rows.filter((r) => !r.isParent && !r.isTech && r.barcode); return h('div', { class: 'ph-line' }, `→ товар: «${pr.name} | ${pr.brandN || pr.brand || ''}» · ${U.mode(live.map((r) => r.retail).filter((v) => v !== null)) ?? '—'} грн`, h('br'), `Артикул і коди візьму з DN: ${live.map((r) => `${r.sku || '?'} (${r.sizeN || '—'})`).join(', ')} `, D.btn('↺', () => { const q = ensure(p.name); delete q.tgtKey; delete q.tgtBcs; saveState(); ctx.rerender(); }, 'btn-small btn-ph-untgt')); })(),
+        h('div', { class: 'btn-row' }, D.btn(s.dup ? '↩ Повернути з дублів' : '👥 Це дубль', () => { const q = ensure(p.name); q.dup = q.dup ? 0 : 1; saveState(); PH.cur = null; D.toast(q.dup ? 'Фото перенесено в «Дублі» 👥' : 'Фото повернено у викладку ✓'); ctx.rerender(); }, 'btn-small btn-ph-dup'),
+          D.btn('🗑 Видалити фото', () => { removePhoto(p.name); saveList(); saveState(); D.toast('Фото видалено 🗑'); ctx.rerender(); }, 'btn-small btn-danger btn-ph-delete')),
+        h('div', { class: 'btn-row' }, pickSelect(app, ctx, p, 'brand', '🏷 Бренд фото', siteBrands(app)), pickSelect(app, ctx, p, 'cat', '🗂 Категорія фото', siteCats(app))))));
+    const note = h('textarea', { class: 'inp ph-note', placeholder: '💬 що особливого: двунитка / фліс / тонка / oversize… — піде в назву та опис', value: s.note || '' });
+    note.addEventListener('input', () => { ensure(p.name).note = note.value; saveState(); });
+    box.appendChild(note);
+    box.appendChild(finder(app, ctx, p));
+    return box;
+  }
+  function pickSelect(app, ctx, p, key, label, opts) {
+    const s = st(p.name);
+    const sel = h('select', { class: 'inp ph-pick-' + key }, h('option', { value: '', text: `${label}: не задано` }), opts.map((o) => h('option', { value: o, text: key === 'cat' ? o : o, selected: s[key] === o })), h('option', { value: '__new', text: key === 'brand' ? '＋ новий бренд…' : '＋ нова категорія…' }));
+    sel.addEventListener('change', () => {
+      if (sel.value === '__new') { const v = addUserValue(key); if (v) { ensure(p.name)[key] = v; saveState(); } ctx.rerender(); return; }
+      ensure(p.name)[key] = sel.value || null; saveState(); ctx.rerender();
+    });
+    return sel;
+  }
+  function addUserValue(key) {
+    if (typeof prompt !== 'function') return null;
+    if (key === 'brand') { const nb = prompt('Назва нового бренду (як має писатись на сайті):', ''); if (!nb || !nb.trim()) return null; const v = nb.trim(); if (!PH.user.brands.includes(v)) PH.user.brands.push(v); saveUser(); D.toast('Бренд додано: ' + v); return v; }
+    const base = prompt('Нова категорія. Впиши повний шлях, напр.:\nОДЯГ/Чоловічий одяг/Куртки/Пуховики\nабо коротко — «Пуховики» (потрапить у ОДЯГ/Чоловічий одяг):', '');
+    if (!base || !base.trim()) return null;
+    let full = base.trim(); if (!full.includes('/')) full = 'ОДЯГ/Чоловічий одяг/' + full;
+    if (!PH.user.cats.includes(full)) PH.user.cats.push(full); saveUser(); D.toast(`Категорію додано: ${catLabel(full)} (нова — буде у файлі як «створити»)`); return full;
+  }
+  // ---- підбір товару DN: сортування, не фільтр (зі старої програми)
+  function finder(app, ctx, p) {
+    const box = h('div', { class: 'ph-finder' });
+    const env = P.envOf(app.index, app.state, PH.state);
+    const chk = h('input', { type: 'checkbox', checked: PH.showAll });
+    chk.addEventListener('change', () => { PH.showAll = chk.checked; try { localStorage.setItem('ck.ph.showall', chk.checked ? '1' : ''); } catch (e) { /* ок */ } draw(); });
+    const fresh = app.index.sellable.filter((x) => { const d = env.fresh(x); return d !== null && d <= 30; }).length;
+    const hasCr = app.index.sellable.some((x) => x.created);
+    box.appendChild(h('div', { class: 'ph-fh' }, h('span', { class: 'lg lgD', text: 'DNTRADE' }), ' Підбір товару ', h('label', { class: 'small muted ph-showall' }, chk, ' показати і вже звʼязані з сайтом')));
+    box.appendChild(h('div', { class: 'small', style: 'color:' + (hasCr ? '#5eead4' : '#fca5a5'), text: hasCr ? `🆕 нових у програмі: ${fresh} (за колонкою «Створення», останні 30 днів) — вони йдуть першими` : '⚠ у вигрузці DNTrade нема колонки дати створення — новинки підняти не можу' }));
+    const q = h('input', { class: 'inp ph-fq', placeholder: 'назва / бренд / артикул…' });
+    q.addEventListener('input', () => { PH.n = { 1: 25, 2: 12, 3: 8 }; draw(); });
+    box.appendChild(q);
+    const listBox = h('div', { class: 'ph-rl' }); box.appendChild(listBox);
+    const products = app.index.sellable.filter((x) => !x.postponed);
+    const draw = () => {
+      D.clear(listBox);
+      const pal = P.colorPalette(products).slice(0, 18);
+      listBox.appendChild(h('div', { class: 'ph-pal' }, h('div', { class: 'small muted' }, 'КОЛІР ', PH.color ? h('span', null, `· обрано «${P.COLORLABEL[PH.color] || PH.color}» `, D.btn('скинути', () => { PH.color = null; draw(); }, 'btn-small')) : '(натисни, щоб звузити)'),
+        pal.map((c) => h('span', { class: 'ph-col' + (PH.color === c.k ? ' on' : ''), title: `${c.label} · ${c.n}`, onclick: () => { PH.color = PH.color === c.k ? null : c.k; draw(); } }, h('span', { class: 'ph-dot', style: 'background:' + c.hex }), h('span', { text: c.label })))));
+      const r = P.rank(products, st(p.name), q.value, PH.color, env, PH.showAll);
+      const crit = []; if (r.ctx.fam) crit.push(`тип «${r.ctx.fam}»`); if (r.ctx.brand) crit.push(`бренд «${r.ctx.brand}»`); if (PH.color) crit.push(`колір «${P.COLORLABEL[PH.color] || PH.color}»`); if (r.toks.length) crit.push(`пошук «${r.toks.join(' ')}»`);
+      const t1 = r.need ? 'НАЙБЛИЖЧІ — збіглося все, що задано' : 'НОВІ У ПРОГРАМІ';
+      const s1 = crit.length ? 'критерії: ' + crit.join(' + ') : 'задай бренд, категорію або колір — і зʼявиться точна група';
+      const s2 = r.ctx.fam ? `той самий тип «${r.ctx.fam}», але збіглося не все` : 'збіглася частина ознак';
+      const s3 = r.ctx.fam ? `інший тип товару — до «${r.ctx.fam}» не підходять, але нікуди не зникли` : 'нічого не збіглося — але товар нікуди не зник';
+      const grpBox = (items, title, sub, cls, gid) => {
+        const bx = h('div', { class: 'ph-grp ' + cls + (items.length ? '' : ' empty') }, h('div', { class: 'ph-grp-h' }, h('b', { text: `${title} — ${items.length}` }), h('span', { class: 'small muted', text: sub })));
+        for (const it of items.slice(0, PH.n[gid])) bx.appendChild(row(it));
+        if (items.length > PH.n[gid]) bx.appendChild(D.btn(`Показати ще (${items.length - PH.n[gid]})`, () => { PH.n[gid] += 25; draw(); }, 'btn-small btn-all ph-more'));
+        return bx;
+      };
+      const row = (it) => {
+        const x = it.p, lk = it.linked, pk = it.picked;
+        const live = x.rows.filter((r2) => !r2.isParent && !r2.isTech);
+        const price = U.mode(live.map((r2) => r2.retail).filter((v) => v !== null));
+        const status = env.status(x);
+        return h('div', { class: 'ph-row' + (pk ? ' picked' : lk ? (status === 'listed' ? ' recent' : ' linked') : ''), data: { key: x.key } },
+          D.photo(x.image, x.name, 'photo-small'),
+          h('div', { class: 'ph-rin' }, h('div', { class: 'ph-rnm', text: x.name }),
+            h('div', { class: 'small muted' }, h('b', { text: x.brandN || x.brand || '—' }), ' · ', x.base ? h('span', { class: 'c-sku', text: 'арт ' + x.base } ) : h('span', { class: 'error', text: 'без артикулу в програмі' }), ` · ${price ?? '—'} грн · коди ${x.codes.slice(0, 3).join(', ')}${x.codes.length > 3 ? '…' : ''}`),
+            h('div', { class: 'ph-why' }, it.why.map((w) => h('span', { style: 'color:' + w.c, text: w.t }))),
+            h('div', { class: 'small' }, pk ? h('span', { class: 'ph-st picked', text: `🔵 ВЖЕ ОБРАНО в цій роботі — фото «${pk}»` }) : null,
+              lk ? h('span', { class: 'ph-st ' + (status === 'listed' ? 'recent' : 'linked'), text: status === 'listed' ? `🟠 НЕДАВНІЙ ІМПОРТ — вже виклали (${lk})` : `вже звʼязано з ${lk}` }) : h('span', { class: 'ph-st free', text: status === 'listing' ? 'у черзі «Потрібна викладка» — можна створити картку' : 'без звʼязку — можна створити картку' }))),
+          h('div', { class: 'btn-col' }, D.btn('Це він', () => { const q2 = ensure(p.name); q2.tgtKey = x.key; q2.tgtBcs = x.barcodes.slice(0, 5); delete q2.attach; saveState(); D.toast('Товар призначено фото'); ctx.rerender(); }, 'btn-small btn-primary btn-ph-pick'),
+            lk ? D.btn('➕ Додати фото до картки', () => { const q2 = ensure(p.name); q2.attach = lk; delete q2.tgtKey; delete q2.tgtBcs; saveState(); D.toast('Фото піде ДОДАТКОВИМ до картки ' + lk); ctx.rerender(); }, 'btn-small btn-ph-attach') : null));
+      };
+      listBox.appendChild(grpBox(r.G[1], '🎯 ' + t1, s1, 'g1', 1));
+      listBox.appendChild(grpBox(r.G[2], '◑ ПІДХОДЯТЬ ЧАСТКОВО', s2, 'g2', 2));
+      listBox.appendChild(grpBox(r.G[3], '▫ РЕШТА ПРОГРАМИ', s3, 'g3', 3));
+      listBox.appendChild(h('div', { class: 'small muted', text: `Всього у програмі: ${products.length} · показано у групах: ${r.G[1].length + r.G[2].length + r.G[3].length}` + (r.hidden ? ` · сховано вже звʼязаних і «лише в програмі»: ${r.hidden} (увімкни галочку зверху, щоб показати)` : ' · нічого не сховано') }));
+    };
+    draw();
+    return box;
+  }
+  // ---- порівняння дублів
+  function compareView(app, ctx) {
+    const sel = Object.keys(PH.sel).map(photoOf).filter(Boolean);
+    return h('div', { class: 'ph-detail' }, h('div', { class: 'ph-pnm', text: '⚖ Порівняння — обери, яку залишити' }),
+      h('div', { class: 'ph-cmp' }, sel.map((ph) => h('div', { class: 'ph-cmp-i' }, D.photo(ph.url, ph.name, 'ph-cmp-img'), h('div', { class: 'small muted', text: ph.name }),
+        D.btn('✅ Залишити цю', () => { ensure(ph.name).dup = 0; for (const o of Object.keys(PH.sel)) if (o !== ph.name) ensure(o).dup = 1; PH.sel = {}; PH.mode = 'photo'; saveState(); D.toast(`✓ Залишили «${ph.name}» — повернено у викладку. Решта лишились у дублях.`); ctx.rerender(); }, 'btn-ok btn-small')))),
+      D.btn('← Назад', () => { PH.mode = 'photo'; ctx.rerender(); }, 'btn-small'));
+  }
+  // ---- розмітка брендів і категорій (повний екран)
+  function tagOpen(app, ctx) {
+    const queue = PH.photos.filter((p) => !P.partOf(PH.state, p.name) && !st(p.name).dup && !(st(p.name).brand && st(p.name).cat));
+    if (!queue.length) { D.toast('Все розмічено ✓ — бренд і категорія є у всіх'); return; }
+    let idx = 0;
+    const wrap = h('div', { class: 'tagmode' });
+    const img = h('img', { class: 'tg-img' });
+    const pos = h('div', { class: 'tg-pos' }), nameEl = h('div', { class: 'tg-name' }), bh = h('div', { class: 'tg-h' }), ch = h('div', { class: 'tg-h' });
+    const bf = h('input', { class: 'inp tg-filter', placeholder: 'фільтр брендів…' }), cf = h('input', { class: 'inp tg-filter', placeholder: 'фільтр категорій…' });
+    const bc = h('div', { class: 'tg-chips' }), cc = h('div', { class: 'tg-chips' });
+    const close = () => { wrap.remove(); ctx.rerender(); };
+    const paint = () => {
+      if (idx >= queue.length) { close(); D.toast('Готово — всі фото розмічені 🎯'); return; }
+      const p = queue[idx], s = st(p.name);
+      img.src = p.url; pos.textContent = `${idx + 1} / ${queue.length}`; nameEl.textContent = p.name;
+      bh.className = 'tg-h' + (s.brand ? ' done' : ''); bh.textContent = '🏷 БРЕНД' + (s.brand ? `: ${s.brand} ✓` : '');
+      ch.className = 'tg-h' + (s.cat ? ' done' : ''); ch.textContent = '🗂 КАТЕГОРІЯ' + (s.cat ? `: ${catLabel(s.cat)} ✓` : '');
+      chips();
+    };
+    const match = (q, x) => !q || P.norm(x).includes(P.norm(q));
+    const set = (kind, val) => { const p = queue[idx]; ensure(p.name)[kind] = val; saveState(); const s = st(p.name); if (s.brand && s.cat) { paint(); setTimeout(() => { idx++; bf.value = ''; cf.value = ''; paint(); }, 260); } else paint(); };
+    const chips = () => {
+      const p = queue[idx]; if (!p) return; const s = st(p.name);
+      D.clear(bc); D.clear(cc);
+      for (const b of siteBrands(app).filter((x) => match(bf.value, x))) bc.appendChild(D.btn(b, () => set('brand', b), 'chip' + (s.brand === b ? ' on' : '')));
+      bc.appendChild(D.btn('＋ новий бренд', () => { const v = addUserValue('brand'); if (v) set('brand', v); }, 'chip dashed'));
+      const cats = siteCats(app).filter((x) => match(cf.value, x) || match(cf.value, catLabel(x)));
+      const lbl = U.counter(cats.map(catLabel)); // однакова остання ланка у різних розділах — показати повний шлях
+      for (const c of cats) { const b = D.btn(lbl.get(catLabel(c)) > 1 ? c : catLabel(c), () => set('cat', c), 'chip' + (s.cat === c ? ' on' : '')); b.title = c; cc.appendChild(b); }
+      cc.appendChild(D.btn('＋ нова категорія', () => { const v = addUserValue('cat'); if (v) set('cat', v); }, 'chip dashed'));
+    };
+    bf.addEventListener('input', chips); cf.addEventListener('input', chips);
+    wrap.appendChild(h('div', { class: 'tg-left' }, img));
+    wrap.appendChild(h('div', { class: 'tg-right' }, h('div', { class: 'tg-top' }, D.btn('◂', () => { if (idx > 0) { idx--; paint(); } }, 'btn-small'), pos, D.btn('Пропустити ▸', () => { idx++; paint(); }, 'btn-small tg-skip'), D.btn('✕', close, 'btn-small btn-danger tg-close')), nameEl, bh, bf, bc, ch, cf, cc));
+    document.body.appendChild(wrap);
+    paint();
+    return wrap;
+  }
+  // ---- підсумок і файли
+  function summaryView(app, ctx, sum, u) {
+    const box = h('div', { class: 'ph-detail ph-sum' });
+    const list = (arr, kind) => arr.length ? h('div', null, arr.slice(0, 200).map((x) => { const ph = photoOf(x.name); return h('div', { class: 'ph-sum-i' }, ph ? D.photo(ph.url, x.name, 'photo-small') : null, h('div', null, kind === 'create' ? h('div', null, h('b', { text: x.p.name }), h('span', { class: 'small muted', text: ` · ${x.p.brandN || x.p.brand || ''} · арт ${x.p.base || '—'} · ${x.s.cat ? catLabel(x.s.cat) : 'без категорії'}` })) : kind === 'add' ? h('div', null, h('b', { text: 'до картки ' + x.art }), h('span', { class: 'small muted', text: ' · фото додадуться до наявних' })) : h('b', { class: 'error', text: 'товар ще не обрано' }), h('div', { class: 'small muted', text: x.name + (x.n > 1 ? ` + ще ${x.n - 1} фото в групі` : '') }))); }), arr.length > 200 ? h('div', { class: 'small muted', text: `…і ще ${arr.length - 200}` }) : null) : h('div', { class: 'small muted', text: '— порожньо' });
+    const nIss = u.red + u.yel;
+    box.appendChild(h('div', { class: 'ph-pnm', text: 'Підсумок викладки' }));
+    box.appendChild(h('div', { class: 'btn-row' },
+      D.btn(`⬇ Зібрати файли для Хорошопа (картки ${sum.create.length} + ZIP фото)`, () => buildFiles(app, ctx, sum), 'btn-ok btn-ph-build'),
+      D.btn(`⬇ CSV для Клода (${sum.create.length} нових)`, () => exportCsv(app, ctx, sum), 'btn-small btn-ph-csv'),
+      nIss ? D.btn(`⚠ Проблеми викладки (${nIss})`, () => problemsModal(app, ctx), 'btn-small warn') : null,
+      D.btn('← До фото', () => { PH.mode = 'photo'; ctx.rerender(); }, 'btn-small')));
+    box.appendChild(h('div', { class: 'ph-steps' }, h('b', { text: 'ЩО РОБИТИ ДАЛІ' }), h('ol', null,
+      h('li', null, `«Зібрати файли» — файл карток для Хорошопа (лише НОВІ картки: ${sum.create.length}; назви, описи, сітка розмірів, 29-коди — програма збирає сама) і ZIP фото з іменами «АРТИКУЛ@N.jpg».`),
+      h('li', null, 'Залий файл карток на Хорошоп (масовий імпорт, «Нові: Імпортувати», «Відсутні товари: Нічого не робити»).'),
+      h('li', null, 'Потім залий ZIP фото. Якщо архів великий — у розділі «📦 ZIP фото» він ділиться на частини, товар ніколи не розривається.'),
+      h('li', null, h('b', { text: `Без галочки «Видалити наявні»` }), ` — щоб дофото до ${sum.addph.length} наявних карток не стерли старі знімки.`),
+      h('li', null, 'Після заливки — нове вивантаження з сайту: програма побачить нові картки за штрихкодом. Тоді «Новий імпорт — очистити фото».'))));
+    box.appendChild(h('div', { class: 'ph-sum-grid' },
+      h('div', { class: 'ph-sum-card ok' }, h('b', { text: `➕ СТВОРИТИ НОВІ КАРТКИ — ${sum.create.length}` }), h('div', { class: 'small muted', text: `рядків імпорту разом: ~${sum.rows}` }), list(sum.create, 'create')),
+      h('div', { class: 'ph-sum-card add' }, h('b', { text: `📷 ДОФОТО ДО НАЯВНИХ — ${sum.addph.length}` }), h('div', { class: 'small muted', text: 'ці товари вже на сайті — картки НЕ створюємо, лише додаємо фото' }), list(sum.addph, 'add')),
+      sum.noTgt.length ? h('div', { class: 'ph-sum-card no' }, h('b', { text: `⏳ ЩЕ БЕЗ ТОВАРУ — ${sum.noTgt.length}` }), h('div', { class: 'small muted', text: 'підбери товар, інакше ці фото нікуди не підуть' }), list(sum.noTgt, 'no')) : null));
+    return box;
+  }
+  function buildFiles(app, ctx, sum) {
+    const batch = P.batchOf(sum, PH.res, app.index, app.state, photoData);
+    if (!batch.length) { D.toast('Немає НОВИХ карток для файлу (можливо, все — дофото)', 'error'); return null; }
+    const bad = batch.filter((it) => !it.sku || !it.name || !it.section);
+    if (bad.length) { D.toast(`Без артикулу/назви/категорії: ${bad.map((b) => b.files[0]).join(', ')} — постав категорію фото (розділ 5)`, 'error'); return null; }
+    const res = CK.exports.listingFiles(batch, app.index, app.state);
+    if (!res.cards.check.ok) { ctx.giveFile(res.cards); return null; }
+    ctx.giveFile(res.cards);
+    if (res.zip) D.download(res.zipName, res.zip, 'application/zip');
+    CK.app.markListed(app, batch);
+    D.toast(`Файли зібрано: ${res.cards.aoa.length - 1} рядків, фото ${res.zipEntries.length}, 29-кодів ${res.assigned29.length}`);
+    ctx.rerender();
+    return res;
+  }
+  function exportCsv(app, ctx, sum) {
+    const r = P.csv(sum, issues(app), PH.res, app.index);
+    if (!r.n) { D.toast('Немає НОВИХ карток для файлу (можливо, все — дофото)'); return null; }
+    D.download('викладка_для_клода.csv', r.text, 'text/csv;charset=utf-8');
+    const n = unresolved(app); const k = n.red + n.yel;
+    D.toast(k ? `CSV готовий (${r.n} товарів). Є ${k} зауваж. — дивись «Проблеми викладки»` : `CSV викладки готовий (${r.n} товарів, перевірку пройдено) — скинь Клоду`);
+    return r;
+  }
+  // ---- «Проблеми викладки»: нічого не блокує
+  function problemsModal(app, ctx) {
+    const sum = summary(app), iss = issues(app), u = P.unresolved(iss, PH.res);
+    if (!sum.create.length && !sum.addph.length) { D.toast('Немає фото з обраним товаром'); return; }
+    const body = h('div', { class: 'ph-aud' });
+    body.appendChild(h('div', { class: 'small' }, h('span', { class: 'error', text: `важливих: ${u.red}` }), ' · ', h('span', { class: 'warn', text: `на рішення: ${u.yel}` }), ' · ', `усього пунктів: ${iss.length}`, h('div', { class: 'small muted', text: 'Нічого не блокує: файл можна зібрати будь-коли. Це перелік того, що варто виправити.' })));
+    const ord = iss.slice().sort((a, b) => (a.sev === 'red' ? 0 : 1) - (b.sev === 'red' ? 0 : 1));
+    for (const q of ord) {
+      const r = PH.res[q.id]; const done = P.solved(q, r);
+      const it = h('div', { class: 'ph-iss ' + q.sev + (done ? ' done' : ''), data: { code: q.code } }, h('div', null, h('b', { text: (done ? '✓ ' : '') + q.title }), h('span', { class: 'small muted', text: ` фото: ${q.it.name}` })), h('div', { class: 'small', text: q.detail }));
+      if (!done) {
+        const row = h('div', { class: 'btn-row' });
+        if (q.input === 'price') { const inp = h('input', { class: 'inp', type: 'number', placeholder: 'ціна, грн', style: 'width:110px' }); row.appendChild(inp); row.appendChild(D.btn('Зберегти ціну', () => { const pv = parseFloat(String(inp.value).replace(',', '.')); if (!(pv > 0)) { D.toast('Впишіть ціну > 0'); return; } PH.res[q.id] = { price: pv, ts: Date.now() }; saveRes(); m.close(); problemsModal(app, ctx); }, 'btn-small btn-ok')); }
+        else if (q.input) { const inp = h('input', { class: 'inp', placeholder: q.input === 'name' ? 'назва для сайту' : 'правильний бренд', style: 'min-width:220px' }); row.appendChild(inp); row.appendChild(D.btn('Зберегти', () => { const v = String(inp.value || '').trim(); if (!v) { D.toast('Порожньо — або натисніть «ОК»'); return; } PH.res[q.id] = { text: v, ts: Date.now() }; saveRes(); m.close(); problemsModal(app, ctx); }, 'btn-small btn-ok')); }
+        if (q.code === 'same') row.appendChild(D.btn(`📷 Зробити ДОФОТО до картки ${q.fixTo}`, () => { const s = ensure(q.it.name); s.attach = q.fixTo; delete s.tgtKey; delete s.tgtBcs; saveState(); PH.res[q.id] = { ok: 1, fixed: q.fixTo, ts: Date.now() }; saveRes(); D.toast('Готово: буде дофото до картки ' + q.fixTo); m.close(); problemsModal(app, ctx); }, 'btn-small btn-ok btn-aud-fix'));
+        if (q.code === 'brand' && q.fixTo) row.appendChild(D.btn(`Підставити «${q.fixTo}»`, () => { PH.res[q.id] = { text: q.fixTo, ts: Date.now() }; saveRes(); D.toast('Бренд підставлено: ' + q.fixTo); m.close(); problemsModal(app, ctx); }, 'btn-small btn-ok btn-aud-brand'));
+        if (q.sev !== 'red') row.appendChild(D.btn(q.code === 'same' ? 'Ні, це НОВА картка' : 'ОК — підтверджую як є', () => { PH.res[q.id] = { ok: 1, ts: Date.now() }; saveRes(); m.close(); problemsModal(app, ctx); }, 'btn-small btn-aud-ok'));
+        it.appendChild(row);
+      } else it.appendChild(h('div', { class: 'btn-row' }, h('span', { class: 'small ok', text: 'рішення: ' + (r && r.text ? 'назва/бренд: ' + r.text : r && r.price ? `ціна ${r.price} грн` : 'підтверджено') }), D.btn('скасувати', () => { delete PH.res[q.id]; saveRes(); m.close(); problemsModal(app, ctx); }, 'btn-small btn-aud-undo')));
+      body.appendChild(it);
+    }
+    body.appendChild(h('div', { class: 'btn-row' }, D.btn('🔄 Перевірити знову', () => { m.close(); problemsModal(app, ctx); }, 'btn-small'), D.btn('⬇ CSV для Клода (проблеми не блокують)', () => { exportCsv(app, ctx, sum); }, 'btn-small btn-ok')));
+    const m = D.modal('Проблеми викладки', body, () => ctx.rerender());
+    m.wrap.classList.add('ph-aud-modal');
+    return m;
+  }
+  // ---- ZIP фото: мапа перейменування, оригінали з диска (не обовʼязково), частини ≤126 МБ, товар не розривається
+  function renView(app, ctx) {
+    const map = P.renmap(PH.state, names(), app.index, app.state);
+    const box = h('div', { class: 'ph-detail ph-ren' });
+    const found = map.filter((m) => PH.ren.files[m.old]).length;
+    box.appendChild(h('div', { class: 'ph-pnm', text: '📦 ZIP фото для сайту' }));
+    box.appendChild(h('div', { class: 'small muted', text: `Мапа будується наживо з поточної викладки: зараз у ній ${map.length} фото. Імена — «АРТИКУЛ@N.jpg»: N=1 — головне. Архів збирається зі збережених (стиснутих) фото; якщо хочеш оригінали — додай папку або файли, програма впізнає їх за старими іменами.` }));
+    if (!map.length) box.appendChild(h('div', { class: 'note-text', text: 'Мапа порожня: у викладці ще немає фото з обраним товаром. Обери товари — мапа зʼявиться сама.' }));
+    const dirIn = h('input', { type: 'file', multiple: true, webkitdirectory: 'true', style: 'display:none' }), filIn = h('input', { type: 'file', multiple: true, accept: 'image/*', style: 'display:none' });
+    const add = (files) => { let extra = 0; for (const f of Array.from(files || [])) { const nm = f.name.trim(); const m = map.find((x) => x.old === nm || x.old.toLowerCase() === nm.toLowerCase() || x.new.toLowerCase() === nm.toLowerCase()); if (m) { if (!PH.ren.files[m.old]) PH.ren.files[m.old] = f; } else extra++; } PH.ren.ignored += extra; ctx.rerender(); };
+    dirIn.addEventListener('change', () => { add(dirIn.files); dirIn.value = ''; }); filIn.addEventListener('change', () => { add(filIn.files); filIn.value = ''; });
+    const onlyDop = h('input', { type: 'checkbox' }), fromN = h('input', { class: 'inp', type: 'number', value: '1', min: '1', max: '10', style: 'width:56px' });
+    box.appendChild(h('div', { class: 'btn-row' }, dirIn, filIn, D.btn('📂 Додати папку з оригіналами', () => dirIn.click(), 'btn-small'), D.btn('🖼 Обрати файли', () => filIn.click(), 'btn-small'),
+      h('label', { class: 'small' }, onlyDop, ' лише дофото'), h('label', { class: 'small' }, 'з фото № ', fromN),
+      D.btn(`📦 Зібрати архів (${map.length})`, () => buildZip(app, ctx, map, onlyDop.checked, +fromN.value || 1, box), 'btn-ok btn-ph-zip' + (map.length ? '' : ' disabled')),
+      D.btn('← До фото', () => { PH.mode = 'photo'; ctx.rerender(); }, 'btn-small')));
+    box.appendChild(h('div', { class: 'small muted', text: `оригіналів знайдено ${found} · зі сховища ${map.length - found} · зайвих (ігнорую) ${PH.ren.ignored}` }));
+    const parts = h('div', { class: 'ph-parts' }); box.appendChild(parts);
+    box.appendChild(h('div', { class: 'ph-ren-grid' }, map.map((m) => { const ph = photoOf(m.old); return h('div', { class: 'ph-ren-i' + (PH.ren.files[m.old] ? ' orig' : '') }, ph ? D.photo(ph.url, m.old, 'ph-ren-img') : null, h('div', { class: 'small muted', text: m.old }), h('div', { class: 'small', text: '→ ' + m.new }), h('div', { class: 'small muted', text: `${m.kind} · ${m.item.slice(0, 40)}` })); })));
+    return box;
+  }
+  async function buildZip(app, ctx, map, onlyDop, fromN, box) {
+    const num = (e) => +((e.new.match(/@(\d+)\./) || [])[1] || 1);
+    const entries = map.filter((m) => (!onlyDop || m.kind === 'дофото') && num(m) >= fromN);
+    if (!entries.length) { D.toast('Нема файлів під фільтр'); return null; }
+    const bytesOf = new Map();
+    for (const e of entries) { const f = PH.ren.files[e.old]; bytesOf.set(e.old, f ? new Uint8Array(await D.readFile(f)) : photoData(e.old)); }
+    const live = entries.filter((e) => bytesOf.get(e.old));
+    const parts = P.splitParts(live, (e) => bytesOf.get(e.old).length, PART_LIM);
+    const host = box ? box.querySelector('.ph-parts') : null; if (host) D.clear(host);
+    const out = [];
+    parts.forEach((pt, i) => {
+      const files = {}; for (const e of pt) files[e.new] = bytesOf.get(e.old);
+      const zip = typeof fflate !== 'undefined' ? fflate.zipSync(files, { level: 0 }) : null;
+      const nPar = new Set(pt.map((e) => e.new.split('@')[0])).size;
+      const size = pt.reduce((s, e) => s + bytesOf.get(e.old).length, 0);
+      const name = `ФОТО_HOROSHOP_${i + 1}.zip`;
+      out.push({ name, zip, n: pt.length, nPar });
+      if (host && zip) host.appendChild(D.btn(`⬇ Частина ${i + 1} з ${parts.length} · ${nPar} товарів · ${pt.length} фото · ${Math.round(size / 1048576)} МБ · товари НЕ розірвані ✓`, () => D.download(name, zip, 'application/zip'), 'btn-ok btn-ph-part'));
+    });
+    D.toast('Архіви готові 📦');
+    return out;
+  }
+  return { listing, PH, load: loadPhotos, addFiles, addPhotos, joinSel, summary, issues, buildFiles, exportCsv, buildZip, problems: problemsModal, tagOpen, photoData, removePhoto };
 })();
 
 // ==== src/ui/main.js
@@ -4805,7 +5538,7 @@ CK.main = (() => {
     ['home', '📊 Підсумок', (a, l, r, c) => CK.screens2.home(a, l, r, c), () => '', false],
     ['svirka', '1 · Сверка', (a, l, r, c) => CK.screens.svirka(a, l, r, c), (n) => n && `${n.pairs - n.confirmed}`, true],
     ['unlinked', '2 · Без зв’язку', (a, l, r, c) => CK.screens.unlinkedScreen(a, l, r, c), (n) => n && `${n.unlinkedDn}+${n.unlinkedCards}`, true],
-    ['listing', '3 · Викладка', (a, l, r, c) => CK.screens2.listing(a, l, r, c), (n) => n && `${n.listingQueue}`, false],
+    ['listing', '3 · Викладка', (a, l, r, c) => CK.photosUi.listing(a, l, r, c), (n) => n && `${n.listingQueue}`, true],
     ['prices', '4 · Ціни', (a, l, r, c) => CK.screens.prices(a, l, r, c), (n) => n && `${n.priceDiff}`, true],
     ['women', '5 · Жіночі', (a, l, r, c) => CK.screens.women(a, l, r, c), (n) => n && `${n.women}`, true],
     ['catalog', '6 · Каталог', (a, l, r, c) => CK.screens2.catalog(a, l, r, c), (n) => n && n.catalogTodo !== undefined ? `${n.catalogTodo}` : '', true],
