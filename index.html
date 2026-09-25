@@ -188,7 +188,7 @@ section,.panel,.pair,.batch{background:rgba(15,23,44,.55);border:1px solid rgba(
 .pair-photos{display:grid;grid-template-columns:1fr 1fr;gap:14px;min-width:0}
 .pair-data{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px;align-items:start;margin-top:12px}
 .pair-data .sizes-wrap{grid-column:1/-1}
-.pair-data .others,.pair-data .sibs,.pair-data .tbl-scroll,.pair-data .pair-photos,.pair-data .cat-prices,.pair-data .cat-hist,.pair-data .cat-bad,.pair-data .btn-row,.pair-data .mp-photos,.pair-data .after-line{grid-column:1/-1}
+.pair-data .others,.pair-data .sibs,.pair-data .tbl-scroll,.pair-data .pair-photos,.pair-data .cat-prices,.pair-data .cat-hist,.pair-data .cat-bad,.pair-data .btn-row,.pair-data .mp-photos,.pair-data .after-line,.pair-data .q-history{grid-column:1/-1}
 .side-title{font-size:15px;font-weight:900;letter-spacing:.12em;color:#7dd3fc;margin-bottom:2px}
 .side-name{font-size:14px;color:#e2e8f0;margin-bottom:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .pair-sides{display:grid;grid-template-columns:1fr 1fr;gap:14px}
@@ -584,6 +584,22 @@ tr.price-row-none td,tr.price-row-unknown td{background:rgba(251,191,36,.08)}
 .side-empty-box{flex:1 1 auto;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;border:1px dashed rgba(255,255,255,.18);border-radius:12px;min-height:220px;padding:12px;text-align:center}
 .side-empty-box .hint{margin:0;background:none;border:none;padding:0}
 .women-men{margin-top:10px}.side-hint{display:flex;align-items:center}
+.list h2.grp-h{text-transform:none;letter-spacing:0;font-size:14px}.grp-h .grp-main{color:#f8fafc;font-weight:800}.grp-h .grp-path{color:#94a3b8;font-weight:400;font-size:12px}
+body:not(.mobile) #screen > .pair.q-item{flex:0 0 auto}
+.chip.chip-women{border-color:#10b981;color:#34d399}.chip.chip-women.on{background:#10b981;color:#fff}
+.chip.chip-nolink{opacity:.85}.un-report{padding:0 6px 8px}
+.fd-divider.nolink{color:#94a3b8}
+.tag-bad{background:rgba(245,158,11,.18);color:#fbbf24}
+.q-add{display:flex;gap:6px;align-items:center}.q-add .inp{flex:1;min-width:0}
+.q-history{margin-top:12px}.q-history h3{margin:0 0 6px}
+.q-ev{display:grid;grid-template-columns:112px 1fr;gap:10px;padding:8px 0;border-top:1px solid rgba(148,163,184,.18)}
+.q-when{font-size:12px;opacity:.7;white-space:nowrap}
+.q-changes{margin:6px 0;padding-left:18px}.q-changes li{margin:2px 0}.q-price{color:#fbbf24}.q-del-row{color:#f87171}.q-add-row{color:#34d399}
+.q-how{font-size:13px;opacity:.9}.q-how ul{margin:4px 0;padding-left:18px}
+.q-start b,.q-note b{color:#fbbf24}.q-dn{opacity:.95}
+@media (max-width:900px){.q-ev{grid-template-columns:1fr;gap:2px}}
+.q-history,.q-ev>*{min-width:0}.q-ev .tbl-scroll{overflow-x:auto}
+body.mobile .chips.un-chips{flex-wrap:wrap;overflow-x:visible}
 .cat-prices{margin-top:12px}.cat-prices h3{margin:0 0 6px}.price-hist .urow .small{white-space:normal}
 
 /* Підбір (24.09.2026): картка/товар уже в парі — сірі, обрати можна */
@@ -650,7 +666,7 @@ var o=[];var l=Array.isArray(e);for(f=n.s.c;f<=n.e.c;++f)s[f]=ya(f);for(var c=n.
 !function(f){typeof module!='undefined'&&typeof exports=='object'?module.exports=f():typeof define!='undefined'&&define.amd?define(f):(typeof self!='undefined'?self:this).fflate=f()}(function(){var _e={};"use strict";_e.deflate=zt,_e.deflateSync=kt,_e.inflate=At,_e.inflateSync=Tt,_e.gzip=It,_e.compress=It,_e.gzipSync=Ut,_e.compressSync=Ut,_e.gunzip=Zt,_e.gunzipSync=qt,_e.zlib=Lt,_e.zlibSync=Bt,_e.unzlib=Nt,_e.unzlibSync=Pt,_e.gzip=It,_e.compress=It,_e.decompress=Jt,_e.decompressSync=Kt,_e.strToU8=nn,_e.strFromU8=rn,_e.zip=dn,_e.zipSync=gn,_e.unzip=zn,_e.unzipSync=kn;var t=(typeof module!='undefined'&&typeof exports=='object'?function(_f){"use strict";var e,r,t,n=";var __w=require('worker_threads');__w.parentPort.on('message',function(m){onmessage({data:m})}),postMessage=function(m,t){__w.parentPort.postMessage(m,t)},close=process.exit;self=global";try{e=require("worker_threads"),r=e.Worker,t=e.isMarkedAsUntransferable}catch(e){}exports.default=r?function(e,o,a,s,u){var i=!1,l=new r(e+n,{eval:!0}).on("error",function(e){return u(e,null)}).on("message",function(e){return u(null,e)}).on("exit",function(e){e&&!i&&u(Error("exited with code "+e),null)});return t&&(s=s.filter(function(e){return!t(e)})),l.postMessage(a,s),l.terminate=function(){return i=!0,r.prototype.terminate.call(l)},l}:function(e,r,t,n,o){setImmediate(function(){return o(Error("async operations unsupported - update to Node 12+ (or Node 10-11 with the --experimental-worker CLI flag)"),null)});var a=function(){};return{terminate:a,postMessage:a}};return _f}:function(_f){"use strict";var e={};_f.default=function(r,t,s,a,n){var o=new Worker(e[t]||(e[t]=URL.createObjectURL(new Blob([r+';addEventListener("error",function(e){e=e.error;postMessage({$e$:[e.message,e.code,e.stack]})})'],{type:"text/javascript"}))));return o.onmessage=function(e){var r=e.data,t=r.$e$;if(t){var s=Error(t[0]);s.code=t[1],s.stack=t[2],n(s,null)}else n(null,r)},o.postMessage(s,a),o};return _f})({}),n=Uint8Array,r=Uint16Array,i=Int32Array,e=new n([0,0,0,0,0,0,0,0,1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,0,0,0,0]),o=new n([0,0,0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,0,0]),s=new n([16,17,18,0,8,7,9,6,10,5,11,4,12,3,13,2,14,1,15]),a=function(t,n){for(var e=new r(31),o=0;o<31;++o)e[o]=n+=1<<t[o-1];var s=new i(e[30]);for(o=1;o<30;++o)for(var a=e[o];a<e[o+1];++a)s[a]=a-e[o]<<5|o;return{b:e,r:s}},u=a(e,2),h=u.b,f=u.r;h[28]=258,f[258]=28;for(var c=a(o,0),l=c.b,p=c.r,v=new r(32768),d=0;d<32768;++d){var g=(43690&d)>>1|(21845&d)<<1;v[d]=((65280&(g=(61680&(g=(52428&g)>>2|(13107&g)<<2))>>4|(3855&g)<<4))>>8|(255&g)<<8)>>1}var y=function(t,n,i){for(var e=t.length,o=0,s=new r(n);o<e;++o)t[o]&&++s[t[o]-1];var a,u=new r(n);for(o=1;o<n;++o)u[o]=u[o-1]+s[o-1]<<1;if(i){a=new r(1<<n);var h=15-n;for(o=0;o<e;++o)if(t[o])for(var f=o<<4|t[o],c=n-t[o],l=u[t[o]-1]++<<c,p=l|(1<<c)-1;l<=p;++l)a[v[l]>>h]=f}else for(a=new r(e),o=0;o<e;++o)t[o]&&(a[o]=v[u[t[o]-1]++]>>15-t[o]);return a},m=new n(288);for(d=0;d<144;++d)m[d]=8;for(d=144;d<256;++d)m[d]=9;for(d=256;d<280;++d)m[d]=7;for(d=280;d<288;++d)m[d]=8;var b=new n(32);for(d=0;d<32;++d)b[d]=5;var w=y(m,9,0),x=y(m,9,1),z=y(b,5,0),k=y(b,5,1),M=function(t){for(var n=t[0],r=1;r<t.length;++r)t[r]>n&&(n=t[r]);return n},S=function(t,n,r){var i=n/8|0;return(t[i]|t[i+1]<<8)>>(7&n)&r},A=function(t,n){var r=n/8|0;return(t[r]|t[r+1]<<8|t[r+2]<<16)>>(7&n)},T=function(t){return(t+7)/8|0},D=function(t,r,i){return(null==r||r<0)&&(r=0),(null==i||i>t.length)&&(i=t.length),new n(t.subarray(r,i))};_e.FlateErrorCode={UnexpectedEOF:0,InvalidBlockType:1,InvalidLengthLiteral:2,InvalidDistance:3,StreamFinished:4,NoStreamHandler:5,InvalidHeader:6,NoCallback:7,InvalidUTF8:8,ExtraFieldTooLong:9,InvalidDate:10,FilenameTooLong:11,StreamFinishing:12,InvalidZipData:13,UnknownCompressionMethod:14};var C=["unexpected EOF","invalid block type","invalid length/literal","invalid distance","stream finished","no stream handler",,"no callback","invalid UTF-8 data","extra field too long","date not in range 1980-2099","filename too long","stream finishing","invalid zip data"],I=function(t,n,r){var i=Error(n||C[t]);if(i.code=t,Error.captureStackTrace&&Error.captureStackTrace(i,I),!r)throw i;return i},U=function(t,r,i,a){var u=t.length,f=a?a.length:0;if(!u||r.f&&!r.l)return i||new n(0);var c=!i,p=c||2!=r.i,v=r.i;c&&(i=new n(3*u));var d=function(t){var r=i.length;if(t>r){var e=new n(Math.max(2*r,t));e.set(i),i=e}},g=r.f||0,m=r.p||0,b=r.b||0,w=r.l,z=r.d,C=r.m,U=r.n,F=8*u;do{if(!w){g=S(t,m,1);var E=S(t,m+1,3);if(m+=3,!E){var Z=t[(Y=T(m)+4)-4]|t[Y-3]<<8,q=Y+Z;if(q>u){v&&I(0);break}p&&d(b+Z),i.set(t.subarray(Y,q),b),r.b=b+=Z,r.p=m=8*q,r.f=g;continue}if(1==E)w=x,z=k,C=9,U=5;else if(2==E){var O=S(t,m,31)+257,G=S(t,m+10,15)+4,L=O+S(t,m+5,31)+1;m+=14;for(var B=new n(L),H=new n(19),j=0;j<G;++j)H[s[j]]=S(t,m+3*j,7);m+=3*G;var N=M(H),P=(1<<N)-1,V=y(H,N,1);for(j=0;j<L;){var Y,J=V[S(t,m,P)];if(m+=15&J,(Y=J>>4)<16)B[j++]=Y;else{var K=0,Q=0;for(16==Y?(Q=3+S(t,m,3),m+=2,K=B[j-1]):17==Y?(Q=3+S(t,m,7),m+=3):18==Y&&(Q=11+S(t,m,127),m+=7);Q--;)B[j++]=K}}var R=B.subarray(0,O),W=B.subarray(O);C=M(R),U=M(W),w=y(R,C,1),z=y(W,U,1)}else I(1);if(m>F){v&&I(0);break}}p&&d(b+131072);for(var X=(1<<C)-1,$=(1<<U)-1,_=m;;_=m){var tt=(K=w[A(t,m)&X])>>4;if((m+=15&K)>F){v&&I(0);break}if(K||I(2),tt<256)i[b++]=tt;else{if(256==tt){_=m,w=null;break}var nt=tt-254;tt>264&&(nt=S(t,m,(1<<(et=e[j=tt-257]))-1)+h[j],m+=et);var rt=z[A(t,m)&$],it=rt>>4;if(rt||I(3),m+=15&rt,W=l[it],it>3){var et=o[it];W+=A(t,m)&(1<<et)-1,m+=et}if(m>F){v&&I(0);break}p&&d(b+131072);var ot=b+nt;if(b<W){var st=f-W,at=Math.min(W,ot);for(st+b<0&&I(3);b<at;++b)i[b]=a[st+b]}for(;b<ot;++b)i[b]=i[b-W]}}r.l=w,r.p=_,r.b=b,r.f=g,w&&(g=1,r.m=C,r.d=z,r.n=U)}while(!g);return b!=i.length&&c?D(i,0,b):i.subarray(0,b)},F=function(t,n,r){var i=n/8|0;t[i]|=r<<=7&n,t[i+1]|=r>>8},E=function(t,n,r){var i=n/8|0;t[i]|=r<<=7&n,t[i+1]|=r>>8,t[i+2]|=r>>16},Z=function(t,i){for(var e=[],o=0;o<t.length;++o)t[o]&&e.push({s:o,f:t[o]});var s=e.length,a=e.slice();if(!s)return{t:j,l:0};if(1==s){var u=new n(e[0].s+1);return u[e[0].s]=1,{t:u,l:1}}e.sort(function(t,n){return t.f-n.f}),e.push({s:-1,f:25001});var h=e[0],f=e[1],c=0,l=1,p=2;for(e[0]={s:-1,f:h.f+f.f,l:h,r:f};l!=s-1;)h=e[e[c].f<e[p].f?c++:p++],f=e[c!=l&&e[c].f<e[p].f?c++:p++],e[l++]={s:-1,f:h.f+f.f,l:h,r:f};var v=a[0].s;for(o=1;o<s;++o)a[o].s>v&&(v=a[o].s);var d=new r(v+1),g=q(e[l-1],d,0);if(g>i){o=0;var y=0,m=g-i,b=1<<m;for(a.sort(function(t,n){return d[n.s]-d[t.s]||t.f-n.f});o<s;++o){var w=a[o].s;if(!(d[w]>i))break;y+=b-(1<<g-d[w]),d[w]=i}for(y>>=m;y>0;){var x=a[o].s;d[x]<i?y-=1<<i-d[x]++-1:++o}for(;o>=0&&y;--o){var z=a[o].s;d[z]==i&&(--d[z],++y)}g=i}return{t:new n(d),l:g}},q=function(t,n,r){return-1==t.s?Math.max(q(t.l,n,r+1),q(t.r,n,r+1)):n[t.s]=r},O=function(t){for(var n=t.length;n&&!t[--n];);for(var i=new r(++n),e=0,o=t[0],s=1,a=function(t){i[e++]=t},u=1;u<=n;++u)if(t[u]==o&&u!=n)++s;else{if(!o&&s>2){for(;s>138;s-=138)a(32754);s>2&&(a(s>10?s-11<<5|28690:s-3<<5|12305),s=0)}else if(s>3){for(a(o),--s;s>6;s-=6)a(8304);s>2&&(a(s-3<<5|8208),s=0)}for(;s--;)a(o);s=1,o=t[u]}return{c:i.subarray(0,e),n:n}},G=function(t,n){for(var r=0,i=0;i<n.length;++i)r+=t[i]*n[i];return r},L=function(t,n,r){var i=r.length,e=T(n+2);t[e]=255&i,t[e+1]=i>>8,t[e+2]=255^t[e],t[e+3]=255^t[e+1];for(var o=0;o<i;++o)t[e+o+4]=r[o];return 8*(e+4+i)},B=function(t,n,i,a,u,h,f,c,l,p,v){F(n,v++,i),++u[256];for(var d=Z(u,15),g=d.t,x=d.l,k=Z(h,15),M=k.t,S=k.l,A=O(g),T=A.c,D=A.n,C=O(M),I=C.c,U=C.n,q=new r(19),B=0;B<T.length;++B)++q[31&T[B]];for(B=0;B<I.length;++B)++q[31&I[B]];for(var H=Z(q,7),j=H.t,N=H.l,P=19;P>4&&!j[s[P-1]];--P);var V,Y,J,K,Q=p+5<<3,R=G(u,m)+G(h,b)+f,W=G(u,g)+G(h,M)+f+14+3*P+G(q,j)+2*q[16]+3*q[17]+7*q[18];if(l>=0&&Q<=R&&Q<=W)return L(n,v,t.subarray(l,l+p));if(F(n,v,1+(W<R)),v+=2,W<R){V=y(g,x,0),Y=g,J=y(M,S,0),K=M;var X=y(j,N,0);for(F(n,v,D-257),F(n,v+5,U-1),F(n,v+10,P-4),v+=14,B=0;B<P;++B)F(n,v+3*B,j[s[B]]);v+=3*P;for(var $=[T,I],_=0;_<2;++_){var tt=$[_];for(B=0;B<tt.length;++B)F(n,v,X[rt=31&tt[B]]),v+=j[rt],rt>15&&(F(n,v,tt[B]>>5&127),v+=tt[B]>>12)}}else V=w,Y=m,J=z,K=b;for(B=0;B<c;++B){var nt=a[B];if(nt>255){var rt;E(n,v,V[257+(rt=nt>>18&31)]),v+=Y[rt+257],rt>7&&(F(n,v,nt>>23&31),v+=e[rt]);var it=31&nt;E(n,v,J[it]),v+=K[it],it>3&&(E(n,v,nt>>5&8191),v+=o[it])}else E(n,v,V[nt]),v+=Y[nt]}return E(n,v,V[256]),v+Y[256]},H=new i([65540,131080,131088,131104,262176,1048704,1048832,2114560,2117632]),j=new n(0),N=function(t,s,a,u,h,c){var l=c.z||t.length,v=new n(u+l+5*(1+Math.ceil(l/7e3))+h),d=v.subarray(u,v.length-h),g=c.l,y=7&(c.r||0);if(s){y&&(d[0]=c.r>>3);for(var m=H[s-1],b=m>>13,w=8191&m,x=(1<<a)-1,z=c.p||new r(32768),k=c.h||new r(x+1),M=Math.ceil(a/3),S=2*M,A=function(n){return(t[n]^t[n+1]<<M^t[n+2]<<S)&x},C=new i(25e3),I=new r(288),U=new r(32),F=0,E=0,Z=c.i||0,q=0,O=c.w||0,G=0;Z+2<l;++Z){var j=A(Z),N=32767&Z,P=k[j];if(z[N]=P,k[j]=N,O<=Z){var V=l-Z;if((F>7e3||q>24576)&&(V>423||!g)){y=B(t,d,0,C,I,U,E,q,G,Z-G,y),q=F=E=0,G=Z;for(var Y=0;Y<286;++Y)I[Y]=0;for(Y=0;Y<30;++Y)U[Y]=0}var J=2,K=0,Q=w,R=N-P&32767;if(V>2&&j==A(Z-R))for(var W=Math.min(b,V)-1,X=Math.min(32767,Z),$=Math.min(258,V);R<=X&&--Q&&N!=P;){if(t[Z+J]==t[Z+J-R]){for(var _=0;_<$&&t[Z+_]==t[Z+_-R];++_);if(_>J){if(J=_,K=R,_>W)break;var tt=Math.min(R,_-2),nt=0;for(Y=0;Y<tt;++Y){var rt=Z-R+Y&32767,it=rt-z[rt]&32767;it>nt&&(nt=it,P=rt)}}}R+=(N=P)-(P=z[N])&32767}if(K){C[q++]=268435456|f[J]<<18|p[K];var et=31&f[J],ot=31&p[K];E+=e[et]+o[ot],++I[257+et],++U[ot],O=Z+J,++F}else C[q++]=t[Z],++I[t[Z]]}}for(Z=Math.max(Z,O);Z<l;++Z)C[q++]=t[Z],++I[t[Z]];y=B(t,d,g,C,I,U,E,q,G,Z-G,y),g||(c.r=7&y|d[y/8|0]<<3,y-=7,c.h=k,c.p=z,c.i=Z,c.w=O)}else{for(Z=c.w||0;Z<l+g;Z+=65535){var st=Z+65535;st>=l&&(d[y/8|0]=g,st=l),y=L(d,y+1,t.subarray(Z,st))}c.i=l}return D(v,0,u+T(y)+h)},P=function(){for(var t=new Int32Array(256),n=0;n<256;++n){for(var r=n,i=9;--i;)r=(1&r&&-306674912)^r>>>1;t[n]=r}return t}(),V=function(){var t=-1;return{p:function(n){for(var r=t,i=0;i<n.length;++i)r=P[255&r^n[i]]^r>>>8;t=r},d:function(){return~t}}},Y=function(){var t=1,n=0;return{p:function(r){for(var i=t,e=n,o=0|r.length,s=0;s!=o;){for(var a=Math.min(s+2655,o);s<a;++s)e+=i+=r[s];i=(65535&i)+15*(i>>16),e=(65535&e)+15*(e>>16)}t=i,n=e},d:function(){return(255&(t%=65521))<<24|(65280&t)<<8|(255&(n%=65521))<<8|n>>8}}},J=function(t,r,i,e,o){if(!o&&(o={l:1},r.dictionary)){var s=r.dictionary.subarray(-32768),a=new n(s.length+t.length);a.set(s),a.set(t,s.length),t=a,o.w=s.length}return N(t,null==r.level?6:r.level,null==r.mem?o.l?Math.ceil(1.5*Math.max(8,Math.min(13,Math.log(t.length)))):20:12+r.mem,i,e,o)},K=function(t,n){var r={};for(var i in t)r[i]=t[i];for(var i in n)r[i]=n[i];return r},Q=function(t,n,r){for(var i=t(),e=""+t,o=e.slice(e.indexOf("[")+1,e.lastIndexOf("]")).replace(/\s+/g,"").split(","),s=0;s<i.length;++s){var a=i[s],u=o[s];if("function"==typeof a){n+=";"+u+"=";var h=""+a;if(a.prototype)if(-1!=h.indexOf("[native code]")){var f=h.indexOf(" ",8)+1;n+=h.slice(f,h.indexOf("(",f))}else for(var c in n+=h,a.prototype)n+=";"+u+".prototype."+c+"="+a.prototype[c];else n+=h}else r[u]=a}return n},R=[],W=function(t){var n=[];for(var r in t)t[r].buffer&&n.push((t[r]=new t[r].constructor(t[r])).buffer);return n},X=function(n,r,i,e){if(!R[i]){for(var o="",s={},a=n.length-1,u=0;u<a;++u)o=Q(n[u],o,s);R[i]={c:Q(n[a],o,s),e:s}}var h=K({},R[i].e);return(0,t.default)(R[i].c+";onmessage=function(e){for(var k in e.data)self[k]=e.data[k];onmessage="+r+"}",i,h,W(h),e)},$=function(){return[n,r,i,e,o,s,h,l,x,k,v,C,y,M,S,A,T,D,I,U,Tt,et,ot]},_=function(){return[n,r,i,e,o,s,f,p,w,m,z,b,v,H,j,y,F,E,Z,q,O,G,L,B,T,D,N,J,kt,et]},tt=function(){return[pt,gt,lt,V,P]},nt=function(){return[vt,dt]},rt=function(){return[yt,lt,Y]},it=function(){return[mt]},et=function(t){return postMessage(t,[t.buffer])},ot=function(t){return t&&{out:t.size&&new n(t.size),dictionary:t.dictionary}},st=function(t,n,r,i,e,o){var s=X(r,i,e,function(t,n){s.terminate(),o(t,n)});return s.postMessage([t,n],n.consume?[t.buffer]:[]),function(){s.terminate()}},at=function(t){return t.ondata=function(t,n){return postMessage([t,n],[t.buffer])},function(n){n.data[0]?(t.push(n.data[0],n.data[1]),postMessage([n.data[0].length])):t.flush(n.data[1])}},ut=function(t,n,r,i,e,o,s){var a,u=X(t,i,e,function(t,r){t?(u.terminate(),n.ondata.call(n,t)):Array.isArray(r)?1==r.length?(n.queuedSize-=r[0],n.ondrain&&n.ondrain(r[0])):(r[1]&&u.terminate(),n.ondata.call(n,t,r[0],r[1])):s(r)});u.postMessage(r),n.queuedSize=0,n.push=function(t,r){n.ondata||I(5),a&&n.ondata(I(4,0,1),null,!!r),n.queuedSize+=t.length,u.postMessage([t,a=r],t.buffer instanceof ArrayBuffer?[t.buffer]:[])},n.terminate=function(){u.terminate()},o&&(n.flush=function(t){u.postMessage([0,t])})},ht=function(t,n){return t[n]|t[n+1]<<8},ft=function(t,n){return(t[n]|t[n+1]<<8|t[n+2]<<16|t[n+3]<<24)>>>0},ct=function(t,n){return ft(t,n)+4294967296*ft(t,n+4)},lt=function(t,n,r){for(;r;++n)t[n]=r,r>>>=8},pt=function(t,n){var r=n.filename;if(t[0]=31,t[1]=139,t[2]=8,t[8]=n.level<2?4:9==n.level?2:0,t[9]=3,0!=n.mtime&&lt(t,4,Math.floor(new Date(n.mtime||Date.now())/1e3)),r){t[3]=8;for(var i=0;i<=r.length;++i)t[i+10]=r.charCodeAt(i)}},vt=function(t){31==t[0]&&139==t[1]&&8==t[2]||I(6,"invalid gzip data");var n=t[3],r=10;4&n&&(r+=2+(t[10]|t[11]<<8));for(var i=(n>>3&1)+(n>>4&1);i>0;i-=!t[r++]);return r+(2&n)},dt=function(t){var n=t.length;return(t[n-4]|t[n-3]<<8|t[n-2]<<16|t[n-1]<<24)>>>0},gt=function(t){return 10+(t.filename?t.filename.length+1:0)},yt=function(t,n){var r=n.level,i=0==r?0:r<6?1:9==r?3:2;if(t[0]=120,t[1]=i<<6|(n.dictionary&&32),t[1]|=31-(t[0]<<8|t[1])%31,n.dictionary){var e=Y();e.p(n.dictionary),lt(t,2,e.d())}},mt=function(t,n){return(8!=(15&t[0])||t[0]>>4>7||(t[0]<<8|t[1])%31)&&I(6,"invalid zlib data"),(t[1]>>5&1)==+!n&&I(6,"invalid zlib data: "+(32&t[1]?"need":"unexpected")+" dictionary"),2+(t[1]>>3&4)};function bt(t,n){return"function"==typeof t&&(n=t,t={}),this.ondata=n,t}var wt=function(){function t(t,r){if("function"==typeof t&&(r=t,t={}),this.ondata=r,this.o=t||{},this.s={l:0,i:32768,w:32768,z:32768},this.b=new n(98304),this.o.dictionary){var i=this.o.dictionary.subarray(-32768);this.b.set(i,32768-i.length),this.s.i=32768-i.length}}return t.prototype.p=function(t,n){this.ondata(J(t,this.o,0,0,this.s),n)},t.prototype.push=function(t,r){this.ondata||I(5),this.s.l&&I(4);var i=t.length+this.s.z;if(i>this.b.length){if(i>2*this.b.length-32768){var e=new n(-32768&i);e.set(this.b.subarray(0,this.s.z)),this.b=e}var o=this.b.length-this.s.z;this.b.set(t.subarray(0,o),this.s.z),this.s.z=this.b.length,this.p(this.b,!1),this.b.set(this.b.subarray(-32768)),this.b.set(t.subarray(o),32768),this.s.z=t.length-o+32768,this.s.i=32766,this.s.w=32768}else this.b.set(t,this.s.z),this.s.z+=t.length;this.s.l=1&r,(this.s.z>this.s.w+8191||r)&&(this.p(this.b,r||!1),this.s.w=this.s.i,this.s.i-=2),r&&(this.s=this.o={},this.b=j)},t.prototype.flush=function(t){if(this.ondata||I(5),this.s.l&&I(4),this.p(this.b,!1),this.s.w=this.s.i,this.s.i-=2,t){var r=new n(6);r[0]=this.s.r>>3;var i=L(r,this.s.r,j);this.s.r=0,this.ondata(r.subarray(0,i>>3),!1)}},t}();_e.Deflate=wt;var xt=function(){return function(t,n){ut([_,function(){return[at,wt]}],this,bt.call(this,t,n),function(t){var n=new wt(t.data);onmessage=at(n)},6,1)}}();function zt(t,n,r){return r||(r=n,n={}),"function"!=typeof r&&I(7),st(t,n,[_],function(t){return et(kt(t.data[0],t.data[1]))},0,r)}function kt(t,n){return J(t,n||{},0,0)}_e.AsyncDeflate=xt;var Mt=function(){function t(t,r){"function"==typeof t&&(r=t,t={}),this.ondata=r;var i=t&&t.dictionary&&t.dictionary.subarray(-32768);this.s={i:0,b:i?i.length:0},this.o=new n(32768),this.p=new n(0),i&&this.o.set(i)}return t.prototype.e=function(t){if(this.ondata||I(5),this.d&&I(4),this.p.length){if(t.length){var r=new n(this.p.length+t.length);r.set(this.p),r.set(t,this.p.length),this.p=r}}else this.p=t},t.prototype.c=function(t){this.s.i=+(this.d=t||!1);var n=this.s.b,r=U(this.p,this.s,this.o);this.ondata(D(r,n,this.s.b),this.d),this.o=D(r,this.s.b-32768),this.s.b=this.o.length,this.p=D(this.p,this.s.p/8|0),this.s.p&=7},t.prototype.push=function(t,n){this.e(t),this.c(n)},t}();_e.Inflate=Mt;var St=function(){return function(t,n){ut([$,function(){return[at,Mt]}],this,bt.call(this,t,n),function(t){var n=new Mt(t.data);onmessage=at(n)},7,0)}}();function At(t,n,r){return r||(r=n,n={}),"function"!=typeof r&&I(7),st(t,n,[$],function(t){return et(Tt(t.data[0],ot(t.data[1])))},1,r)}function Tt(t,n){return U(t,{i:2},n&&n.out,n&&n.dictionary)}_e.AsyncInflate=St;var Dt=function(){function t(t,n){this.c=V(),this.l=0,this.v=1,wt.call(this,t,n)}return t.prototype.push=function(t,n){this.c.p(t),this.l+=t.length,wt.prototype.push.call(this,t,n)},t.prototype.p=function(t,n){var r=J(t,this.o,this.v&&gt(this.o),n&&8,this.s);this.v&&(pt(r,this.o),this.v=0),n&&(lt(r,r.length-8,this.c.d()),lt(r,r.length-4,this.l)),this.ondata(r,n)},t.prototype.flush=function(t){wt.prototype.flush.call(this,t)},t}();_e.Gzip=Dt,_e.Compress=Dt;var Ct=function(){return function(t,n){ut([_,tt,function(){return[at,wt,Dt]}],this,bt.call(this,t,n),function(t){var n=new Dt(t.data);onmessage=at(n)},8,1)}}();function It(t,n,r){return r||(r=n,n={}),"function"!=typeof r&&I(7),st(t,n,[_,tt,function(){return[Ut]}],function(t){return et(Ut(t.data[0],t.data[1]))},2,r)}function Ut(t,n){n||(n={});var r=V(),i=t.length;r.p(t);var e=J(t,n,gt(n),8),o=e.length;return pt(e,n),lt(e,o-8,r.d()),lt(e,o-4,i),e}_e.AsyncGzip=Ct,_e.AsyncCompress=Ct;var Ft=function(){function t(t,n){this.v=1,this.r=0,Mt.call(this,t,n)}return t.prototype.push=function(t,r){if(Mt.prototype.e.call(this,t),this.r+=t.length,this.v){var i=this.p.subarray(this.v-1),e=i.length>3?vt(i):4;if(e>i.length){if(!r)return}else this.v>1&&this.onmember&&this.onmember(this.r-i.length);this.p=i.subarray(e),this.v=0}Mt.prototype.c.call(this,0),this.s.f&&!this.s.l?(this.v=T(this.s.p)+9,this.s={i:0},this.o=new n(0),this.push(new n(0),r)):r&&Mt.prototype.c.call(this,r)},t}();_e.Gunzip=Ft;var Et=function(){return function(t,n){var r=this;ut([$,nt,function(){return[at,Mt,Ft]}],this,bt.call(this,t,n),function(t){var n=new Ft(t.data);n.onmember=function(t){return postMessage(t)},onmessage=at(n)},9,0,function(t){return r.onmember&&r.onmember(t)})}}();function Zt(t,n,r){return r||(r=n,n={}),"function"!=typeof r&&I(7),st(t,n,[$,nt,function(){return[qt]}],function(t){return et(qt(t.data[0],t.data[1]))},3,r)}function qt(t,r){var i=vt(t);return i+8>t.length&&I(6,"invalid gzip data"),U(t.subarray(i,-8),{i:2},r&&r.out||new n(dt(t)),r&&r.dictionary)}_e.AsyncGunzip=Et;var Ot=function(){function t(t,n){this.c=Y(),this.v=1,wt.call(this,t,n)}return t.prototype.push=function(t,n){this.c.p(t),wt.prototype.push.call(this,t,n)},t.prototype.p=function(t,n){var r=J(t,this.o,this.v&&(this.o.dictionary?6:2),n&&4,this.s);this.v&&(yt(r,this.o),this.v=0),n&&lt(r,r.length-4,this.c.d()),this.ondata(r,n)},t.prototype.flush=function(t){wt.prototype.flush.call(this,t)},t}();_e.Zlib=Ot;var Gt=function(){return function(t,n){ut([_,rt,function(){return[at,wt,Ot]}],this,bt.call(this,t,n),function(t){var n=new Ot(t.data);onmessage=at(n)},10,1)}}();function Lt(t,n,r){return r||(r=n,n={}),"function"!=typeof r&&I(7),st(t,n,[_,rt,function(){return[Bt]}],function(t){return et(Bt(t.data[0],t.data[1]))},4,r)}function Bt(t,n){n||(n={});var r=Y();r.p(t);var i=J(t,n,n.dictionary?6:2,4);return yt(i,n),lt(i,i.length-4,r.d()),i}_e.AsyncZlib=Gt;var Ht=function(){function t(t,n){Mt.call(this,t,n),this.v=t&&t.dictionary?2:1}return t.prototype.push=function(t,n){if(Mt.prototype.e.call(this,t),this.v){if(this.p.length<6&&!n)return;this.p=this.p.subarray(mt(this.p,this.v-1)),this.v=0}n&&(this.p.length<4&&I(6,"invalid zlib data"),this.p=this.p.subarray(0,-4)),Mt.prototype.c.call(this,n)},t}();_e.Unzlib=Ht;var jt=function(){return function(t,n){ut([$,it,function(){return[at,Mt,Ht]}],this,bt.call(this,t,n),function(t){var n=new Ht(t.data);onmessage=at(n)},11,0)}}();function Nt(t,n,r){return r||(r=n,n={}),"function"!=typeof r&&I(7),st(t,n,[$,it,function(){return[Pt]}],function(t){return et(Pt(t.data[0],ot(t.data[1])))},5,r)}function Pt(t,n){return U(t.subarray(mt(t,n&&n.dictionary),-4),{i:2},n&&n.out,n&&n.dictionary)}_e.AsyncUnzlib=jt;var Vt=function(){function t(t,n){this.o=bt.call(this,t,n)||{},this.G=Ft,this.I=Mt,this.Z=Ht}return t.prototype.i=function(){var t=this;this.s.ondata=function(n,r){t.ondata(n,r)}},t.prototype.push=function(t,r){if(this.ondata||I(5),this.s)this.s.push(t,r);else{if(this.p&&this.p.length){var i=new n(this.p.length+t.length);i.set(this.p),i.set(t,this.p.length)}else this.p=t;this.p.length>2&&(this.s=31==this.p[0]&&139==this.p[1]&&8==this.p[2]?new this.G(this.o):8!=(15&this.p[0])||this.p[0]>>4>7||(this.p[0]<<8|this.p[1])%31?new this.I(this.o):new this.Z(this.o),this.i(),this.s.push(this.p,r),this.p=null)}},t}();_e.Decompress=Vt;var Yt=function(){function t(t,n){Vt.call(this,t,n),this.queuedSize=0,this.G=Et,this.I=St,this.Z=jt}return t.prototype.i=function(){var t=this;this.s.ondata=function(n,r,i){t.ondata(n,r,i)},this.s.ondrain=function(n){t.queuedSize-=n,t.ondrain&&t.ondrain(n)}},t.prototype.push=function(t,n){this.queuedSize+=t.length,Vt.prototype.push.call(this,t,n)},t}();function Jt(t,n,r){return r||(r=n,n={}),"function"!=typeof r&&I(7),31==t[0]&&139==t[1]&&8==t[2]?Zt(t,n,r):8!=(15&t[0])||t[0]>>4>7||(t[0]<<8|t[1])%31?At(t,n,r):Nt(t,n,r)}function Kt(t,n){return 31==t[0]&&139==t[1]&&8==t[2]?qt(t,n):8!=(15&t[0])||t[0]>>4>7||(t[0]<<8|t[1])%31?Tt(t,n):Pt(t,n)}_e.AsyncDecompress=Yt;var Qt=function(t,r,i,e){for(var o in t){var s=t[o],a=r+o,u=e;Array.isArray(s)&&(u=K(e,s[1]),s=s[0]),ArrayBuffer.isView(s)?i[a]=[s,u]:(i[a+="/"]=[new n(0),u],Qt(s,a,i,e))}},Rt="undefined"!=typeof TextEncoder&&new TextEncoder,Wt="undefined"!=typeof TextDecoder&&new TextDecoder,Xt=0;try{Wt.decode(j,{stream:!0}),Xt=1}catch(t){}var $t=function(t){for(var n="",r=0;;){var i=t[r++],e=(i>127)+(i>223)+(i>239);if(r+e>t.length)return{s:n,r:D(t,r-1)};e?3==e?(i=((15&i)<<18|(63&t[r++])<<12|(63&t[r++])<<6|63&t[r++])-65536,n+=String.fromCharCode(55296|i>>10,56320|1023&i)):n+=String.fromCharCode(1&e?(31&i)<<6|63&t[r++]:(15&i)<<12|(63&t[r++])<<6|63&t[r++]):n+=String.fromCharCode(i)}},_t=function(){function t(t){this.ondata=t,Xt?this.t=new TextDecoder:this.p=j}return t.prototype.push=function(t,r){if(this.ondata||I(5),r=!!r,this.t)return this.ondata(this.t.decode(t,{stream:!0}),r),void(r&&(this.t.decode().length&&I(8),this.t=null));this.p||I(4);var i=new n(this.p.length+t.length);i.set(this.p),i.set(t,this.p.length);var e=$t(i),o=e.s,s=e.r;r?(s.length&&I(8),this.p=null):this.p=s,this.ondata(o,r)},t}();_e.DecodeUTF8=_t;var tn=function(){function t(t){this.ondata=t}return t.prototype.push=function(t,n){this.ondata||I(5),this.d&&I(4),this.ondata(nn(t),this.d=n||!1)},t}();function nn(t,r){if(r){for(var i=new n(t.length),e=0;e<t.length;++e)i[e]=t.charCodeAt(e);return i}if(Rt)return Rt.encode(t);var o=t.length,s=new n(t.length+(t.length>>1)),a=0,u=function(t){s[a++]=t};for(e=0;e<o;++e){if(a+5>s.length){var h=new n(a+8+(o-e<<1));h.set(s),s=h}var f=t.charCodeAt(e);f<128||r?u(f):f<2048?(u(192|f>>6),u(128|63&f)):f>55295&&f<57344?(u(240|(f=65536+(1047552&f)|1023&t.charCodeAt(++e))>>18),u(128|f>>12&63),u(128|f>>6&63),u(128|63&f)):(u(224|f>>12),u(128|f>>6&63),u(128|63&f))}return D(s,0,a)}function rn(t,n){if(n){for(var r="",i=0;i<t.length;i+=16384)r+=String.fromCharCode.apply(null,t.subarray(i,i+16384));return r}if(Wt)return Wt.decode(t);var e=$t(t),o=e.s;return(r=e.r).length&&I(8),o}_e.EncodeUTF8=tn;var en=function(t){return 1==t?3:t<6?2:9==t?1:0},on=function(t,n){return n+30+ht(t,n+26)+ht(t,n+28)},sn=function(t,n,r){var i=ht(t,n+28),e=ht(t,n+30),o=rn(t.subarray(n+46,n+46+i),!(2048&ht(t,n+8))),s=n+46+i,a=an(t,s,e,r,ft(t,n+20),ft(t,n+24),ft(t,n+42)),u=a[0],h=a[1],f=a[2];return[ht(t,n+10),u,h,o,s+e+ht(t,n+32),f]},an=function(t,n,r,i,e,o,s){var a=4294967295==e,u=4294967295==o,h=4294967295==s,f=n+r;if(i&&a+u+h){for(;n+4<f;n+=4+ht(t,n+2))if(1==ht(t,n))return[a?ct(t,n+4+8*u):e,u?ct(t,n+4):o,h?ct(t,n+4+8*(u+a)):s,1];i<2&&I(13)}return[e,o,s,0]},un=function(t){var n=0;if(t)for(var r in t){var i=t[r].length;i>65535&&I(9),n+=i+4}return n},hn=function(t,n,r,i,e,o,s,a){var u=i.length,h=r.extra,f=a&&a.length,c=un(h);lt(t,n,null!=s?33639248:67324752),n+=4,null!=s&&(t[n++]=20,t[n++]=r.os),t[n]=20,n+=2,t[n++]=r.flag<<1|(o<0&&8),t[n++]=e&&8,t[n++]=255&r.compression,t[n++]=r.compression>>8;var l=new Date(null==r.mtime?Date.now():r.mtime),p=l.getFullYear()-1980;if((p<0||p>119)&&I(10),lt(t,n,p<<25|l.getMonth()+1<<21|l.getDate()<<16|l.getHours()<<11|l.getMinutes()<<5|l.getSeconds()>>1),n+=4,-1!=o&&(lt(t,n,r.crc),lt(t,n+4,o<0?-o-2:o),lt(t,n+8,r.size)),lt(t,n+12,u),lt(t,n+14,c),n+=16,null!=s&&(lt(t,n,f),lt(t,n+6,r.attrs),lt(t,n+10,s),n+=14),t.set(i,n),n+=u,c)for(var v in h){var d=h[v],g=d.length;lt(t,n,+v),lt(t,n+2,g),t.set(d,n+4),n+=4+g}return f&&(t.set(a,n),n+=f),n},fn=function(t,n,r,i,e){lt(t,n,101010256),lt(t,n+8,r),lt(t,n+10,r),lt(t,n+12,i),lt(t,n+16,e)},cn=function(){function t(t){this.filename=t,this.c=V(),this.size=0,this.compression=0}return t.prototype.process=function(t,n){this.ondata(null,t,n)},t.prototype.push=function(t,n){this.ondata||I(5),this.c.p(t),this.size+=t.length,n&&(this.crc=this.c.d()),this.process(t,n||!1)},t}();_e.ZipPassThrough=cn;var ln=function(){function t(t,n){var r=this;n||(n={}),cn.call(this,t),this.d=new wt(n,function(t,n){r.ondata(null,t,n)}),this.compression=8,this.flag=en(n.level)}return t.prototype.process=function(t,n){try{this.d.push(t,n)}catch(t){this.ondata(t,null,n)}},t.prototype.push=function(t,n){cn.prototype.push.call(this,t,n)},t}();_e.ZipDeflate=ln;var pn=function(){function t(t,n){var r=this;n||(n={}),cn.call(this,t),this.d=new xt(n,function(t,n,i){r.ondata(t,n,i)}),this.compression=8,this.flag=en(n.level),this.terminate=this.d.terminate}return t.prototype.process=function(t,n){this.d.push(t,n)},t.prototype.push=function(t,n){cn.prototype.push.call(this,t,n)},t}();_e.AsyncZipDeflate=pn;var vn=function(){function t(t){this.ondata=t,this.u=[],this.d=1}return t.prototype.add=function(t){var r=this;if(this.ondata||I(5),2&this.d)this.ondata(I(4+8*(1&this.d),0,1),null,!1);else{var i=nn(t.filename),e=i.length,o=t.comment,s=o&&nn(o),a=e!=t.filename.length||s&&o.length!=s.length,u=e+un(t.extra)+30;e>65535&&this.ondata(I(11,0,1),null,!1);var h=new n(u);hn(h,0,t,i,a,-1);var f=[h],c=function(){for(var t=0,n=f;t<n.length;t++)r.ondata(null,n[t],!1);f=[]},l=this.d;this.d=0;var p=this.u.length,v=K(t,{f:i,u:a,o:s,t:function(){t.terminate&&t.terminate()},r:function(){if(c(),l){var t=r.u[p+1];t?t.r():r.d=1}l=1}}),d=0;t.ondata=function(i,e,o){if(i)r.ondata(i,e,o),r.terminate();else if(d+=e.length,f.push(e),o){var s=new n(16);lt(s,0,134695760),lt(s,4,t.crc),lt(s,8,d),lt(s,12,t.size),f.push(s),v.c=d,v.b=u+d+16,v.crc=t.crc,v.size=t.size,l&&v.r(),l=1}else l&&c()},this.u.push(v)}},t.prototype.end=function(){var t=this;2&this.d?this.ondata(I(4+8*(1&this.d),0,1),null,!0):(this.d?this.e():this.u.push({r:function(){1&t.d&&(t.u.splice(-1,1),t.e())},t:function(){}}),this.d=3)},t.prototype.e=function(){for(var t=0,r=0,i=0,e=0,o=this.u;e<o.length;e++)i+=46+(h=o[e]).f.length+un(h.extra)+(h.o?h.o.length:0);for(var s=new n(i+22),a=0,u=this.u;a<u.length;a++){var h;hn(s,t,h=u[a],h.f,h.u,-h.c-2,r,h.o),t+=46+h.f.length+un(h.extra)+(h.o?h.o.length:0),r+=h.b}fn(s,t,this.u.length,i,r),this.ondata(null,s,!0),this.d=2},t.prototype.terminate=function(){for(var t=0,n=this.u;t<n.length;t++)n[t].t();this.d=2},t}();function dn(t,r,i){i||(i=r,r={}),"function"!=typeof i&&I(7);var e={};Qt(t,"",e,r);var o=Object.keys(e),s=o.length,a=0,u=0,h=s,f=Array(s),c=[],l=function(){for(var t=0;t<c.length;++t)c[t]()},p=function(t,n){xn(function(){i(t,n)})};xn(function(){p=i});var v=function(){var t=new n(u+22),r=a,i=u-a;u=0;for(var e=0;e<h;++e){var o=f[e];try{var s=o.c.length;hn(t,u,o,o.f,o.u,s);var c=30+o.f.length+un(o.extra),l=u+c;t.set(o.c,l),hn(t,a,o,o.f,o.u,s,u,o.m),a+=16+c+(o.m?o.m.length:0),u=l+s}catch(t){return p(t,null)}}fn(t,a,f.length,i,r),p(null,t)};s||v();for(var d=function(t){var n=o[t],r=e[n],i=r[0],h=r[1],d=V(),g=i.length;d.p(i);var y=nn(n),m=y.length,b=h.comment,w=b&&nn(b),x=w&&w.length,z=un(h.extra),k=0==h.level?0:8,M=function(r,i){if(r)l(),p(r,null);else{var e=i.length;f[t]=K(h,{size:g,crc:d.d(),c:i,f:y,m:w,u:m!=n.length||w&&b.length!=x,compression:k}),a+=30+m+z+e,u+=76+2*(m+z)+(x||0)+e,--s||v()}};if(m>65535&&M(I(11,0,1),null),k)if(g<16e4)try{M(null,kt(i,h))}catch(t){M(t,null)}else c.push(zt(i,h,M));else M(null,i)},g=0;g<h;++g)d(g);return l}function gn(t,r){r||(r={});var i={},e=[];Qt(t,"",i,r);var o=0,s=0;for(var a in i){var u=i[a],h=u[0],f=u[1],c=0==f.level?0:8,l=(M=nn(a)).length,p=f.comment,v=p&&nn(p),d=v&&v.length,g=un(f.extra);l>65535&&I(11);var y=c?kt(h,f):h,m=y.length,b=V();b.p(h),e.push(K(f,{size:h.length,crc:b.d(),c:y,f:M,m:v,u:l!=a.length||v&&p.length!=d,o:o,compression:c})),o+=30+l+g+m,s+=76+2*(l+g)+(d||0)+m}for(var w=new n(s+22),x=o,z=s-o,k=0;k<e.length;++k){var M;hn(w,(M=e[k]).o,M,M.f,M.u,M.c.length);var S=30+M.f.length+un(M.extra);w.set(M.c,M.o+S),hn(w,o,M,M.f,M.u,M.c.length,M.o,M.m),o+=16+S+(M.m?M.m.length:0)}return fn(w,o,e.length,z,x),w}_e.Zip=vn;var yn=function(){function t(){}return t.prototype.push=function(t,n){this.ondata(null,t,n)},t.compression=0,t}();_e.UnzipPassThrough=yn;var mn=function(){function t(){var t=this;this.i=new Mt(function(n,r){t.ondata(null,n,r)})}return t.prototype.push=function(t,n){try{this.i.push(t,n)}catch(t){this.ondata(t,null,n)}},t.compression=8,t}();_e.UnzipInflate=mn;var bn=function(){function t(t,n){var r=this;n<32e4?this.i=new Mt(function(t,n){r.ondata(null,t,n)}):(this.i=new St(function(t,n,i){r.ondata(t,n,i)}),this.terminate=this.i.terminate)}return t.prototype.push=function(t,n){this.i.terminate&&(t=D(t,0)),this.i.push(t,n)},t.compression=8,t}();_e.AsyncUnzipInflate=bn;var wn=function(){function t(t){this.onfile=t,this.k=[],this.o={0:yn},this.p=j}return t.prototype.push=function(t,r){var i=this;if(this.onfile||I(5),this.p||I(4),this.c>0){var e=Math.min(this.c,t.length),o=t.subarray(0,e);if(this.c-=e,this.d?this.d.push(o,!this.c):this.k[0].push(o),(t=t.subarray(e)).length)return this.push(t,r)}else{var s=0,a=0,u=void 0,h=void 0;this.p.length?t.length?((h=new n(this.p.length+t.length)).set(this.p),h.set(t,this.p.length)):h=this.p:h=t;for(var f=h.length,c=this.c,l=c&&this.d,p=function(){var t=ft(h,a);if(67324752==t){s=1,u=a,v.d=null,v.c=0;var n=ht(h,a+6),r=ht(h,a+8),e=2048&n,o=8&n,l=ht(h,a+26),p=ht(h,a+28);if(f>a+30+l+p){var d=[];v.k.unshift(d),s=2;var g,y=ft(h,a+18),m=ft(h,a+22),b=rn(h.subarray(a+30,a+=30+l),!e),w=an(h,a,p,2,y,m,0),x=w[0],z=w[1];o&&(x=-1-w[3]),a+=p,v.c=x;var k={name:b,compression:r,start:function(){if(k.ondata||I(5),x){var t=i.o[r];t||k.ondata(I(14,"unknown compression type "+r,1),null,!1),(g=x<0?new t(b):new t(b,x,z)).ondata=function(t,n,r){k.ondata(t,n,r)};for(var n=0,e=d;n<e.length;n++)g.push(e[n],!1);i.k[0]==d&&i.c?i.d=g:g.push(j,!0)}else k.ondata(null,j,!0)},terminate:function(){g&&g.terminate&&g.terminate()}};x>=0&&(k.size=x,k.originalSize=z),v.onfile(k)}return"break"}if(c){if(134695760==t)return u=a+=12+(-2==c&&8),s=3,v.c=0,"break";if(33639248==t)return u=a-=4,s=3,v.c=0,"break"}},v=this;a<f-4&&"break"!==p();++a);if(this.p=j,c<0){var d=h.subarray(0,s?u-12-(-2==c&&8)-(134695760==ft(h,u-16)&&4):a);l?l.push(d,!!s):this.k[+(2==s)].push(d)}if(2&s)return this.push(h.subarray(a),r);this.p=h.subarray(a)}r&&(this.c&&I(13),this.p=null)},t.prototype.register=function(t){this.o[t.compression]=t},t}();_e.Unzip=wn;var xn="function"==typeof queueMicrotask?queueMicrotask:"function"==typeof setTimeout?setTimeout:function(t){t()};function zn(t,r,i){i||(i=r,r={}),"function"!=typeof i&&I(7);var e=[],o=function(){for(var t=0;t<e.length;++t)e[t]()},s={},a=function(t,n){xn(function(){i(t,n)})};xn(function(){a=i});for(var u=t.length-22;101010256!=ft(t,u);--u)if(!u||t.length-u>65558)return a(I(13,0,1),null),o;var h=ht(t,u+8);if(h){var f=h,c=ft(t,u+16),l=117853008==ft(t,u-20);if(l){var p=ft(t,u-12);(l=101075792==ft(t,p))&&(f=h=ft(t,p+32),c=ft(t,p+48))}for(var v=r&&r.filter,d=function(r){var i=sn(t,c,l),u=i[0],f=i[1],p=i[2],d=i[3],g=i[4],y=on(t,i[5]);c=g;var m=function(t,n){t?(o(),a(t,null)):(n&&(s[d]=n),--h||a(null,s))};if(!v||v({name:d,size:f,originalSize:p,compression:u}))if(u)if(8==u){var b=t.subarray(y,y+f);if(p<524288||f>.8*p)try{m(null,Tt(b,{out:new n(p)}))}catch(t){m(t,null)}else e.push(At(b,{size:p},m))}else m(I(14,"unknown compression type "+u,1),null);else m(null,D(t,y,y+f));else m(null,null)},g=0;g<f;++g)d()}else a(null,{});return o}function kn(t,r){for(var i={},e=t.length-22;101010256!=ft(t,e);--e)(!e||t.length-e>65558)&&I(13);var o=ht(t,e+8);if(!o)return{};var s=ft(t,e+16),a=117853008==ft(t,e-20);if(a){var u=ft(t,e-12);(a=101075792==ft(t,u))&&(o=ft(t,u+32),s=ft(t,u+48))}for(var h=r&&r.filter,f=0;f<o;++f){var c=sn(t,s,a),l=c[0],p=c[1],v=c[2],d=c[3],g=c[4],y=on(t,c[5]);s=g,h&&!h({name:d,size:p,originalSize:v,compression:l})||(l?8==l?i[d]=Tt(t.subarray(y,y+p),{out:new n(v)}):I(14,"unknown compression type "+l):i[d]=D(t,y,y+p))}return i}return _e});
 </script>
 <script>
-const CK = window.CK = { BUILD: "v2.137 (3f04930, 2026-09-24)" };
+const CK = window.CK = { BUILD: "v2.144 (ab0d97a, 2026-09-25)" };
 // ==== src/core/util.js
 // Загальні утиліти. Усі модулі живуть у просторі імен CK (один HTML без сервера).
 CK.util = (() => {
@@ -1127,9 +1143,13 @@ CK.decisions = (() => {
     twinok: 'Двічі на сайті: зв’язок однієї картки визнано неправильним',
     pricelog: 'ціни з вивантаження',
     sectionsOk: 'розділи за назвою — переглянуто, підтверджено',
+    quarantine: 'Карантин: стежити за карткою / зняти',
+    qsnap: 'Карантин: знімок картки з вивантаження',
+    qnote: 'Карантин: моя ручна зміна',
     undo: 'Скасування',
   };
 
+  const QUARANTINE_START = [['3280', 'Артем, 25.09.2026: ціна на сайті сама стає неправильною (1390 на M–XXL), штрихкодів DN нема'], ['030', 'Артем, 25.09.2026: ціна сама стає неправильною (L — 990), штрихкодів нема']];
   function createTable(list) {
     const decisions = { list: Array.isArray(list) ? list.slice() : [] };
     return decisions;
@@ -1188,6 +1208,11 @@ CK.decisions = (() => {
       priceLog: [],            // (24.09.2026) записи «ціни з вивантаження»: {which:'H'|'D', date, rows:[[ключ, було, стало]]} — пам’ять цін між вивантаженнями
       sitePriceLast: new Map(), // артикул рядка сайту → остання відома ціна
       dnPriceLast: new Map(),  // код DN → остання відома роздрібна
+      // Карантин (25.09.2026, Артем): картки сайту під окремим наглядом. 3280 і 030 — з першого дня, на прохання Артема
+      // («ціна сама стає неправильною»); зняти можна кнопкою, як і будь-яку іншу.
+      quarantine: new Map(QUARANTINE_START.map(([parent, note]) => [parent, { note, ts: '2026-09-25T09:00:00.000Z', id: 'start-' + parent, start: true }])),
+      qSnaps: [],              // {parent, which:'H'|'D', at (час файлу вивантаження), file, rows, ts}
+      qNotes: [],              // {parent, text, ts, id} — «я змінив вручну …»
     };
     for (const r of active(dec)) {
       switch (r.type) {
@@ -1238,6 +1263,9 @@ CK.decisions = (() => {
         case 'unfixflag': st.fixflags.delete(r.parent); break;
         case 'attr': if (r.keep) st.attrs.set(r.parent + '|' + r.attr, { keep: r.keep, value: r.value || '', ts: r.ts, id: r.id }); else st.attrs.delete(r.parent + '|' + r.attr); break;
         case 'sectionsOk': for (const [parent, section] of r.parents || []) st.sectionsOk.set(parent, { section, ts: r.ts, id: r.id }); break;
+        case 'quarantine': if (r.on) st.quarantine.set(r.parent, { note: r.note || '', cardName: r.cardName || '', ts: r.ts, id: r.id }); else st.quarantine.delete(r.parent); break;
+        case 'qsnap': for (const [parent, rows] of r.cards || []) st.qSnaps.push({ parent, which: r.which, at: r.at, file: r.file || '', rows, ts: r.ts, id: r.id }); break;
+        case 'qnote': st.qNotes.push({ parent: r.parent, text: r.text || '', ts: r.ts, id: r.id }); break;
         case 'pricelog': st.priceLog.push(r); for (const [k, , now] of r.rows || []) (r.which === 'H' ? st.sitePriceLast : st.dnPriceLast).set(k, now); break;
         case 'note': st.notes.set(r.key, { kind: r.kind, ref: r.ref, name: r.name || '', text: r.text || '', ts: r.ts, id: r.id, done: null }); break;
         case 'dupe': st.dupes.set(r.parent, { keepParent: r.keepParent || '', cardName: r.cardName || '', ts: r.ts, id: r.id }); break;
@@ -1851,10 +1879,16 @@ CK.model = (() => {
     const linkedParents = new Set();
     const linkedCodes = new Set();
     for (const p of pairs(index, state)) { linkedParents.add(p.parent); for (const pr of p.products) for (const c of pr.codes) linkedCodes.add(c); }
-    const cards = Array.from(index.cards.values()).filter((c) => !linkedParents.has(c.parent) && !c.postponed && !state.dupes.has(c.parent) && !state.women.has(c.parent) && !state.siteOnly.has(c.parent) && !state.toDn.has(c.parent));
+    const free = Array.from(index.cards.values()).filter((c) => !linkedParents.has(c.parent) && !c.postponed && !state.dupes.has(c.parent) && !state.women.has(c.parent) && !state.siteOnly.has(c.parent) && !state.toDn.has(c.parent));
+    // 25.09.2026 (Артем): у «Картки сайту без DN» — лише справжні товари. Жіночі — окремою вкладкою (прив’язуються до чоловічої картки),
+    // образи й набори — «Не для зв’язку з DN» (разом з позначеними «лише на сайті»), щоб для звітності було видно всі картки сайту.
+    const notLink = free.filter((c) => notForLink(c)).map((c) => ({ card: c, reason: notForLink(c), kind: 'section' }))
+      .concat(Array.from(state.siteOnly).map(([parent, e]) => ({ card: index.cards.get(parent), reason: 'лише на сайті' + (e.reason ? ' — ' + e.reason : ''), kind: 'siteonly' })).filter((x) => x.card));
+    const women = free.filter((c) => !notForLink(c) && c.women);
+    const cards = free.filter((c) => !notForLink(c) && !c.women);
     const products = index.sellable.filter((p) => !p.codes.some((c) => linkedCodes.has(c)) && !p.postponed);
     const dn = products.map((p) => ({ product: p, listing: (state.listing.get(p.codes[0]) || {}).status || '', excluded: p.barcodes.length > 0 && p.barcodes.every((b) => state.excluded.has(b)) }));
-    return { cards, dn };
+    return { cards, women, notLink, dn };
   }
 
   // Дублі карток на видалення з сайту (правило 33): gone — картки вже нема у вивантаженні (видалена).
@@ -1881,6 +1915,16 @@ CK.model = (() => {
     return out;
   }
   // Категорія для групування списків: словник/ручна категорія, інакше перше слово назви.
+  // Картки, які за розділом не зв’язуються з товаром DN (25.09.2026, Артем): готові образи і набори — це добірки з кількох товарів.
+  const NOT_LINK_RE = /^ГОТОВІ ОБРАЗИ(\/|$)|(^|\/)Набори(\/|$)/i;
+  function notForLink(c) { const s = (c && c.section) || ''; return NOT_LINK_RE.test(s) ? (/образ/i.test(s) ? 'готовий образ' : 'набір') : ''; }
+  // Назва групи для картки сайту — як у DN (25.09.2026, Артем): останнє слово шляху без «Жіночі»: «ОДЯГ/Чоловічий одяг/Штани/Джинси» → «Джинси».
+  function sectionLabel(section) {
+    const parts = String(section || '').split('/').map((x) => x.trim()).filter(Boolean);
+    if (!parts.length) return '(без розділу)';
+    const leaf = parts[parts.length - 1].replace(/\s+(жіночі|жіночий|женские)$/i, '').trim() || parts[parts.length - 1];
+    return leaf === leaf.toUpperCase() ? leaf.charAt(0) + leaf.slice(1).toLowerCase() : leaf;
+  }
   function groupLabel(p) { return p.category || p.catWord || '(без назви)'; }
   // Виключені: ручні (П12) і технічні (штрихкод = код).
   function excludedList(index, state) {
@@ -1894,7 +1938,7 @@ CK.model = (() => {
     const siteOnly = Array.from(state.siteOnly).map(([parent, e]) => { const card = index.cards.get(parent) || null; return { parent, card, name: card ? card.name : e.cardName, reason: e.reason, ts: e.ts, id: e.id, gone: !card }; });
     return { manual, tech, discount, siteOnly };
   }
-  return { buildIndex, factProducts, sizeTable, buildLink, pairs, doubtOf, postponed, unlinked, dupes, toDnList, twinsOf, excludedList, isWomenCard, otherSameName, questionable, groupLabel };
+  return { buildIndex, factProducts, sizeTable, buildLink, pairs, doubtOf, postponed, unlinked, dupes, toDnList, twinsOf, excludedList, isWomenCard, otherSameName, questionable, groupLabel, notForLink, sectionLabel };
 })();
 
 // ==== src/core/snapshot.js
@@ -2819,6 +2863,8 @@ CK.rules = (() => {
     { g: 'Файли', n: 32, t: 'Розбіжність бренду / кольору / розділу — рішення Артема', d: 'У підтвердженій парі, де сайт і DN розходяться у бренді, кольорі чи розділі, під таблицею з’являється блок «Властивості»: по кожному — «Лишити як на сайті» (правка у DN руками, файл «ВРУЧНУ_у_DN»), «Як у DN» (іде у файл заливки, якщо таке значення на сайті вже є), «Нове для обох» / для розділу — вибір існуючого розділу сайту (і у файл, і у DN руками). Без рішення файл заливки ці властивості НЕ чіпає. Такі пари — група «Властивості» у «Ручній модерації».', s: '22.09.2026' },
     { g: 'Сверка', n: 33, t: 'Один товар DN — одна картка сайту (крім жіночої версії)', d: 'Якщо товар DN уже зв’язаний з іншою карткою сайту (або є на ній за штрихкодом), пара показує це угорі з фото тієї картки. Блок з вибором стоїть над фото (по центру), і «Це той самий» не спрацює, поки Артем не вирішить: «Чоловіча + жіноча» — обидві лишаються, штрихкоди на жіночу йдуть за правилом 11; або «дубль» — яку картку лишити; або «зв’язок неправильний» — картку відв’язують (не видаляють) і підбирають їй інший товар DN: картка стає «без DN» і йде у «Ручна модерація → відкладені»; при «ця картка» програма одразу показує товар DN поруч з іншою карткою — підтвердити. Позначений дубль можна повернути тією ж кнопкою. Зв’язок дубля знімається тим самим кліком, картка йде у «Ручна модерація → На видалення з сайту» (видаляти руками в Хорошопі — файлом не можна; до того окремий файл «Приховати дублі» ставить «Відображати: Ні», щоб дубль зник з вітрини; після видалення запис лишається сірим як історія). Перед масовою заливкою аналіз показує, чи лишились штрихкоди у двох картках. Додано 22.09.2026 на прохання Артема (месенджер Stone Island: картки 0062 і 5170H1 з одним штрихкодом).' },
     { g: 'Файли', n: 34, t: 'Розділ — за словом у назві картки сайту, автоматично', d: 'Базова перевірка (Артем, 24.09.2026): «Кепка …» має бути у «Кепки», «Зіп-худі …» — у «Зіп-худі», «Шорти карго …» — у «Шорти карго», «Панама …» — у «Панами» — незалежно від того, де товар лежить у DN. Слово «жіноча» в назві → жіночий розділ, якщо такий є на сайті. Не помилка: картка вже у точнішому підрозділі («Шорти» → «Шорти тканинні», назва тканину не каже) або у жіночому варіанті без слова статі. Програма переносить сама, а Артем переглядає список у «Властивості» (клік на картку — звідки куди; можна перенести в інший розділ або лишити як є) і підтверджує однією кнопкою «Усе перенесено правильно» — лише після цього переїзди йдуть у файл заливки (колонка «Раздел», лише розділи, що вже є на сайті). Назва без слова-ознаки (парфуми за назвою бренду) — лишається як є; слово є, а розділу на сайті нема («Худі») — програма показує список і питає, чи створити розділ.', s: '24.09.2026' },
+    { g: 'Сверка', n: 35, t: 'Карантин — нагляд за карткою', d: 'Прохання Артема, 25.09.2026. Картку сайту можна поставити в «Карантин» (артикул, артикул рядка або штрихкод). Програма запам’ятовує її стан з кожного нового вивантаження сайту і DN: розміри, штрихкоди, ціну, стару ціну, наявність, акцію, назву, а також рядки DN з тими ж штрихкодами. Історія показує, що змінилось, на скільки гривень і між якими вивантаженнями (точного часу у вивантаженні Хорошопа нема), і що могло це зробити: ручна зміна (записана кнопкою), заливка з програми, DNTrade (штрихкод рядка є в DN і ціна дорівнює роздрібній DN) або сайт (у рядка нема штрихкоду DN — DNTrade його не бачить). Нічого не міняє і нічого не відправляє. З першого дня в карантині 3280 і 030.' },
+    { g: 'Сверка', n: 36, t: '«Без зв’язку»: лише справжні товари; жіночі й образи — окремо', d: 'Прохання Артема, 25.09.2026. У «Картки сайту без DN» — лише справжні товари. Жіночі картки без пари — окрема зелена вкладка «Жіночі»: їх прив’язують до чоловічої картки того ж товару (спільні штрихкоди і ціна). Готові образи (розділ «ГОТОВІ ОБРАЗИ») і набори (розділ «…/Набори») та картки «лише на сайті» — вкладка «Не для зв’язку з DN», для звітності; у підборі картки для товару DN вони в самому кінці з позначкою. Групи названо як у DN (останнє слово розділу, без «Жіночі»), повний шлях розділу — сірим у дужках.' },
   ];
   const groups = () => { const out = []; for (const r of LIST) { let g = out.find((x) => x.name === r.g); if (!g) { g = { name: r.g, rules: [] }; out.push(g); } g.rules.push(r); } return out; };
   return { LIST, groups };
@@ -3586,6 +3632,139 @@ CK.notes = (() => {
   return { items: noteItems, open: openNotes };
 })();
 
+// ==== src/core/quarantine.js
+// Карантин (25.09.2026, прохання Артема): картки сайту під окремим наглядом. Програма запам’ятовує стан кожної такої картки
+// з кожного вивантаження (сайт і DN) і показує історію змін: що змінилось, на скільки, між якими вивантаженнями і що могло це зробити.
+// Точного часу зміни у вивантаженні Хорошопа немає — лише «між вивантаженням А і Б». Тому чим частіше вивантаження — тим точніше.
+// Нічого не вирішує і нічого не відправляє на сайт — лише спостерігає.
+CK.quarantine = (() => {
+  const U = CK.util;
+  // Поля знімка. Назви короткі й не збігаються з тими, що викидає стисла копія (avail/stock/section…), — історія не губиться.
+  const H_FIELDS = [['size', 'розмір'], ['barcode', 'штрихкод'], ['price', 'ціна'], ['old', 'стара ціна'], ['av', 'наявність'], ['vis', 'відображати'], ['disc', 'знижка %'], ['promoEnd', 'кінець акції'], ['name', 'назва']];
+  const D_FIELDS = [['barcode', 'штрихкод'], ['retail', 'роздрібна'], ['qty', 'залишок'], ['sku', 'артикул'], ['name', 'назва']];
+  const MONEY = new Set(['price', 'old', 'retail']);
+
+  function siteRows(index, parent) {
+    const c = index.cards.get(parent);
+    if (!c) return null;
+    return c.rows.map((r) => {
+      const raw = r.raw || {};
+      return { key: r.sku, size: r.sizeN || r.size || '', barcode: r.barcode || '', price: U.num(r.price), old: U.num(raw['Старая цена']), av: r.avail || '', vis: r.visible || '', disc: U.num(raw['Скидка %']), promoEnd: U.str(raw['Дата и время окончания акции']), name: r.name || '' };
+    });
+  }
+  // Рядки DN, пов’язані з карткою: підтверджена пара + ті, що збігаються зі штрихкодами картки.
+  function dnRows(index, state, parent) {
+    const c = index.cards.get(parent), l = state.links.get(parent);
+    const rows = new Map();
+    for (const code of (l && l.dCodes) || []) { const p = index.productByCode.get(code); if (p) for (const r of p.rows) rows.set(String(r.code), r); }
+    if (c) for (const hr of c.rows) { const r = hr.barcode ? index.dByBarcode.get(hr.barcode) : null; if (r) rows.set(String(r.code), r); }
+    return Array.from(rows.values()).filter((r) => !r.isTech).map((r) => ({ key: String(r.code), sku: r.sku || '', size: r.sizeN || '', barcode: r.barcode || '', retail: U.num(r.retail), qty: U.num(r.stock), name: r.name || '' }));
+  }
+  const atOf = (m) => (m && (m.fileModified || m.date || m.loadedAt)) || U.nowIso();
+  const same = (a, b) => JSON.stringify(a) === JSON.stringify(b);
+
+  // Які знімки треба записати зараз: для кожної картки в карантині — стан з поточних вивантажень, якщо такого ще нема.
+  // Той самий файл двічі — нічого; стан не змінився від попереднього вивантаження — нічого.
+  function pending(app, which) {
+    if (!app.index || !app.state) return null;
+    const src = which === 'H' ? app.h : app.d;
+    if (!src) return null;
+    const at = atOf(src.meta);
+    const cards = [];
+    for (const parent of app.state.quarantine.keys()) {
+      const rows = which === 'H' ? siteRows(app.index, parent) : dnRows(app.index, app.state, parent);
+      if (rows === null) { if (!app.state.qSnaps.some((s) => s.parent === parent && s.which === 'H')) continue; }
+      const snaps = app.state.qSnaps.filter((s) => s.parent === parent && s.which === which);
+      if (snaps.some((s) => s.at === at)) continue;
+      const earlier = snaps.filter((s) => s.at < at).sort((a, b) => a.at.localeCompare(b.at)).pop();
+      const now = rows || [];
+      if (earlier && same(earlier.rows, now)) continue;
+      if (!earlier && !now.length) continue;
+      cards.push([parent, now]);
+    }
+    return cards.length ? { type: 'qsnap', which, at, file: (src.meta && src.meta.name) || '', cards } : null;
+  }
+
+  function diff(prev, now, which) {
+    const F = which === 'H' ? H_FIELDS : D_FIELDS;
+    const a = new Map(prev.map((r) => [r.key, r])), b = new Map(now.map((r) => [r.key, r]));
+    const out = [];
+    for (const [k, r] of b) {
+      const o = a.get(k);
+      if (!o) { out.push({ key: k, size: r.size, kind: 'added', row: r }); continue; }
+      for (const [f, label] of F) {
+        const x = o[f] === undefined ? null : o[f], y = r[f] === undefined ? null : r[f];
+        if (x === y || (x === null && y === '') || (x === '' && y === null)) continue;
+        const delta = MONEY.has(f) && typeof x === 'number' && typeof y === 'number' ? Math.round((y - x) * 100) / 100 : null;
+        out.push({ key: k, size: r.size, kind: 'field', field: f, label, was: x, now: y, delta });
+      }
+    }
+    for (const [k, o] of a) if (!b.has(k)) out.push({ key: k, size: o.size, kind: 'removed', row: o });
+    return out;
+  }
+
+  // «Як це сталося» — лише те, що програма може знати з файлів і власних записів. Хто саме змінив на сайті — у вивантаженні нема.
+  function explain(app, parent, prev, cur, changes, which) {
+    const st = app.state, ix = app.index, out = [];
+    const inWin = (ts) => ts > prev.at && ts <= cur.at;
+    for (const n of st.qNotes) if (n.parent === parent && inWin(n.ts)) out.push(`Ваша ручна зміна (${U.fmtDate(n.ts)}): ${n.text}`);
+    for (const u of st.uploads) if ((u.parents || []).includes(parent) && inWin(u.ts)) out.push(`Заливка з програми (${U.fmtDate(u.ts)}${u.file ? ', ' + u.file : ''}) — ця картка була у файлі.`);
+    if (which === 'D') { out.push('Змінились дані в самій DNTrade (ціну/залишок там міняє той, хто працює в DNTrade, або документи продажу/приходу).'); return U.uniq(out); }
+    const rowsNow = new Map(cur.rows.map((r) => [r.key, r]));
+    for (const c of changes) {
+      if (c.kind !== 'field') continue;
+      if (c.field === 'disc' || c.field === 'promoEnd' || c.field === 'old') { out.push('Змінились акція/знижка/стара ціна — це налаштування акцій на сайті.'); continue; }
+      if (!['price', 'av', 'barcode'].includes(c.field)) continue;
+      const r = rowsNow.get(c.key) || {};
+      const who = `${c.key}${r.size ? ' (' + r.size + ')' : ''}`;
+      if (!r.barcode) { out.push(`${who}: у рядка нема штрихкоду — DNTrade цей рядок не бачить і змінити не могла. Змінено на самому сайті: вручну в адмінці, імпортом файлу або іншим сервісом, підключеним до сайту.`); continue; }
+      const d = ix.dByBarcode.get(r.barcode);
+      if (!d) { out.push(`${who}: штрихкод ${r.barcode} у вивантаженні DN не знайдено — DNTrade мала б не чіпати цей рядок. Якщо товар з таким штрихкодом є в DNTrade (архів, прихований) — перевірте пошуком у DN.`); continue; }
+      if (c.field === 'price' && U.num(d.retail) === c.now) out.push(`${who}: нова ціна дорівнює роздрібній DN (код ${d.code}, «${d.name}») — найімовірніше, її поставила DNTrade: штрихкод рядка = штрихкод товару DN.`);
+      else out.push(`${who}: штрихкод є в DN (код ${d.code}, «${d.name}»), DNTrade могла оновити цей рядок.`);
+    }
+    if (!out.length) out.push('Програма не бачить причини у своїх записах — зміна зроблена на сайті.');
+    return U.uniq(out);
+  }
+
+  // Історія картки: найновіше зверху.
+  function timeline(app, parent) {
+    const st = app.state, ev = [];
+    for (const which of ['H', 'D']) {
+      const snaps = st.qSnaps.filter((s) => s.parent === parent && s.which === which).sort((a, b) => a.at.localeCompare(b.at));
+      let prev = null;
+      for (const s of snaps) {
+        if (prev && same(prev.rows, s.rows)) continue;
+        if (!prev) ev.push({ at: s.at, which, kind: 'base', file: s.file, rows: s.rows });
+        else { const ch = diff(prev.rows, s.rows, which); if (ch.length) ev.push({ at: s.at, from: prev.at, which, kind: 'change', file: s.file, fromFile: prev.file, changes: ch, how: explain(app, parent, prev, s, ch, which) }); }
+        prev = s;
+      }
+    }
+    for (const n of st.qNotes) if (n.parent === parent) ev.push({ at: n.ts, kind: 'note', text: n.text });
+    const q = st.quarantine.get(parent);
+    if (q) ev.push({ at: q.ts, kind: 'start', note: q.note });
+    return ev.sort((a, b) => String(b.at).localeCompare(String(a.at)));
+  }
+  function list(app) {
+    return Array.from(app.state.quarantine.entries()).map(([parent, q]) => {
+      const card = app.index ? app.index.cards.get(parent) : null;
+      const tl = timeline(app, parent);
+      const changes = tl.filter((e) => e.kind === 'change');
+      return { parent, q, card, name: card ? card.name : (q.cardName || 'картки нема у вивантаженні'), changes: changes.length, lastChange: changes[0] ? changes[0].at : '' };
+    }).sort((a, b) => (b.lastChange || '').localeCompare(a.lastChange || '') || a.parent.localeCompare(b.parent));
+  }
+  // Пошук картки для «додати в карантин»: батьківський артикул, артикул рядка або штрихкод.
+  function findCard(index, text) {
+    const t = U.str(text).trim();
+    if (!t) return null;
+    if (index.cards.has(t)) return index.cards.get(t);
+    const r = index.hBySku.get(t) || index.hByBarcode.get(t);
+    const row = Array.isArray(r) ? r[0] : r;
+    return row ? index.cards.get(row.parent) || null : null;
+  }
+  return { siteRows, dnRows, pending, diff, explain, timeline, list, findCard, H_FIELDS, D_FIELDS };
+})();
+
 // ==== src/core/overview.js
 // Підсумок (21.09.2026, прохання Артема): не «скільки рядків сайту мають якийсь штрихкод DN», а шлях кожного товару DN
 // до мети: є пара → перевірено у програмі → залито на сайт → сайт збігається. Плюс по кожній проблемі — скільки вирішено.
@@ -3704,6 +3883,7 @@ CK.app = (() => {
     app.h = Object.assign(res, { meta: Object.assign({ loadedAt: U.nowIso() }, meta || {}) });
     afterLoad(app);
     logPrices(app, 'H');
+    syncQuarantine(app, 'H');
     return res;
   }
   function loadDnFile(app, data, meta, mappingOverride) {
@@ -3711,6 +3891,7 @@ CK.app = (() => {
     app.d = Object.assign(res, { meta: Object.assign({ loadedAt: U.nowIso() }, meta || {}) });
     afterLoad(app);
     logPrices(app, 'D');
+    syncQuarantine(app, 'D');
     return res;
   }
   // Пам’ять цін (24.09.2026, прохання Артема): при кожному новому вивантаженні програма записує у журнал, у яких рядків
@@ -3735,6 +3916,20 @@ CK.app = (() => {
     const m = src.meta || {};
     return record(app, { type: 'pricelog', which, date: (m.fileModified || m.date || m.loadedAt || U.nowIso()).slice(0, 10), file: m.name || '', rows });
   }
+  // Карантин (25.09.2026): знімок карток під наглядом з кожного нового вивантаження (і при додаванні картки).
+  function syncQuarantine(app, which) {
+    if (!ready(app)) return 0;
+    let n = 0;
+    for (const w of which ? [which] : ['H', 'D']) { const rec = CK.quarantine.pending(app, w); if (rec) { record(app, rec); n++; } }
+    return n;
+  }
+  function setQuarantine(app, parent, on, note) {
+    const card = app.index && app.index.cards.get(parent);
+    const r = record(app, { type: 'quarantine', parent, on: !!on, note: note || '', cardName: card ? card.name : '' });
+    if (on) syncQuarantine(app);
+    return r;
+  }
+  function quarantineNote(app, parent, text) { return record(app, { type: 'qnote', parent, text }); }
   function afterLoad(app) {
     recompute(app);
     app.lastVerify = ready(app) ? CK.snapshot.verify(app.index, app.state) : null; // 6.2
@@ -3929,11 +4124,12 @@ CK.app = (() => {
       notes: Array.from(app.state.notes.values()).filter((n) => !n.done).length,
       attrsPending: CK.upload.attrPending(app.index, app.state).length, sectionsReview: CK.upload.sectionSummary(app.index, app.state).move.filter((x) => !x.confirmed && !x.decision).length, dupes: CK.model.dupes(app.index, app.state).filter((d) => !d.gone).length, twins: pairs.filter((p) => !p.excluded && p.twins.length).length,
       fix: CK.model.dupes(app.index, app.state).filter((d) => !d.gone).length + CK.model.toDnList(app.index, app.state).filter((d) => !d.gone && !d.inDn).length + Array.from(app.state.notes.values()).filter((n) => !n.done).length + pairs.filter((p) => !p.excluded && (p.mixup || p.flagged || p.redRows.length)).length + problems.items.length + verify.mismatches + Array.from(app.index.cards.values()).filter((c) => c.multiPhoto && !c.photoChosen).length + CK.exports.galleryCards(app.index).length + CK.upload.attrPending(app.index, app.state).length,
+      quarantine: app.state.quarantine.size, quarantineChanged: CK.quarantine.list(app).filter((x) => x.changes).length,
       catalogTodo: (() => { const s = CK.catalog.stats(CK.catalog.items(app.index, app.state)); return s.total - s.verified; })(),
     };
   }
 
-  return { createApp, onChange, recompute, ready, loadSiteFile, loadDnFile, clearFile, loadDecisions, record, undoDecision, confirmPair, unlink, exclude, excludeRow, unexclude, setCategory, setBrand, togglePhotofix, choosePhoto, recordUpload, setVerified, setWomen, unsetWomen, setDupe, unsetDupe, setSiteOnly, unsetSiteOnly, setToDn, unsetToDn, badLink, setWomenPair, acceptSnapshot, restoreSnapshot, choose29, setListing, markListed, approveCategoryDict, approveBrandDict, setGridRules, setSettings, importLegacy, randomCheck, fixStats, logPrices, confirmSections, backupJson, needsBackup, counts, setNote, noteDone, setMixup, unsetMixup, setFixflag, unsetFixflag, setAttr };
+  return { createApp, onChange, recompute, ready, loadSiteFile, loadDnFile, clearFile, loadDecisions, record, undoDecision, confirmPair, unlink, exclude, excludeRow, unexclude, setCategory, setBrand, togglePhotofix, choosePhoto, recordUpload, setVerified, setWomen, unsetWomen, setDupe, unsetDupe, setSiteOnly, unsetSiteOnly, setToDn, unsetToDn, badLink, setWomenPair, acceptSnapshot, restoreSnapshot, choose29, setListing, markListed, approveCategoryDict, approveBrandDict, setGridRules, setSettings, importLegacy, randomCheck, fixStats, logPrices, confirmSections, syncQuarantine, setQuarantine, quarantineNote, backupJson, needsBackup, counts, setNote, noteDone, setMixup, unsetMixup, setFixflag, unsetFixflag, setAttr };
 })();
 
 </script>
@@ -4710,7 +4906,7 @@ CK.screens = (() => {
     let shown = 60;
     function drawList() {
       D.clear(list);
-      items.slice(0, shown).forEach((it, i) => { if (it.women !== undefined && i > 0 ? it.women !== items[i - 1].women : (i === 0 && it.women)) list.appendChild(h('div', { class: 'fd-divider' + (it.women ? ' women' : ''), text: it.women ? 'ЖІНОЧІ — окремо, у кінці' : 'ЧОЛОВІЧІ' })); list.appendChild(h('div', { class: 'fd-item rank-' + it.rank + (it.matchesQuery ? '' : ' nomatch') + (it.taken ? ' taken' : '') + (it.women ? ' women' : '') + (i === idx ? ' sel' : ''), data: { i, key: it.key }, onclick: () => { idx = i; showCurrent(); }, ondblclick: () => { idx = i; pick(); } },
+      items.slice(0, shown).forEach((it, i) => { const grp = (x) => x.grp || (x.women ? 'women' : 'men'); if (it.women !== undefined && (i > 0 ? grp(it) !== grp(items[i - 1]) : grp(it) !== 'men')) list.appendChild(h('div', { class: 'fd-divider' + (grp(it) === 'women' ? ' women' : grp(it) === 'nolink' ? ' nolink' : ''), text: grp(it) === 'women' ? 'ЖІНОЧІ — окремо, у кінці' : grp(it) === 'nolink' ? 'ОБРАЗИ І НАБОРИ — не для зв’язку з DN' : 'ЧОЛОВІЧІ' })); list.appendChild(h('div', { class: 'fd-item rank-' + it.rank + (it.matchesQuery ? '' : ' nomatch') + (it.taken ? ' taken' : '') + (it.women ? ' women' : '') + (i === idx ? ' sel' : ''), data: { i, key: it.key }, onclick: () => { idx = i; showCurrent(); }, ondblclick: () => { idx = i; pick(); } },
         D.photo(it.photo, it.name, 'photo-small'),
         h('div', { class: 'pick-info' }, h('b', { text: it.name }), h('div', { class: 'small muted', text: it.sub }), h('span', { class: 'tag', text: it.rankLabel }), it.note ? h('span', { class: 'tag tag-note', text: it.note }) : null, it.women ? h('span', { class: 'tag tag-women', text: 'жіноча' }) : null),
         h('div', { class: 'pick-act' }, it.taken ? h('div', { class: 'small muted taken-note', text: it.taken }) : null, D.btn('Це він →', (e) => { e.stopPropagation(); idx = i; pick(); }, 'btn-small btn-primary')))); });
@@ -4780,7 +4976,7 @@ CK.screens = (() => {
     const womenRe = new RegExp(app.state.settings.womenRe || 'жіноч|женск', 'i');
     const refWomen = womenRe.test(product.name);
     const cards = Array.from(app.index.cards.values());
-    const noteOf = (c) => c.multiPhoto && !c.photoChosen ? 'різні фото на рядках — обрати фото у Ручній модерації' : c.postponedType ? 'відкладена група' : app.state.dupes.has(c.parent) ? 'дубль — на видалення' : app.state.siteOnly.has(c.parent) ? 'лише на сайті' : '';
+    const noteOf = (c) => CK.model.notForLink(c) ? CK.model.notForLink(c) + ' — не для зв’язку з DN' : c.multiPhoto && !c.photoChosen ? 'різні фото на рядках — обрати фото у Ручній модерації' : c.postponedType ? 'відкладена група' : app.state.dupes.has(c.parent) ? 'дубль — на видалення' : app.state.siteOnly.has(c.parent) ? 'лише на сайті' : '';
     const brandK = CK.dicts.brandKey(product.brandN || product.brand), cat = product.category || product.catWord;
     const rankCard = (c) => { const b = !!brandK && CK.dicts.brandKey(c.brand) === brandK, k = !!cat && CK.dicts.categoryMatches(cat, c.section); return b && k ? 0 : b ? 1 : k ? 2 : 3; };
     const bOf = (c) => (!!brandK && CK.dicts.brandKey(c.brand) === brandK ? 0 : 1);
@@ -4790,7 +4986,7 @@ CK.screens = (() => {
     return finderView(ctx, {
       title: `Обрати картку сайту для ${product.name} (${product.base || product.codes[0]})`,
       hint: 'порядок: бренд + категорія → схожа назва (спільні слова) → лише бренд → лише категорія → решта; сірі — картки, що вже в парі (обрати можна); пошук лише сортує (Enter — це він)',
-      items: (query) => { const mq = CK.picker.queryMatcher(query, cardTexts); const res = cards.map((c, i) => ({ c, w: (!!c.women) === refWomen ? 0 : 1, rank: rankCard(c), b: bOf(c), sim: simOf(c), q: mq.test(cardTexts[i]) ? 0 : 1 })).sort((a, b) => a.w - b.w || a.q - b.q || a.rank - b.rank || b.sim - a.sim || a.c.parent.localeCompare(b.c.parent)).map((x) => ({ key: x.c.parent, c: x.c, women: !!x.c.women, note: noteOf(x.c), taken: app.state.links.has(x.c.parent) ? 'Ця картка вже в парі' : '', photo: x.c.photos[0], name: x.c.name, sub: `${x.c.parent} · ${x.c.section} · ${x.c.brand || ''} · рядків ${x.c.rows.length}`, rank: x.rank, rankLabel: CK.picker.RANK_LABEL[x.rank] + (x.sim ? ` · схожа назва (${x.sim} сл.)` : ''), matchesQuery: !x.q })); res.suggestion = mq.suggestion; return res; },
+      items: (query) => { const mq = CK.picker.queryMatcher(query, cardTexts); const res = cards.map((c, i) => ({ c, w: (CK.model.notForLink(c) ? 2 : 0) + ((!!c.women) === refWomen ? 0 : 1), rank: rankCard(c), b: bOf(c), sim: simOf(c), q: mq.test(cardTexts[i]) ? 0 : 1 })).sort((a, b) => a.w - b.w || a.q - b.q || a.rank - b.rank || b.sim - a.sim || a.c.parent.localeCompare(b.c.parent)).map((x) => ({ key: x.c.parent, c: x.c, women: !!x.c.women, grp: CK.model.notForLink(x.c) ? 'nolink' : x.c.women ? 'women' : 'men', note: noteOf(x.c), taken: app.state.links.has(x.c.parent) ? 'Ця картка вже в парі' : '', photo: x.c.photos[0], name: x.c.name, sub: `${x.c.parent} · ${x.c.section} · ${x.c.brand || ''} · рядків ${x.c.rows.length}`, rank: x.rank, rankLabel: CK.picker.RANK_LABEL[x.rank] + (x.sim ? ` · схожа назва (${x.sim} сл.)` : ''), matchesQuery: !x.q })); res.suggestion = mq.suggestion; return res; },
       leftTitle: 'ХОРОШОП — кандидат', rightTitle: 'DNTRADE — товар', leftPhotos: (it) => it.c.photos,
       rightPhoto: product.image, rightInfo: h('div', { class: 'under-photo' }, h('span', { class: 'kv' }, h('span', { class: 'lbl', text: 'Артикул' }), h('b', { class: 'c-sku', text: product.base || 'без арт.' })), h('span', { class: 'kv' }, h('span', { class: 'lbl', text: 'Штрихкод' }), h('b', { class: 'mono c-bc', text: product.barcodes[0] || '—' })), h('span', { class: 'kv' }, h('span', { class: 'lbl', text: 'Код' }), h('b', { class: 'c-code', text: r0.code })), h('div', { class: 'small muted', style: 'flex-basis:100%', text: product.name })),
       leftInfo: (it) => { const r = it.c.photoRow || it.c.rows[0]; return h('div', { class: 'under-photo' }, h('span', { class: 'kv' }, h('span', { class: 'lbl', text: 'Артикул' }), h('b', { class: 'c-sku', text: r.sku })), h('span', { class: 'kv' }, h('span', { class: 'lbl', text: 'Штрихкод' }), h('b', { class: 'mono c-bc', text: r.barcode || '—' })), h('span', { class: 'kv' }, h('span', { class: 'lbl', text: 'Картка' }), h('b', { class: 'c-code', text: it.c.parent })), h('div', { class: 'small muted', style: 'flex-basis:100%', text: it.c.name + ' · ' + it.c.section })); },
@@ -4925,10 +5121,12 @@ CK.screens = (() => {
   }
 
   // ---------- Без зв’язку: товари DN без сайту / картки сайту без DN / під питанням. Списки — групами за категорією, з фільтром.
-  function groupedList(items, labelOf, keyOf, ctx, renderItem, filterKey) {
+  // display(key) → {main, path} (25.09.2026, Артем): назва групи як у DN чорним, повний шлях розділу сайту — сірим у дужках.
+  function groupedList(items, labelOf, keyOf, ctx, renderItem, filterKey, display) {
     const groups = U.groupBy(items, labelOf);
-    const labels = Array.from(groups.keys()).sort((a, b) => groups.get(b).length - groups.get(a).length || a.localeCompare(b));
-    const sel = h('select', { class: 'inp' }, h('option', { value: '', text: `усі категорії (${items.length})` }), labels.map((l) => h('option', { value: l, text: `${l} (${groups.get(l).length})`, selected: ctx[filterKey] === l })));
+    const disp = (l) => (display ? display(l) : { main: l, path: '' });
+    const labels = Array.from(groups.keys()).sort((a, b) => groups.get(b).length - groups.get(a).length || disp(a).main.localeCompare(disp(b).main));
+    const sel = h('select', { class: 'inp' }, h('option', { value: '', text: `усі категорії (${items.length})` }), labels.map((l) => h('option', { value: l, text: `${disp(l).main} (${groups.get(l).length})` + (disp(l).path ? ` · ${disp(l).path}` : ''), selected: ctx[filterKey] === l })));
     sel.addEventListener('change', () => { ctx[filterKey] = sel.value; ctx.rerender(); });
     const cur = ctx[filterKey] && groups.has(ctx[filterKey]) ? ctx[filterKey] : '';
     const shown = cur ? [cur] : labels;
@@ -4936,7 +5134,8 @@ CK.screens = (() => {
     const box = h('div');
     box.appendChild(h('div', { class: 'left-top', style: 'padding-top:0' }, h('label', null, 'Категорія ', sel), hidden ? h('span', { class: 'small muted', text: `сховано фільтром ${hidden}` }) : null));
     for (const l of shown) {
-      box.appendChild(h('h2', { text: `${l} (${groups.get(l).length})` }));
+      const d = disp(l);
+      box.appendChild(h('h2', { class: 'grp-h' }, h('span', { class: 'grp-main', text: `${d.main} · ${groups.get(l).length}` }), d.path ? h('span', { class: 'grp-path', text: ` (${d.path})` }) : null));
       box.appendChild(D.paged(groups.get(l), renderItem, 20, 'показано'));
     }
     return box;
@@ -4979,10 +5178,17 @@ CK.screens = (() => {
     ctx.unTab = ctx.unTab || 'dn';
     const q = h('input', { class: 'inp', placeholder: 'пошук — лише сортує', value: ctx.q2 || '' });
     const switchTab = (t) => () => { ctx.unTab = t; ctx.selU = null; ctx.finder = null; ctx.rerender(); };
-    left.appendChild(h('div', { class: 'left-top' }, q, h('div', { class: 'chips' },
+    left.appendChild(h('div', { class: 'left-top' }, q, h('div', { class: 'chips un-chips' },
       D.btn(`Товари DN без сайту (${un.dn.length})`, switchTab('dn'), 'chip' + (ctx.unTab === 'dn' ? ' on' : '')),
       D.btn(`Картки сайту без DN (${un.cards.length})`, switchTab('cards'), 'chip' + (ctx.unTab === 'cards' ? ' on' : '')),
+      D.btn(`Жіночі (${un.women.length})`, switchTab('women'), 'chip chip-women' + (ctx.unTab === 'women' ? ' on' : '')),
+      D.btn(`Не для зв’язку з DN (${un.notLink.length})`, switchTab('nolink'), 'chip chip-nolink' + (ctx.unTab === 'nolink' ? ' on' : '')),
       D.btn(`Під питанням (${qs.length})`, switchTab('q'), 'chip' + (ctx.unTab === 'q' ? ' on' : '')))));
+    // Звітність (25.09.2026, Артем): скільки всього карток на сайті і куди кожна потрапила.
+    if (ctx.unTab === 'cards' || ctx.unTab === 'women' || ctx.unTab === 'nolink') {
+      const all = app.index.cards.size, linked = app.state.links.size, wPaired = app.state.women.size;
+      left.appendChild(h('div', { class: 'small muted un-report', text: `Карток на сайті: ${all} · у парі з DN: ${linked} · жіночих прив’язано до чоловічих: ${wPaired} · без DN (товари): ${un.cards.length} · жіночих без пари: ${un.women.length} · не для зв’язку: ${un.notLink.length} · інше (дублі, відкладені, «створити у DN»): ${Math.max(0, all - linked - wPaired - un.cards.length - un.women.length - un.notLink.length)}` }));
+    }
     // Фото товарів DN без сайту — пачкою (24.09.2026, Артем: віддати нейромережі для створення фото). Бере товари поточного фільтру категорії.
     if (ctx.unTab === 'dn') {
       const visible = () => un.dn.filter((x) => !ctx.catDn || CK.model.groupLabel(x.product) === ctx.catDn).map((x) => x.product);
@@ -4996,6 +5202,7 @@ CK.screens = (() => {
     left.appendChild(list);
     const LST = { program: 'лише в програмі', listing: 'потрібна викладка', listed: 'файли зібрано' };
     const dnItem = (x) => D.listItem({ photo: x.product.image, name: x.product.name, sub: `${x.product.base || 'без артикула'} · код ${x.product.codes.slice(0, 3).join(', ')}${x.product.codes.length > 3 ? '…' : ''} · розміри ${x.product.sizes.join(', ') || '—'} · ${x.product.created || ''}` + (x.why ? ' · ' + x.why : ''), badge: x.excluded ? 'не для сайту' : x.why ? 'під питанням' : LST[x.listing] || '', badgeCls: x.excluded ? 'tag-excl' : x.why ? 'tag-susp' : 'tag-' + x.listing, cls: x.excluded ? 'excluded' : '', sel: ctx.selU === x.product.key, data: { key: x.product.key }, onclick: () => { ctx.selU = x.product.key; ctx.finder = null; ctx.rerender(); } });
+    const secDisp = (sec) => { const main = CK.model.sectionLabel(sec === '(без розділу)' ? '' : sec); return { main, path: sec === '(без розділу)' || sec === main ? '' : sec }; };
     const drawList = () => {
       D.clear(list);
       ctx.q2 = q.value;
@@ -5004,7 +5211,13 @@ CK.screens = (() => {
         list.appendChild(groupedList(items, (x) => CK.model.groupLabel(x.product), (x) => x.product.key, ctx, dnItem, 'catDn'));
       } else if (ctx.unTab === 'cards') {
         const items = D.sortByQuery(un.cards, (c) => c.name + ' ' + c.parent + ' ' + c.section + ' ' + c.rows.map((r) => r.sku + ' ' + r.barcode).join(' '), q.value);
-        list.appendChild(groupedList(items, (c) => c.section || '(без розділу)', (c) => c.parent, ctx, (c) => D.listItem({ photo: c.photos[0], name: c.name || c.parent, sub: `${c.parent} · ${c.section} · рядків ${c.rows.length}`, sel: ctx.selU === c.parent, data: { parent: c.parent }, onclick: () => { ctx.selU = c.parent; ctx.finder = null; ctx.rerender(); } }), 'catCards'));
+        list.appendChild(groupedList(items, (c) => c.section || '(без розділу)', (c) => c.parent, ctx, (c) => D.listItem({ photo: c.photos[0], name: c.name || c.parent, sub: `${c.parent} · ${c.section} · рядків ${c.rows.length}`, sel: ctx.selU === c.parent, data: { parent: c.parent }, onclick: () => { ctx.selU = c.parent; ctx.finder = null; ctx.rerender(); } }), 'catCards', secDisp));
+      } else if (ctx.unTab === 'women' || ctx.unTab === 'nolink') {
+        const src = ctx.unTab === 'women' ? un.women.map((c) => ({ card: c, reason: '' })) : un.notLink;
+        const items = D.sortByQuery(src, (x) => x.card.name + ' ' + x.card.parent + ' ' + x.card.section + ' ' + x.reason, q.value);
+        if (ctx.unTab === 'women') list.appendChild(h('div', { class: 'small muted', style: 'padding:0 6px 8px', text: 'Жіночі картки не зв’язуються з DN напряму: їх прив’язують до чоловічої картки того ж товару (унісекс) — штрихкоди і ціна в них будуть спільні.' }));
+        else list.appendChild(h('div', { class: 'small muted', style: 'padding:0 6px 8px', text: 'Готові образи і набори (за розділом сайту) та картки, позначені «лише на сайті». У підбір товару DN не йдуть; тут — для звітності.' }));
+        list.appendChild(groupedList(items, (x) => x.card.section || '(без розділу)', (x) => x.card.parent, ctx, (x) => D.listItem({ photo: x.card.photos[0], name: x.card.name || x.card.parent, sub: `${x.card.parent} · рядків ${x.card.rows.length}` + (x.reason ? ` · ${x.reason}` : ''), sel: ctx.selU === x.card.parent, data: { parent: x.card.parent }, onclick: () => { ctx.selU = x.card.parent; ctx.finder = null; ctx.rerender(); } }), ctx.unTab === 'women' ? 'catWomen' : 'catNoLink', secDisp));
       } else {
         const items = D.sortByQuery(qs.map((x) => ({ product: x.product, why: x.why, listing: '', excluded: false })), (x) => x.product.name + ' ' + x.product.base, q.value);
         list.appendChild(h('div', { class: 'small muted', style: 'padding:0 6px 8px', text: 'Тут програма не впевнена, як групувати рядки DN. Нічого не вирішує сама — виправ у DN або обери картку сайту вручну.' }));
@@ -5039,6 +5252,22 @@ CK.screens = (() => {
         D.btn('⋯ ще дії', () => PV.moreSheet(panel, moreDn), 'btn-more')));
       if (ctx.finder && ctx.finder.kind === 'card') { right.appendChild(finderCard(app, ctx, p)); return; }
       right.appendChild(panel);
+    } else if (ctx.unTab === 'women' || ctx.unTab === 'nolink') {
+      const x = ctx.unTab === 'women' ? (un.women.find((c) => c.parent === ctx.selU) ? { card: app.index.cards.get(ctx.selU), reason: '' } : null) : un.notLink.find((y) => y.card.parent === ctx.selU);
+      if (!x) { right.appendChild(h('div', { class: 'hint', text: ctx.unTab === 'women' ? 'Обери жіночу картку ліворуч і прив’яжи її до чоловічої.' : 'Обери картку ліворуч — тут образи, набори і «лише на сайті».' })); return; }
+      const c = x.card;
+      const findDn = () => { ctx.finder = { kind: 'dn', card: c }; ctx.rerender(); };
+      if (ctx.finder && ctx.finder.kind === 'dn') { right.appendChild(finderDn(app, ctx, c)); return; }
+      if (ctx.unTab === 'women') {
+        const toMen = () => { Object.assign(ctx, { tab: 'women', selW: c.parent, finder: { kind: 'men' } }); ctx.rerender(); };
+        right.appendChild(PV.soloView(app, { data: { parent: c.parent }, head: c.parent, name: c.name, tags: [{ text: 'жіноча · без пари', cls: 'tag-women' }], card: c, products: [],
+          dnHint: 'Жіноча картка отримає штрихкоди і ціну чоловічої картки того ж товару', dnBtn: D.btn('Прив’язати до чоловічої', toMen, 'btn-small btn-primary'),
+          btns: [D.btn('Прив’язати до чоловічої картки', toMen, 'btn-primary btn-to-men')] }));
+      } else {
+        right.appendChild(PV.soloView(app, { data: { parent: c.parent }, head: c.parent, name: c.name, tags: [{ text: x.reason, cls: 'tag-excl' }], card: c, products: [],
+          dnHint: x.kind === 'siteonly' ? 'Позначено «лише на сайті» — без зв’язку з DN' : 'Образ / набір складається з кількох товарів — з одним товаром DN не зв’язується',
+          btns: [x.kind === 'siteonly' ? D.btn('Повернути у «Без зв’язку»', () => { CK.app.unsetSiteOnly(app, c.parent); ctx.selU = null; }, 'btn-undo') : null, D.btn('Все одно підібрати товар DN', findDn, 'btn-small')] }));
+      }
     } else {
       const c = app.index.cards.get(ctx.selU);
       if (!c) { right.appendChild(h('div', { class: 'hint', text: 'Обери картку сайту ліворуч і підбери до неї товар DN.' })); return; }
@@ -5715,7 +5944,75 @@ CK.screens2 = (() => {
         n.card ? D.btn('Відкрити у Сверці →', () => goTab('svirka', { sel: n.card.parent, filter: 'all' }), 'btn-primary') : n.product ? D.btn('Відкрити у «Без зв’язку» →', () => goTab('unlinked', { unTab: 'dn', selU: n.product.key }), 'btn-primary') : null,
         n.product ? D.btn('У Каталозі →', () => goTab('catalog', { selC: n.product.key }), 'btn-small') : null] });
   }
-  return { home, files, rules, catalog, fixes, attrsScreen };
+
+  // ---------- Карантин (25.09.2026, Артем): картки під наглядом — історія змін по кожному вивантаженню.
+  function quarantine(app, left, right, ctx) {
+    const Q = CK.quarantine;
+    const fmtAt = (at) => !at ? '—' : /^\d{4}-\d{2}-\d{2}$/.test(at) ? at.split('-').reverse().join('.') : U.fmtDate(at);
+    const money = (v) => v === null || v === undefined || v === '' ? '—' : String(v);
+    const inp = h('input', { class: 'inp', placeholder: 'артикул картки сайту, артикул рядка або штрихкод' });
+    const add = () => {
+      const c = Q.findCard(app.index, inp.value);
+      if (!c) { D.toast('Картку не знайдено у вивантаженні сайту: ' + inp.value, 'warn'); return; }
+      ctx.selQ = c.parent; ctx.mDetail = true;
+      if (app.state.quarantine.has(c.parent)) { ctx.rerender(); return; }
+      CK.app.setQuarantine(app, c.parent, true, '');
+      D.toast(`${c.parent} — у карантині. Програма запам’ятала поточний стан.`);
+    };
+    inp.addEventListener('keydown', (e) => { if (e.key === 'Enter') add(); });
+    const items = Q.list(app);
+    left.appendChild(h('div', { class: 'left-top' }, h('div', { class: 'q-add' }, inp, D.btn('+ У карантин', add, 'btn-small btn-primary')),
+      h('div', { class: 'small muted', text: `Під наглядом: ${items.length} · зі змінами: ${items.filter((x) => x.changes).length}. Програма запам’ятовує картку з кожного нового вивантаження сайту і DN. Точного часу зміни у вивантаженні нема — видно, між якими вивантаженнями змінилось; частіше вивантаження — точніше.` })));
+    const list = h('div', { class: 'list' });
+    left.appendChild(list);
+    for (const it of items) list.appendChild(D.listItem({ photo: it.card ? it.card.photos[0] : '', name: it.name, sub: `${it.parent} · у карантині з ${fmtAt(it.q.ts)}` + (it.lastChange ? ` · остання зміна ${fmtAt(it.lastChange)}` : ''),
+      badge: it.changes ? `змін: ${it.changes}` : 'без змін', badgeCls: it.changes ? 'tag-bad' : '', sel: ctx.selQ === it.parent, data: { parent: it.parent }, onclick: () => { ctx.selQ = it.parent; ctx.rerender(); } }));
+    if (!ctx.selQ && items.length) ctx.selQ = items[0].parent;
+    const it = items.find((x) => x.parent === ctx.selQ);
+    if (!it) { right.appendChild(h('div', { class: 'hint', text: 'Карантин порожній. Введіть артикул картки ліворуч — програма стежитиме за її цінами, наявністю, штрихкодами і розмірами.' })); return; }
+    const card = it.card;
+    const l = app.state.links.get(it.parent);
+    const products = card ? (l ? U.uniq((l.dCodes || []).map((c) => app.index.productByCode.get(c)).filter(Boolean)) : CK.model.factProducts(card, app.index)) : [];
+    const tl = Q.timeline(app, it.parent);
+    const siteT = (rows) => D.table(['Розмір', 'Артикул', 'Штрихкод', 'Ціна', 'Стара', 'Наявність'], rows.map((r) => h('tr', null, h('td', { text: r.size || '—' }), h('td', { class: 'c-sku', text: r.key }), h('td', { class: 'mono', text: r.barcode || '—' }), h('td', { text: money(r.price) }), h('td', { text: money(r.old) }), h('td', { text: r.av || '' }))));
+    const dnT = (rows) => D.table(['Код', 'Артикул', 'Розмір', 'Штрихкод', 'Роздрібна', 'Залишок'], rows.map((r) => h('tr', null, h('td', { text: r.key }), h('td', { class: 'c-sku', text: r.sku || '—' }), h('td', { text: r.size || '—' }), h('td', { class: 'mono', text: r.barcode || '—' }), h('td', { text: money(r.retail) }), h('td', { text: money(r.qty) }))));
+    const changeLine = (c) => {
+      const who = `${c.size ? c.size + ' · ' : ''}${c.key}`;
+      if (c.kind === 'added') return h('li', { class: 'q-add-row', text: `${who}: новий рядок (ціна ${money(c.row.price !== undefined ? c.row.price : c.row.retail)})` });
+      if (c.kind === 'removed') return h('li', { class: 'q-del-row', text: `${who}: рядок зник` });
+      const d = c.delta === null ? '' : c.delta > 0 ? ` (+${c.delta} грн)` : ` (${String(c.delta).replace('-', '−')} грн)`;
+      return h('li', { class: c.field === 'price' || c.field === 'retail' ? 'q-price' : '' }, h('b', { text: who + ': ' }), `${c.label}: ${money(c.was)} → `, h('b', { text: money(c.now) }), d);
+    };
+    const evEl = (e) => {
+      const src = e.which === 'D' ? 'DNTrade' : 'сайт';
+      if (e.kind === 'start') return h('div', { class: 'q-ev q-start' }, h('div', { class: 'q-when', text: fmtAt(e.at) }), h('div', null, h('b', { text: 'Поставлено в карантин. ' }), e.note || ''));
+      if (e.kind === 'note') return h('div', { class: 'q-ev q-note' }, h('div', { class: 'q-when', text: fmtAt(e.at) }), h('div', null, h('b', { text: 'Ваша ручна зміна: ' }), e.text));
+      if (e.kind === 'base') return h('div', { class: 'q-ev q-base' }, h('div', { class: 'q-when', text: fmtAt(e.at) }), h('div', null, h('b', { text: `Перший знімок (${src}) — вивантаження ${fmtAt(e.at)}` }), e.file ? h('span', { class: 'small muted', text: ' · ' + e.file }) : null,
+        h('div', { class: 'tbl-scroll' }, e.which === 'D' ? dnT(e.rows) : siteT(e.rows))));
+      return h('div', { class: 'q-ev q-change' + (e.which === 'D' ? ' q-dn' : '') }, h('div', { class: 'q-when', text: fmtAt(e.at) }),
+        h('div', null, h('b', { text: `Зміна (${src}) між вивантаженнями ${fmtAt(e.from)} і ${fmtAt(e.at)}` }), h('ul', { class: 'q-changes' }, e.changes.map(changeLine)),
+          h('div', { class: 'q-how' }, h('b', { text: 'Як це могло статися: ' }), h('ul', null, e.how.map((x) => h('li', { text: x }))))));
+    };
+    const hist = h('div', { class: 'q-history' }, h('h3', { text: 'Історія змін' }),
+      h('div', { class: 'small muted', text: 'Найновіше зверху. Кожне нове вивантаження сайту чи DN — новий знімок; якщо нічого не змінилось, запису нема. Щоб відрізнити свої правки від «самих собою» — записуйте їх кнопкою внизу.' }),
+      tl.length ? tl.map(evEl) : h('div', { class: 'hint', text: 'Ще нема знімків — завантажте вивантаження сайту.' }));
+    const noteBtn = D.btn('✍ Записати мою ручну зміну', () => {
+      const ta = h('textarea', { class: 'inp', rows: 3, placeholder: 'наприклад: поставив M–XXL 3490, L 3490' });
+      let m;
+      const save = D.btn('Записати', () => { const t = ta.value.trim(); if (!t) return; CK.app.quarantineNote(app, it.parent, t); if (m) m.close(); }, 'btn-primary');
+      m = D.modal('Ручна зміна — ' + it.parent, h('div', null, h('div', { class: 'small muted', text: 'Що і коли ви змінили на сайті руками. Програма покаже це поруч зі змінами з вивантажень.' }), ta, h('div', { class: 'acts' }, save)));
+      setTimeout(() => ta.focus(), 30);
+    }, 'btn-primary');
+    const offBtn = D.btn('Зняти з карантину', () => { CK.app.setQuarantine(app, it.parent, false); ctx.selQ = null; }, 'btn-undo');
+    const v = PV.soloView(app, { cls: 'q-item', data: { parent: it.parent }, head: it.parent, name: it.name,
+      tags: [{ text: 'карантин з ' + fmtAt(it.q.ts), cls: 'tag-bad' }, { text: l ? 'є пара з DN' : products.length ? 'збіг з DN за штрихкодом (не підтверджено)' : 'без DN — DNTrade картку не оновлює' }],
+      noteTitle: it.q.note ? 'Чому в карантині: ' : null, note: it.q.note || null,
+      products, card, dnHint: 'Товару DN нема: у рядків картки немає штрихкодів DNTrade, тому DNTrade цю картку не бачить.', siteHint: 'Картки нема в поточному вивантаженні сайту — можливо, видалена.',
+      after: [hist], btns: [offBtn, noteBtn] });
+    right.appendChild(v);
+  }
+
+  return { home, files, rules, catalog, fixes, attrsScreen, quarantine };
 })();
 
 // ==== src/ui/photos.js
@@ -6198,17 +6495,18 @@ CK.main = (() => {
     ['listing', '3 · Викладка', (a, l, r, c) => CK.photosUi.listing(a, l, r, c), (n) => n && `${n.listingQueue}`, true],
     ['women', '4 · Жіночі', (a, l, r, c) => CK.screens.women(a, l, r, c), (n) => n && `${n.women}`, true],
     ['catalog', '5 · Каталог', (a, l, r, c) => CK.screens2.catalog(a, l, r, c), (n) => n && n.catalogTodo !== undefined ? `${n.catalogTodo}` : '', true],
-    ['fix', '6 · Ручна модерація', (a, l, r, c) => CK.screens2.fixes(a, l, r, c), (n) => n && `${n.fix}`, true],
-    ['attrs', '7 · Властивості', (a, l, r, c) => CK.screens2.attrsScreen(a, l, r, c), (n) => n && `${(n.attrsPending || 0) + (n.sectionsReview || 0)}`, true],
-    ['files', '8 · Файли', (a, l, r, c) => CK.screens2.files(a, l, r, c), () => '', false],
-    ['rules', '9 · Правила', (a, l, r, c) => CK.screens2.rules(a, l, r, c), () => '', false],
+    ['quarantine', '6 · Карантин', (a, l, r, c) => CK.screens2.quarantine(a, l, r, c), (n) => n && `${n.quarantine}`, true],
+    ['fix', '7 · Ручна модерація', (a, l, r, c) => CK.screens2.fixes(a, l, r, c), (n) => n && `${n.fix}`, true],
+    ['attrs', '8 · Властивості', (a, l, r, c) => CK.screens2.attrsScreen(a, l, r, c), (n) => n && `${(n.attrsPending || 0) + (n.sectionsReview || 0)}`, true],
+    ['files', '9 · Файли', (a, l, r, c) => CK.screens2.files(a, l, r, c), () => '', false],
+    ['rules', '10 · Правила', (a, l, r, c) => CK.screens2.rules(a, l, r, c), () => '', false],
     // Приховані з меню (21.09.2026, Артем: без дублювання вкладок): відкриваються з «Ручна модерація» і з Підсумку.
     ['check', 'Перевір (знімки)', (a, l, r, c) => CK.screens.check(a, l, r, c), (n) => n && `${n.check}`, true, true],
     ['problems', 'Проблеми сайту', (a, l, r, c) => CK.screens.problems(a, l, r, c), (n) => n && `${n.problems}`, false, true],
   ];
   const HIDDEN_PARENT = { check: 'fix', problems: 'fix' }; // яку вкладку підсвічувати, коли відкрита прихована
   // Кольори вкладок (22.09.2026, схема Артема): сірі — сверка і без зв’язку; зелена — викладка; жовті — ціни, жіночі; сині — каталог, файли, правила; червоні — ручна модерація, властивості.
-  const TAB_COLOR = { svirka: 'grey', unlinked: 'grey', listing: 'green', women: 'yellow', catalog: 'blue', fix: 'red', attrs: 'red', files: 'blue', rules: 'blue' };
+  const TAB_COLOR = { svirka: 'grey', unlinked: 'grey', listing: 'green', women: 'yellow', catalog: 'blue', quarantine: 'yellow', fix: 'red', attrs: 'red', files: 'blue', rules: 'blue' };
   const ctx = { tab: 'files' };
   let app;
   const isMobile = () => typeof matchMedia === 'function' && matchMedia('(max-width: 900px)').matches;
@@ -6312,7 +6610,7 @@ CK.main = (() => {
     return fresh;
   }
   // Місце, де Артем зупинився: вкладка, відкрита пара, фільтр, потік — щоб продовжити з телефона там, де закінчив на комп’ютері.
-  const UI_KEYS = ['tab', 'sel', 'selU', 'unTab', 'filter', 'cat', 'flow', 'test1', 'selC', 'catF', 'catSort', 'selN', 'fixF'];
+  const UI_KEYS = ['tab', 'selQ', 'sel', 'selU', 'unTab', 'filter', 'cat', 'flow', 'test1', 'selC', 'catF', 'catSort', 'selN', 'fixF'];
   let uiTimer = null;
   function cloudSaveUi() {
     if (!CK.cloud.available() || ctx.restoringUi) return;
@@ -6460,6 +6758,7 @@ CK.main = (() => {
     fix: SVG('<path d="M14.5 4.5l5 5L8 21H3v-5L14.5 4.5z"/><path d="M12 7l5 5"/>'),
     attrs: SVG('<path d="M4 7h16"/><path d="M4 12h10"/><path d="M4 17h7"/><circle cx="18" cy="15" r="3"/>'),
     rules: SVG('<path d="M6 3h9l4 4v14H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v5h5"/><path d="M8.5 12h7"/><path d="M8.5 16h7"/>'),
+    quarantine: SVG('<path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6l7-3z"/><path d="M12 8v5"/><path d="M12 16v.1"/>'),
     backup: SVG('<path d="M12 4v11"/><path d="M8 11l4 4 4-4"/><path d="M4 17v2a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-2"/>'),
     more: SVG('<circle cx="5" cy="12" r="1.6" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.6" fill="currentColor" stroke="none"/><circle cx="19" cy="12" r="1.6" fill="currentColor" stroke="none"/>'),
   };
@@ -6606,6 +6905,7 @@ CK.main = (() => {
       if (Dd) app.d = Dd;
       CK.app.recompute(app);
       if (CK.app.ready(app)) { app.lastVerify = CK.snapshot.verify(app.index, app.state); ctx.tab = 'home'; }
+      try { CK.app.syncQuarantine(app); } catch (e) { CK.errlog.add('quarantine', e.message); }
     } catch (e) { D.toast('Пам’ять браузера недоступна: ' + e.message, 'error'); }
     // Хмара Telegram — дзеркало: рішення (злиття), вивантаження, місце, де зупинився. Не блокує запуск: екран малюється одразу з локального,
     // а коли хмара відповість — перемальовується.
@@ -6615,6 +6915,7 @@ CK.main = (() => {
         await cloudPullAll('boot');
         try { await CK.cloud.gc(false); } catch (e) { /* прибирання сиріт — не критично */ }
         CK.app.recompute(app);
+        try { CK.app.syncQuarantine(app); } catch (e) { CK.errlog.add('quarantine', e.message); }
         if (CK.app.ready(app)) { app.lastVerify = CK.snapshot.verify(app.index, app.state); if (ctx.uiRestored && !TABS.some((t) => t[0] === ctx.tab)) ctx.tab = 'home'; }
         render();
       }, 50);
