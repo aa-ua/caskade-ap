@@ -1,0 +1,16 @@
+@media (max-width:767px){
+html.cs2 body section.catalog .catalog-card__content{display:flex!important;flex-wrap:wrap!important;align-items:center!important;gap:0!important;flex-direction:row!important}
+html.cs2 body section.catalog .catalog-card__content:after{content:""!important;order:4!important;flex-basis:100%!important;height:0!important;display:block!important}
+html.cs2 body section.catalog .catalog-card__title:before{content:none!important}
+html.cs2 body section.catalog .catalog-card__title{display:inline!important;font:700 15px/1.3 Rubik,Arial,sans-serif!important;color:#111!important;margin:0!important}
+html.cs2 body section.catalog .catalog-card__title a,html.cs2 body section.catalog .catalog-card__title .link{font:inherit!important;color:inherit!important}
+html.cs2 body section.catalog .catalog-card__brand{display:inline!important;font:400 13.5px/1.3 Rubik,Arial,sans-serif!important;color:#77736c!important;margin:0!important}
+html.cs2 body section.catalog .catalog-card__prices{order:5!important;margin:6px 0 0!important;flex:0 0 auto!important}
+html.cs2 body section.catalog .catalog-card__price{font:700 17px/1.1 Rubik,Arial,sans-serif!important;color:#111!important}
+html.cs2 body section.catalog .catalog-card__presence{order:8!important;flex-basis:100%!important;margin:5px 0 0!important;font:500 14px/1.2 Rubik,Arial,sans-serif!important;white-space:nowrap!important}
+html.cs2 body section.catalog .catalog-card__rating{display:none!important}
+html.cs2 body section.catalog .catalog-card__title{order:1!important}
+html.cs2 body section.catalog .catalog-card__brand{order:2!important}
+html.cs2 body section.catalog .catalog-card__brand:before{content:"\00a0·\00a0";color:#aaa}
+html.cs2 body section.catalog .cs2-szl{order:6!important;margin:9px 0 0 auto!important;padding-left:6px!important;font:500 13px/1.1 Rubik,Arial,sans-serif!important;color:#555!important;letter-spacing:.02em!important;white-space:nowrap!important}
+}
